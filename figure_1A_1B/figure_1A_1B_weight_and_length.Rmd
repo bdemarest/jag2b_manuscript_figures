@@ -5,8 +5,7 @@ date: '2023-03-03'
 output: github_document
 ---
 
-
-```{r}
+```{r load-packages, warning = FALSE, message = FALSE}
 library(data.table)
 library(ggplot2)
 library(tidyverse)
@@ -14,6 +13,7 @@ library(readxl)
 library(gt)
 library(here)
 library(stringr)
+library(patchwork)
 
 
 ```
@@ -22,7 +22,6 @@ library(stringr)
 ```{r}
 # Load data from excel sheet.
 # 
-
 
 tab = readxl::read_excel(path=here("figure_1A_1B",
   "summary_weight_length_data_jag2b_6wpf_to_2yrold_20230303bld.xlsx"),
@@ -44,35 +43,104 @@ age_order_vec = c(paste(c(6, 8, 10, 12), "weeks"),
                   paste(c(4, 6, 8, 10, 13, 24), "months"))
 tab[, age2:=factor(age2, levels=age_order_vec)]
 
+# Convert dob to character.
+tab[, dob:=as.character(dob)]
+
+```
+
+```{r}
+# Table showing sample size for all time points, genotypes.
+
+dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>% 
+  as_tibble() %>%
+  gt() %>%
+  tab_header(title="1. jag2b fish counts by timepoint and genotype.")
+
 ```
 
 
 ```{r}
-# Plot weights.
+# Table for all time points and sexes, grouped by genotype.
 
-# From ??
+dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>% 
+  as_tibble() %>%
+  group_by(genotype2) %>%
+  gt() %>%
+  tab_header(title="2. jag2b fish counts by timepoint, genotype, and sex") %>%
+  tab_source_note(
+    source_note=md("Data modifications: For plots and stats analysis, we will
+    
+    1. Combine males and females for 6- to 12-week timepoints, changing sex to \"unknown\" for these fish.
+    2. Discard females for timepoints 10- to 24-month.
+    
+    Rationale: Determining sex for 6- to 12-week old fish is difficult and error prone.
+    Sex differences in weight and length are generally minimal at these ages,
+    and jag2b mutants are impossible to sex.
+    The number of females of ages 10- to 24-months is too small to allow
+    adding sex to the ANOVA model."))
+                     
+```
+
+
+```{r}
+# Table dob batches, by time point.
+
+dcast(data=tab, dob ~ age2, fun.aggregate=length) %>% 
+  as_tibble() %>%
+  gt() %>%
+  tab_header(title="jag2b fish counts by timepoint and date-of-birth.")
+
+```
+
+```{r}
+# Table genotype by time point, grouped by dob.
+
+dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>% 
+  as_tibble() %>%
+  group_by(dob) %>%
+  gt() %>%
+  tab_header(title="jag2b fish counts by timepoint, data-of-birth, and genotype.")
+
+```
+
+
+```{r}
+# Edit the data set.
+# 1. Remove females 10-, 13-, and 24-months.
+# 2. For 6- through 12-week fish, relabel males and females as 'unknown'.
+
+tab2 = tab[!(age %in% c("10month", "13month", "24month") & sex %in% "F")]
+
+# Show that females of correct ages were removed
+dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>% 
+  as_tibble() %>%
+  gt() %>%
+  tab_header(title="Updated jag2b fish counts by timepoint and sex.",
+             subtitle="Females removed for timepoints 10-, 13-, 24-months")
+
+
+tab2[age %in% c("6wpf", "8wpf", "10wpf", "12wpf"), sex:="unknown"]
+
+dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>% 
+  as_tibble() %>%
+  gt() %>%
+  tab_header(title="Updated jag2b fish sex labels.",
+             subtitle="Males and females re-labeled as \'unknown\' for ages 6- through 12-weeks.")
+
+
+```
+
+
+```{r}
+# Plot weights and lengths.
+# Use 'tab2' data (updated to combine males and females, remove some females).
+
 genotype_colors  = c( "WT"="#80b1d3",
                      "HET"="#b3de69",
                      "MUT"="#fb8072")
-# From Chelsea ( 20220311_lengthanalysis.R )
-genotype_colors2 = c( "WT"="#4fa0ca",
-                     "HET"="#b3d968",
-                     "MUT"="#f47f72")
-
-p1 = ggplot(data=tab, aes(y=weight_gr, x=genotype2,
-                          color=genotype2, fill=genotype2)) +
-     theme_bw() +
-     geom_boxplot(outlier.color=NA, fill=NA, linewidth=0.5) +
-     geom_point(size=2, shape=21, color="grey20") +
-     scale_color_manual(values=genotype_colors2) +
-     scale_fill_manual(values=genotype_colors2) +
-     facet_wrap(facets=vars(age2))
-     
-
-
 
 # Compute summary statistics, grouped by age2 and genotype2.
-by_genotype = tab[, list(mean_weight=mean(weight_gr, na.rm=TRUE),
+by_genotype = tab2[, list(mean_weight=mean(weight_gr, na.rm=TRUE),
                            sd_weight=sd(weight_gr, na.rm=TRUE),
                          mean_length=mean(length_cm, na.rm=TRUE),
                          sd_length=sd(length_cm, na.rm=TRUE)),
@@ -94,7 +162,7 @@ p2 = ggplot() +
                       xend=as.integer(genotype2) + 0.45,
                       color=genotype2),
                   linewidth=1.0) +
-     geom_point(data=tab,
+     geom_point(data=tab2,
                 aes(x=genotype2, 
                     y=weight_gr,
                     fill=genotype2,
@@ -102,27 +170,164 @@ p2 = ggplot() +
                 #shape=21,
                 color="grey30",
                 size=1.4) +
-     scale_shape_manual(values=c(M=21, F=24)) +
+     scale_shape_manual(values=c(M=21, unknown=24)) +
      scale_color_manual(values=genotype_colors) +
      scale_fill_manual(values=genotype_colors) +
+     guides(fill="none") +
      # theme(panel.grid.minor.y=element_blank()) +
      # theme(panel.grid.major.x=element_blank()) +
      theme(axis.text.x=element_text(size=rel(0.8))) +
-     labs(title="Jag2b weight data, 10 developmental time points.") +
-     labs(subtitle="Horizontal bar = mean, whiskers = +/- standard deviation") +
+#     labs(title="Jag2b weight data, 10 developmental time points.") +
+#     labs(subtitle="Horizontal bar = mean, whiskers = +/- standard deviation") +
      labs(x=NULL, y="Weight (grams)", color="Genotype", shape="Sex") +
      facet_grid(cols=vars(age2))
 
-ggsave(here("figure_1A_1B", "weights_10ages_20230303.pdf"),
-       plot=p2, height=4, width=10)
 
-print(p2)
+# Lengths.
+p3 = ggplot() +
+     theme_bw() +
+     geom_errorbar(data=by_genotype,
+                   aes(x=genotype2,
+                       ymin=mean_length - sd_length,
+                       ymax=mean_length + sd_length,
+                       color=genotype2),
+                   linewidth=0.625,
+                   width=0.6) +
+     geom_segment(data=by_genotype,
+                  aes(y=mean_length,
+                      yend=mean_length,
+                      x=as.integer(genotype2) - 0.45,
+                      xend=as.integer(genotype2) + 0.45,
+                      color=genotype2),
+                  linewidth=1.0) +
+     geom_point(data=tab2,
+                aes(x=genotype2, 
+                    y=length_cm,
+                    fill=genotype2,
+                    shape=sex),
+                #shape=21,
+                color="grey30",
+                size=1.4) +
+     scale_shape_manual(values=c(M=21, unknown=24)) +
+     scale_color_manual(values=genotype_colors) +
+     scale_fill_manual(values=genotype_colors) +
+     guides(fill="none") +
+     # theme(panel.grid.minor.y=element_blank()) +
+     # theme(panel.grid.major.x=element_blank()) +
+     theme(axis.text.x=element_text(size=rel(0.8))) +
+#      labs(title="Jag2b length data, 10 developmental time points.") +
+#      labs(subtitle="Horizontal bar = mean, whiskers = +/- standard deviation") +
+     labs(x=NULL, y="Length (cm)", color="Genotype", shape="Sex") +
+     facet_grid(cols=vars(age2))
+
+
+p2_p3 = p2 / p3 + plot_layout(guides='collect') +
+         plot_annotation(title="Jag2b weight and length data, 10 developmental time points.",
+                         subtitle="Horizontal bar = mean, whiskers = +/- standard deviation")
+
+
+# add 'useDingbats=FALSE' to allow file to open correctly in Illustrator.
+ggsave(here("figure_1A_1B", "weights_lengths_10ages_20230307.pdf"),
+       plot=p2_p3, 
+       height=6, width=10, 
+       useDingbats=FALSE)
+
+print(p2_p3)
+
+```
+
+```{r}
+# Statistics. Use 'tab2' data set!!
+# 1. Do ANOVA for weight, length ~ age + genotype
+# 2. Possibly do pairwise t-tests for genotypes at each timepoint.
+
+
+lm_w = lm(weight_gr ~ age2 + genotype2, data=tab2)
+summary(lm_w)
+anova(lm_w)
+
+lm_l = lm(length_cm ~ age2 + genotype2, data=tab2)
+summary(lm_l)
+anova(lm_l)
 
 
 
 ```
 
 
+```{r pairwise-t-tests, eval=FALSE, include=FALSE}
+# copied from ultrasound proj.
+#------ T-tests for non-normalized dotplots 7 variables, 2 batches.
+
+comp_tab = data.table(group1=rep(c("WT", "WT", "HET"), times=2),
+                      group2=rep(c("HET", "MUT", "MUT"), times=2),
+                         variable=rep(c("weight_gr", "length_cm"), each=3))
+
+comp_tab = rbind(comp_tab, comp_tab)
+
+comp_tab[, age:=rep(levels(tab2$age2), each=6)]
+
+
+
+tres_list = list()
+
+for (i in seq(nrow(comp_tab))) {
+  row_i = comp_tab[i]
+  tmp_group1 = row_i$group1
+  tmp_group2 = row_i$group2
+  tmp_age = row_i$age
+  tmp_var = row_i$variable
+  
+  group1_data = by_fish[genotype == tmp_group1 & age == tmp_age, 
+                   ..tmp_var]
+  
+  group2_data = by_fish[genotype == tmp_group2 & age == tmp_age, 
+                   ..tmp_var]
+  
+    tmp_res = t.test(x=group1_data,
+                     y=group2_data,
+                     alternative = "two.sided",
+                     conf.level=0.95)
+  
+    new_row = data.table(group1=tmp_group1,
+                         group2=tmp_group2,
+                         age=tmp_age,
+                         comparison_variable=tmp_var,
+                         effect_size=tmp_res$estimate[1] - tmp_res$estimate[2], # (mutant or het mean) - wt mean
+                         pvalue=tmp_res$p.value,
+                         conf_lower=tmp_res$conf.int[1],
+                         conf_upper=tmp_res$conf.int[2],
+                         sample_size_group1=nrow(group1_data),
+                         sample_size_group2=nrow(group2_data),
+                         t_statistic=tmp_res$statistic,
+                         df=tmp_res$parameter)
+  tres_list[[i]] = new_row
+                       
+}
+
+
+# Summary table of all pair-wise t.test results and related values.
+stats_tab = rbindlist(tres_list)
+
+n_comparisons = sum(!is.na(stats_tab$pvalue))
+
+stats_tab[, padj:=p.adjust(pvalue, method="fdr", n=n_comparisons)]
+
+stats_tab[, genotype_pair:=paste(group1, group2, sep="-")]
+
+stats_tab[, genotype_pair:=factor(genotype_pair,
+                                  levels=c("WT-HET", "HET-MUT", "WT-MUT"))]
+
+# Output stats to text file.
+fwrite(stats_tab, 
+       file="pairwise_ttest_results_nonnormalized_7variables_6month_8month_20220621.txt", 
+       sep="\t")
+
+
+
+
+
+```
 
 
 
