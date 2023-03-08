@@ -246,16 +246,38 @@ lm_w = lm(weight_gr ~ age2 + genotype2, data=tab2)
 summary(lm_w)
 anova(lm_w)
 
+aov_w = aov(weight_gr ~ age2 + genotype2, data=tab2)
+tukey_res_w = TukeyHSD(aov_w)
+tukey_res_w
+plot(tukey_res_w)
+
+# To do:
+# Figure out how to use TukeyHSD to output
+# genotype-pairs results _separately_ for each timepoint.
+
+
 lm_l = lm(length_cm ~ age2 + genotype2, data=tab2)
 summary(lm_l)
 anova(lm_l)
 
 
+aov_l = aov(length_cm ~ age2 + genotype2, data=tab2)
+tukey_res_l = TukeyHSD(aov_l)
+tukey_res_l
+plot(tukey_res_l)
+
 
 ```
 
 
+
+
 ```{r pairwise-t-tests, eval=FALSE, include=FALSE}
+# Example code for pairwise t-test (wt-mut, het-mut, wt-het) for
+# each timepoint.
+
+# Hold on this, pending anova / TukeyHSD results.
+
 # copied from ultrasound proj.
 #------ T-tests for non-normalized dotplots 7 variables, 2 batches.
 

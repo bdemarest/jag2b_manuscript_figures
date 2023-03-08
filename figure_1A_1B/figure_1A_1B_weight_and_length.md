@@ -55,7 +55,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#txhpeadgkm .gt_table {
+#mahljzxdys .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -83,7 +83,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   /* table.border.bottom.color */
 }
 
-#txhpeadgkm .gt_heading {
+#mahljzxdys .gt_heading {
   background-color: #FFFFFF;
   /* heading.background.color */
   border-bottom-color: #FFFFFF;
@@ -102,7 +102,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   /* heading.border.lr.color */
 }
 
-#txhpeadgkm .gt_title {
+#mahljzxdys .gt_title {
   color: #333333;
   font-size: 125%;
   /* heading.title.font.size */
@@ -116,7 +116,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   border-bottom-width: 0;
 }
 
-#txhpeadgkm .gt_subtitle {
+#mahljzxdys .gt_subtitle {
   color: #333333;
   font-size: 85%;
   /* heading.subtitle.font.size */
@@ -130,7 +130,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   border-top-width: 0;
 }
 
-#txhpeadgkm .gt_bottom_border {
+#mahljzxdys .gt_bottom_border {
   border-bottom-style: solid;
   /* heading.border.bottom.style */
   border-bottom-width: 2px;
@@ -139,7 +139,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   /* heading.border.bottom.color */
 }
 
-#txhpeadgkm .gt_column_spanner {
+#mahljzxdys .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -147,7 +147,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   padding-bottom: 4px;
 }
 
-#txhpeadgkm .gt_col_headings {
+#mahljzxdys .gt_col_headings {
   border-top-style: solid;
   /* column_labels.border.top.style */
   border-top-width: 2px;
@@ -174,7 +174,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   /* column_labels.border.lr.color */
 }
 
-#txhpeadgkm .gt_col_heading {
+#mahljzxdys .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   /* column_labels.background.color */
@@ -190,11 +190,11 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   overflow-x: hidden;
 }
 
-#txhpeadgkm .gt_sep_right {
+#mahljzxdys .gt_sep_right {
   border-right: 5px solid #FFFFFF;
 }
 
-#txhpeadgkm .gt_group_heading {
+#mahljzxdys .gt_group_heading {
   padding: 8px;
   /* row_group.padding */
   color: #333333;
@@ -233,7 +233,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   vertical-align: middle;
 }
 
-#txhpeadgkm .gt_empty_group_heading {
+#mahljzxdys .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -257,20 +257,20 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   vertical-align: middle;
 }
 
-#txhpeadgkm .gt_striped {
+#mahljzxdys .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
   /* row.striping.background_color */
 }
 
-#txhpeadgkm .gt_from_md > :first-child {
+#mahljzxdys .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#txhpeadgkm .gt_from_md > :last-child {
+#mahljzxdys .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#txhpeadgkm .gt_row {
+#mahljzxdys .gt_row {
   padding-top: 8px;
   /* data_row.padding */
   padding-bottom: 8px;
@@ -300,7 +300,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   overflow-x: hidden;
 }
 
-#txhpeadgkm .gt_stub {
+#mahljzxdys .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   /* stub.background.color */
@@ -317,7 +317,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   padding-left: 12px;
 }
 
-#txhpeadgkm .gt_summary_row {
+#mahljzxdys .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* summary_row.background.color */
@@ -331,7 +331,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   padding-right: 5px;
 }
 
-#txhpeadgkm .gt_first_summary_row {
+#mahljzxdys .gt_first_summary_row {
   padding-top: 8px;
   /* summary_row.padding */
   padding-bottom: 8px;
@@ -346,7 +346,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   /* summary_row.border.color */
 }
 
-#txhpeadgkm .gt_grand_summary_row {
+#mahljzxdys .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* grand_summary_row.background.color */
@@ -360,7 +360,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   padding-right: 5px;
 }
 
-#txhpeadgkm .gt_first_grand_summary_row {
+#mahljzxdys .gt_first_grand_summary_row {
   padding-top: 8px;
   /* grand_summary_row.padding */
   padding-bottom: 8px;
@@ -375,7 +375,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   /* grand_summary_row.border.color */
 }
 
-#txhpeadgkm .gt_table_body {
+#mahljzxdys .gt_table_body {
   border-top-style: solid;
   /* table_body.border.top.style */
   border-top-width: 2px;
@@ -390,7 +390,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   /* table_body.border.bottom.color */
 }
 
-#txhpeadgkm .gt_footnotes {
+#mahljzxdys .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   /* footnotes.background.color */
@@ -414,7 +414,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   /* footnotes.border.lr.color */
 }
 
-#txhpeadgkm .gt_footnote {
+#mahljzxdys .gt_footnote {
   margin: 0px;
   font-size: 90%;
   /* footnotes.font.size */
@@ -422,7 +422,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   /* footnotes.padding */
 }
 
-#txhpeadgkm .gt_sourcenotes {
+#mahljzxdys .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   /* source_notes.background.color */
@@ -446,48 +446,48 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   /* source_notes.border.lr.style */
 }
 
-#txhpeadgkm .gt_sourcenote {
+#mahljzxdys .gt_sourcenote {
   font-size: 90%;
   /* source_notes.font.size */
   padding: 4px;
   /* source_notes.padding */
 }
 
-#txhpeadgkm .gt_left {
+#mahljzxdys .gt_left {
   text-align: left;
 }
 
-#txhpeadgkm .gt_center {
+#mahljzxdys .gt_center {
   text-align: center;
 }
 
-#txhpeadgkm .gt_right {
+#mahljzxdys .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#txhpeadgkm .gt_font_normal {
+#mahljzxdys .gt_font_normal {
   font-weight: normal;
 }
 
-#txhpeadgkm .gt_font_bold {
+#mahljzxdys .gt_font_bold {
   font-weight: bold;
 }
 
-#txhpeadgkm .gt_font_italic {
+#mahljzxdys .gt_font_italic {
   font-style: italic;
 }
 
-#txhpeadgkm .gt_super {
+#mahljzxdys .gt_super {
   font-size: 65%;
 }
 
-#txhpeadgkm .gt_footnote_marks {
+#mahljzxdys .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="txhpeadgkm" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="mahljzxdys" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   <thead class="gt_header">
     <tr>
       <th colspan="11" class="gt_heading gt_title gt_font_normal gt_center" style>1. jag2b fish counts by timepoint and genotype.</th>
@@ -581,7 +581,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#wnodfueqtt .gt_table {
+#glmqktiizv .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -609,7 +609,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   /* table.border.bottom.color */
 }
 
-#wnodfueqtt .gt_heading {
+#glmqktiizv .gt_heading {
   background-color: #FFFFFF;
   /* heading.background.color */
   border-bottom-color: #FFFFFF;
@@ -628,7 +628,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   /* heading.border.lr.color */
 }
 
-#wnodfueqtt .gt_title {
+#glmqktiizv .gt_title {
   color: #333333;
   font-size: 125%;
   /* heading.title.font.size */
@@ -642,7 +642,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   border-bottom-width: 0;
 }
 
-#wnodfueqtt .gt_subtitle {
+#glmqktiizv .gt_subtitle {
   color: #333333;
   font-size: 85%;
   /* heading.subtitle.font.size */
@@ -656,7 +656,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   border-top-width: 0;
 }
 
-#wnodfueqtt .gt_bottom_border {
+#glmqktiizv .gt_bottom_border {
   border-bottom-style: solid;
   /* heading.border.bottom.style */
   border-bottom-width: 2px;
@@ -665,7 +665,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   /* heading.border.bottom.color */
 }
 
-#wnodfueqtt .gt_column_spanner {
+#glmqktiizv .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -673,7 +673,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   padding-bottom: 4px;
 }
 
-#wnodfueqtt .gt_col_headings {
+#glmqktiizv .gt_col_headings {
   border-top-style: solid;
   /* column_labels.border.top.style */
   border-top-width: 2px;
@@ -700,7 +700,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   /* column_labels.border.lr.color */
 }
 
-#wnodfueqtt .gt_col_heading {
+#glmqktiizv .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   /* column_labels.background.color */
@@ -716,11 +716,11 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   overflow-x: hidden;
 }
 
-#wnodfueqtt .gt_sep_right {
+#glmqktiizv .gt_sep_right {
   border-right: 5px solid #FFFFFF;
 }
 
-#wnodfueqtt .gt_group_heading {
+#glmqktiizv .gt_group_heading {
   padding: 8px;
   /* row_group.padding */
   color: #333333;
@@ -759,7 +759,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   vertical-align: middle;
 }
 
-#wnodfueqtt .gt_empty_group_heading {
+#glmqktiizv .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -783,20 +783,20 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   vertical-align: middle;
 }
 
-#wnodfueqtt .gt_striped {
+#glmqktiizv .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
   /* row.striping.background_color */
 }
 
-#wnodfueqtt .gt_from_md > :first-child {
+#glmqktiizv .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#wnodfueqtt .gt_from_md > :last-child {
+#glmqktiizv .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#wnodfueqtt .gt_row {
+#glmqktiizv .gt_row {
   padding-top: 8px;
   /* data_row.padding */
   padding-bottom: 8px;
@@ -826,7 +826,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   overflow-x: hidden;
 }
 
-#wnodfueqtt .gt_stub {
+#glmqktiizv .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   /* stub.background.color */
@@ -843,7 +843,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   padding-left: 12px;
 }
 
-#wnodfueqtt .gt_summary_row {
+#glmqktiizv .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* summary_row.background.color */
@@ -857,7 +857,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   padding-right: 5px;
 }
 
-#wnodfueqtt .gt_first_summary_row {
+#glmqktiizv .gt_first_summary_row {
   padding-top: 8px;
   /* summary_row.padding */
   padding-bottom: 8px;
@@ -872,7 +872,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   /* summary_row.border.color */
 }
 
-#wnodfueqtt .gt_grand_summary_row {
+#glmqktiizv .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* grand_summary_row.background.color */
@@ -886,7 +886,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   padding-right: 5px;
 }
 
-#wnodfueqtt .gt_first_grand_summary_row {
+#glmqktiizv .gt_first_grand_summary_row {
   padding-top: 8px;
   /* grand_summary_row.padding */
   padding-bottom: 8px;
@@ -901,7 +901,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   /* grand_summary_row.border.color */
 }
 
-#wnodfueqtt .gt_table_body {
+#glmqktiizv .gt_table_body {
   border-top-style: solid;
   /* table_body.border.top.style */
   border-top-width: 2px;
@@ -916,7 +916,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   /* table_body.border.bottom.color */
 }
 
-#wnodfueqtt .gt_footnotes {
+#glmqktiizv .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   /* footnotes.background.color */
@@ -940,7 +940,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   /* footnotes.border.lr.color */
 }
 
-#wnodfueqtt .gt_footnote {
+#glmqktiizv .gt_footnote {
   margin: 0px;
   font-size: 90%;
   /* footnotes.font.size */
@@ -948,7 +948,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   /* footnotes.padding */
 }
 
-#wnodfueqtt .gt_sourcenotes {
+#glmqktiizv .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   /* source_notes.background.color */
@@ -972,48 +972,48 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   /* source_notes.border.lr.style */
 }
 
-#wnodfueqtt .gt_sourcenote {
+#glmqktiizv .gt_sourcenote {
   font-size: 90%;
   /* source_notes.font.size */
   padding: 4px;
   /* source_notes.padding */
 }
 
-#wnodfueqtt .gt_left {
+#glmqktiizv .gt_left {
   text-align: left;
 }
 
-#wnodfueqtt .gt_center {
+#glmqktiizv .gt_center {
   text-align: center;
 }
 
-#wnodfueqtt .gt_right {
+#glmqktiizv .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#wnodfueqtt .gt_font_normal {
+#glmqktiizv .gt_font_normal {
   font-weight: normal;
 }
 
-#wnodfueqtt .gt_font_bold {
+#glmqktiizv .gt_font_bold {
   font-weight: bold;
 }
 
-#wnodfueqtt .gt_font_italic {
+#glmqktiizv .gt_font_italic {
   font-style: italic;
 }
 
-#wnodfueqtt .gt_super {
+#glmqktiizv .gt_super {
   font-size: 65%;
 }
 
-#wnodfueqtt .gt_footnote_marks {
+#glmqktiizv .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="wnodfueqtt" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="glmqktiizv" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   <thead class="gt_header">
     <tr>
       <th colspan="11" class="gt_heading gt_title gt_font_normal gt_center" style>2. jag2b fish counts by timepoint, genotype, and sex</th>
@@ -1157,7 +1157,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#mopcdilbpi .gt_table {
+#psxkrcszca .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -1185,7 +1185,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   /* table.border.bottom.color */
 }
 
-#mopcdilbpi .gt_heading {
+#psxkrcszca .gt_heading {
   background-color: #FFFFFF;
   /* heading.background.color */
   border-bottom-color: #FFFFFF;
@@ -1204,7 +1204,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   /* heading.border.lr.color */
 }
 
-#mopcdilbpi .gt_title {
+#psxkrcszca .gt_title {
   color: #333333;
   font-size: 125%;
   /* heading.title.font.size */
@@ -1218,7 +1218,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   border-bottom-width: 0;
 }
 
-#mopcdilbpi .gt_subtitle {
+#psxkrcszca .gt_subtitle {
   color: #333333;
   font-size: 85%;
   /* heading.subtitle.font.size */
@@ -1232,7 +1232,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   border-top-width: 0;
 }
 
-#mopcdilbpi .gt_bottom_border {
+#psxkrcszca .gt_bottom_border {
   border-bottom-style: solid;
   /* heading.border.bottom.style */
   border-bottom-width: 2px;
@@ -1241,7 +1241,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   /* heading.border.bottom.color */
 }
 
-#mopcdilbpi .gt_column_spanner {
+#psxkrcszca .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1249,7 +1249,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   padding-bottom: 4px;
 }
 
-#mopcdilbpi .gt_col_headings {
+#psxkrcszca .gt_col_headings {
   border-top-style: solid;
   /* column_labels.border.top.style */
   border-top-width: 2px;
@@ -1276,7 +1276,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   /* column_labels.border.lr.color */
 }
 
-#mopcdilbpi .gt_col_heading {
+#psxkrcszca .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   /* column_labels.background.color */
@@ -1292,11 +1292,11 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   overflow-x: hidden;
 }
 
-#mopcdilbpi .gt_sep_right {
+#psxkrcszca .gt_sep_right {
   border-right: 5px solid #FFFFFF;
 }
 
-#mopcdilbpi .gt_group_heading {
+#psxkrcszca .gt_group_heading {
   padding: 8px;
   /* row_group.padding */
   color: #333333;
@@ -1335,7 +1335,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   vertical-align: middle;
 }
 
-#mopcdilbpi .gt_empty_group_heading {
+#psxkrcszca .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1359,20 +1359,20 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   vertical-align: middle;
 }
 
-#mopcdilbpi .gt_striped {
+#psxkrcszca .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
   /* row.striping.background_color */
 }
 
-#mopcdilbpi .gt_from_md > :first-child {
+#psxkrcszca .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#mopcdilbpi .gt_from_md > :last-child {
+#psxkrcszca .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#mopcdilbpi .gt_row {
+#psxkrcszca .gt_row {
   padding-top: 8px;
   /* data_row.padding */
   padding-bottom: 8px;
@@ -1402,7 +1402,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   overflow-x: hidden;
 }
 
-#mopcdilbpi .gt_stub {
+#psxkrcszca .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   /* stub.background.color */
@@ -1419,7 +1419,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   padding-left: 12px;
 }
 
-#mopcdilbpi .gt_summary_row {
+#psxkrcszca .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* summary_row.background.color */
@@ -1433,7 +1433,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   padding-right: 5px;
 }
 
-#mopcdilbpi .gt_first_summary_row {
+#psxkrcszca .gt_first_summary_row {
   padding-top: 8px;
   /* summary_row.padding */
   padding-bottom: 8px;
@@ -1448,7 +1448,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   /* summary_row.border.color */
 }
 
-#mopcdilbpi .gt_grand_summary_row {
+#psxkrcszca .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* grand_summary_row.background.color */
@@ -1462,7 +1462,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   padding-right: 5px;
 }
 
-#mopcdilbpi .gt_first_grand_summary_row {
+#psxkrcszca .gt_first_grand_summary_row {
   padding-top: 8px;
   /* grand_summary_row.padding */
   padding-bottom: 8px;
@@ -1477,7 +1477,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   /* grand_summary_row.border.color */
 }
 
-#mopcdilbpi .gt_table_body {
+#psxkrcszca .gt_table_body {
   border-top-style: solid;
   /* table_body.border.top.style */
   border-top-width: 2px;
@@ -1492,7 +1492,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   /* table_body.border.bottom.color */
 }
 
-#mopcdilbpi .gt_footnotes {
+#psxkrcszca .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   /* footnotes.background.color */
@@ -1516,7 +1516,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   /* footnotes.border.lr.color */
 }
 
-#mopcdilbpi .gt_footnote {
+#psxkrcszca .gt_footnote {
   margin: 0px;
   font-size: 90%;
   /* footnotes.font.size */
@@ -1524,7 +1524,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   /* footnotes.padding */
 }
 
-#mopcdilbpi .gt_sourcenotes {
+#psxkrcszca .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   /* source_notes.background.color */
@@ -1548,48 +1548,48 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   /* source_notes.border.lr.style */
 }
 
-#mopcdilbpi .gt_sourcenote {
+#psxkrcszca .gt_sourcenote {
   font-size: 90%;
   /* source_notes.font.size */
   padding: 4px;
   /* source_notes.padding */
 }
 
-#mopcdilbpi .gt_left {
+#psxkrcszca .gt_left {
   text-align: left;
 }
 
-#mopcdilbpi .gt_center {
+#psxkrcszca .gt_center {
   text-align: center;
 }
 
-#mopcdilbpi .gt_right {
+#psxkrcszca .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#mopcdilbpi .gt_font_normal {
+#psxkrcszca .gt_font_normal {
   font-weight: normal;
 }
 
-#mopcdilbpi .gt_font_bold {
+#psxkrcszca .gt_font_bold {
   font-weight: bold;
 }
 
-#mopcdilbpi .gt_font_italic {
+#psxkrcszca .gt_font_italic {
   font-style: italic;
 }
 
-#mopcdilbpi .gt_super {
+#psxkrcszca .gt_super {
   font-size: 65%;
 }
 
-#mopcdilbpi .gt_footnote_marks {
+#psxkrcszca .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="mopcdilbpi" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="psxkrcszca" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   <thead class="gt_header">
     <tr>
       <th colspan="11" class="gt_heading gt_title gt_font_normal gt_center" style>jag2b fish counts by timepoint and date-of-birth.</th>
@@ -1737,7 +1737,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#vbyfkzjqgn .gt_table {
+#frnqscharr .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -1765,7 +1765,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   /* table.border.bottom.color */
 }
 
-#vbyfkzjqgn .gt_heading {
+#frnqscharr .gt_heading {
   background-color: #FFFFFF;
   /* heading.background.color */
   border-bottom-color: #FFFFFF;
@@ -1784,7 +1784,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   /* heading.border.lr.color */
 }
 
-#vbyfkzjqgn .gt_title {
+#frnqscharr .gt_title {
   color: #333333;
   font-size: 125%;
   /* heading.title.font.size */
@@ -1798,7 +1798,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   border-bottom-width: 0;
 }
 
-#vbyfkzjqgn .gt_subtitle {
+#frnqscharr .gt_subtitle {
   color: #333333;
   font-size: 85%;
   /* heading.subtitle.font.size */
@@ -1812,7 +1812,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   border-top-width: 0;
 }
 
-#vbyfkzjqgn .gt_bottom_border {
+#frnqscharr .gt_bottom_border {
   border-bottom-style: solid;
   /* heading.border.bottom.style */
   border-bottom-width: 2px;
@@ -1821,7 +1821,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   /* heading.border.bottom.color */
 }
 
-#vbyfkzjqgn .gt_column_spanner {
+#frnqscharr .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1829,7 +1829,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   padding-bottom: 4px;
 }
 
-#vbyfkzjqgn .gt_col_headings {
+#frnqscharr .gt_col_headings {
   border-top-style: solid;
   /* column_labels.border.top.style */
   border-top-width: 2px;
@@ -1856,7 +1856,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   /* column_labels.border.lr.color */
 }
 
-#vbyfkzjqgn .gt_col_heading {
+#frnqscharr .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   /* column_labels.background.color */
@@ -1872,11 +1872,11 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   overflow-x: hidden;
 }
 
-#vbyfkzjqgn .gt_sep_right {
+#frnqscharr .gt_sep_right {
   border-right: 5px solid #FFFFFF;
 }
 
-#vbyfkzjqgn .gt_group_heading {
+#frnqscharr .gt_group_heading {
   padding: 8px;
   /* row_group.padding */
   color: #333333;
@@ -1915,7 +1915,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   vertical-align: middle;
 }
 
-#vbyfkzjqgn .gt_empty_group_heading {
+#frnqscharr .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1939,20 +1939,20 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   vertical-align: middle;
 }
 
-#vbyfkzjqgn .gt_striped {
+#frnqscharr .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
   /* row.striping.background_color */
 }
 
-#vbyfkzjqgn .gt_from_md > :first-child {
+#frnqscharr .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#vbyfkzjqgn .gt_from_md > :last-child {
+#frnqscharr .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#vbyfkzjqgn .gt_row {
+#frnqscharr .gt_row {
   padding-top: 8px;
   /* data_row.padding */
   padding-bottom: 8px;
@@ -1982,7 +1982,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   overflow-x: hidden;
 }
 
-#vbyfkzjqgn .gt_stub {
+#frnqscharr .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   /* stub.background.color */
@@ -1999,7 +1999,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   padding-left: 12px;
 }
 
-#vbyfkzjqgn .gt_summary_row {
+#frnqscharr .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* summary_row.background.color */
@@ -2013,7 +2013,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   padding-right: 5px;
 }
 
-#vbyfkzjqgn .gt_first_summary_row {
+#frnqscharr .gt_first_summary_row {
   padding-top: 8px;
   /* summary_row.padding */
   padding-bottom: 8px;
@@ -2028,7 +2028,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   /* summary_row.border.color */
 }
 
-#vbyfkzjqgn .gt_grand_summary_row {
+#frnqscharr .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* grand_summary_row.background.color */
@@ -2042,7 +2042,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   padding-right: 5px;
 }
 
-#vbyfkzjqgn .gt_first_grand_summary_row {
+#frnqscharr .gt_first_grand_summary_row {
   padding-top: 8px;
   /* grand_summary_row.padding */
   padding-bottom: 8px;
@@ -2057,7 +2057,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   /* grand_summary_row.border.color */
 }
 
-#vbyfkzjqgn .gt_table_body {
+#frnqscharr .gt_table_body {
   border-top-style: solid;
   /* table_body.border.top.style */
   border-top-width: 2px;
@@ -2072,7 +2072,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   /* table_body.border.bottom.color */
 }
 
-#vbyfkzjqgn .gt_footnotes {
+#frnqscharr .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   /* footnotes.background.color */
@@ -2096,7 +2096,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   /* footnotes.border.lr.color */
 }
 
-#vbyfkzjqgn .gt_footnote {
+#frnqscharr .gt_footnote {
   margin: 0px;
   font-size: 90%;
   /* footnotes.font.size */
@@ -2104,7 +2104,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   /* footnotes.padding */
 }
 
-#vbyfkzjqgn .gt_sourcenotes {
+#frnqscharr .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   /* source_notes.background.color */
@@ -2128,48 +2128,48 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   /* source_notes.border.lr.style */
 }
 
-#vbyfkzjqgn .gt_sourcenote {
+#frnqscharr .gt_sourcenote {
   font-size: 90%;
   /* source_notes.font.size */
   padding: 4px;
   /* source_notes.padding */
 }
 
-#vbyfkzjqgn .gt_left {
+#frnqscharr .gt_left {
   text-align: left;
 }
 
-#vbyfkzjqgn .gt_center {
+#frnqscharr .gt_center {
   text-align: center;
 }
 
-#vbyfkzjqgn .gt_right {
+#frnqscharr .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#vbyfkzjqgn .gt_font_normal {
+#frnqscharr .gt_font_normal {
   font-weight: normal;
 }
 
-#vbyfkzjqgn .gt_font_bold {
+#frnqscharr .gt_font_bold {
   font-weight: bold;
 }
 
-#vbyfkzjqgn .gt_font_italic {
+#frnqscharr .gt_font_italic {
   font-style: italic;
 }
 
-#vbyfkzjqgn .gt_super {
+#frnqscharr .gt_super {
   font-size: 65%;
 }
 
-#vbyfkzjqgn .gt_footnote_marks {
+#frnqscharr .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="vbyfkzjqgn" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="frnqscharr" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   <thead class="gt_header">
     <tr>
       <th colspan="11" class="gt_heading gt_title gt_font_normal gt_center" style>jag2b fish counts by timepoint, data-of-birth, and genotype.</th>
@@ -2541,7 +2541,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#spqsaymfhn .gt_table {
+#nvzwkhqsjo .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -2569,7 +2569,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* table.border.bottom.color */
 }
 
-#spqsaymfhn .gt_heading {
+#nvzwkhqsjo .gt_heading {
   background-color: #FFFFFF;
   /* heading.background.color */
   border-bottom-color: #FFFFFF;
@@ -2588,7 +2588,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* heading.border.lr.color */
 }
 
-#spqsaymfhn .gt_title {
+#nvzwkhqsjo .gt_title {
   color: #333333;
   font-size: 125%;
   /* heading.title.font.size */
@@ -2602,7 +2602,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   border-bottom-width: 0;
 }
 
-#spqsaymfhn .gt_subtitle {
+#nvzwkhqsjo .gt_subtitle {
   color: #333333;
   font-size: 85%;
   /* heading.subtitle.font.size */
@@ -2616,7 +2616,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   border-top-width: 0;
 }
 
-#spqsaymfhn .gt_bottom_border {
+#nvzwkhqsjo .gt_bottom_border {
   border-bottom-style: solid;
   /* heading.border.bottom.style */
   border-bottom-width: 2px;
@@ -2625,7 +2625,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* heading.border.bottom.color */
 }
 
-#spqsaymfhn .gt_column_spanner {
+#nvzwkhqsjo .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -2633,7 +2633,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   padding-bottom: 4px;
 }
 
-#spqsaymfhn .gt_col_headings {
+#nvzwkhqsjo .gt_col_headings {
   border-top-style: solid;
   /* column_labels.border.top.style */
   border-top-width: 2px;
@@ -2660,7 +2660,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* column_labels.border.lr.color */
 }
 
-#spqsaymfhn .gt_col_heading {
+#nvzwkhqsjo .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   /* column_labels.background.color */
@@ -2676,11 +2676,11 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   overflow-x: hidden;
 }
 
-#spqsaymfhn .gt_sep_right {
+#nvzwkhqsjo .gt_sep_right {
   border-right: 5px solid #FFFFFF;
 }
 
-#spqsaymfhn .gt_group_heading {
+#nvzwkhqsjo .gt_group_heading {
   padding: 8px;
   /* row_group.padding */
   color: #333333;
@@ -2719,7 +2719,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   vertical-align: middle;
 }
 
-#spqsaymfhn .gt_empty_group_heading {
+#nvzwkhqsjo .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -2743,20 +2743,20 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   vertical-align: middle;
 }
 
-#spqsaymfhn .gt_striped {
+#nvzwkhqsjo .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
   /* row.striping.background_color */
 }
 
-#spqsaymfhn .gt_from_md > :first-child {
+#nvzwkhqsjo .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#spqsaymfhn .gt_from_md > :last-child {
+#nvzwkhqsjo .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#spqsaymfhn .gt_row {
+#nvzwkhqsjo .gt_row {
   padding-top: 8px;
   /* data_row.padding */
   padding-bottom: 8px;
@@ -2786,7 +2786,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   overflow-x: hidden;
 }
 
-#spqsaymfhn .gt_stub {
+#nvzwkhqsjo .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   /* stub.background.color */
@@ -2803,7 +2803,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   padding-left: 12px;
 }
 
-#spqsaymfhn .gt_summary_row {
+#nvzwkhqsjo .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* summary_row.background.color */
@@ -2817,7 +2817,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   padding-right: 5px;
 }
 
-#spqsaymfhn .gt_first_summary_row {
+#nvzwkhqsjo .gt_first_summary_row {
   padding-top: 8px;
   /* summary_row.padding */
   padding-bottom: 8px;
@@ -2832,7 +2832,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* summary_row.border.color */
 }
 
-#spqsaymfhn .gt_grand_summary_row {
+#nvzwkhqsjo .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* grand_summary_row.background.color */
@@ -2846,7 +2846,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   padding-right: 5px;
 }
 
-#spqsaymfhn .gt_first_grand_summary_row {
+#nvzwkhqsjo .gt_first_grand_summary_row {
   padding-top: 8px;
   /* grand_summary_row.padding */
   padding-bottom: 8px;
@@ -2861,7 +2861,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* grand_summary_row.border.color */
 }
 
-#spqsaymfhn .gt_table_body {
+#nvzwkhqsjo .gt_table_body {
   border-top-style: solid;
   /* table_body.border.top.style */
   border-top-width: 2px;
@@ -2876,7 +2876,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* table_body.border.bottom.color */
 }
 
-#spqsaymfhn .gt_footnotes {
+#nvzwkhqsjo .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   /* footnotes.background.color */
@@ -2900,7 +2900,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* footnotes.border.lr.color */
 }
 
-#spqsaymfhn .gt_footnote {
+#nvzwkhqsjo .gt_footnote {
   margin: 0px;
   font-size: 90%;
   /* footnotes.font.size */
@@ -2908,7 +2908,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* footnotes.padding */
 }
 
-#spqsaymfhn .gt_sourcenotes {
+#nvzwkhqsjo .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   /* source_notes.background.color */
@@ -2932,48 +2932,48 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* source_notes.border.lr.style */
 }
 
-#spqsaymfhn .gt_sourcenote {
+#nvzwkhqsjo .gt_sourcenote {
   font-size: 90%;
   /* source_notes.font.size */
   padding: 4px;
   /* source_notes.padding */
 }
 
-#spqsaymfhn .gt_left {
+#nvzwkhqsjo .gt_left {
   text-align: left;
 }
 
-#spqsaymfhn .gt_center {
+#nvzwkhqsjo .gt_center {
   text-align: center;
 }
 
-#spqsaymfhn .gt_right {
+#nvzwkhqsjo .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#spqsaymfhn .gt_font_normal {
+#nvzwkhqsjo .gt_font_normal {
   font-weight: normal;
 }
 
-#spqsaymfhn .gt_font_bold {
+#nvzwkhqsjo .gt_font_bold {
   font-weight: bold;
 }
 
-#spqsaymfhn .gt_font_italic {
+#nvzwkhqsjo .gt_font_italic {
   font-style: italic;
 }
 
-#spqsaymfhn .gt_super {
+#nvzwkhqsjo .gt_super {
   font-size: 65%;
 }
 
-#spqsaymfhn .gt_footnote_marks {
+#nvzwkhqsjo .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="spqsaymfhn" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="nvzwkhqsjo" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   <thead class="gt_header">
     <tr>
       <th colspan="11" class="gt_heading gt_title gt_font_normal gt_center" style>Updated jag2b fish counts by timepoint and sex.</th>
@@ -3043,7 +3043,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#afedwvooul .gt_table {
+#ovimgxpgxq .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -3071,7 +3071,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* table.border.bottom.color */
 }
 
-#afedwvooul .gt_heading {
+#ovimgxpgxq .gt_heading {
   background-color: #FFFFFF;
   /* heading.background.color */
   border-bottom-color: #FFFFFF;
@@ -3090,7 +3090,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* heading.border.lr.color */
 }
 
-#afedwvooul .gt_title {
+#ovimgxpgxq .gt_title {
   color: #333333;
   font-size: 125%;
   /* heading.title.font.size */
@@ -3104,7 +3104,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   border-bottom-width: 0;
 }
 
-#afedwvooul .gt_subtitle {
+#ovimgxpgxq .gt_subtitle {
   color: #333333;
   font-size: 85%;
   /* heading.subtitle.font.size */
@@ -3118,7 +3118,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   border-top-width: 0;
 }
 
-#afedwvooul .gt_bottom_border {
+#ovimgxpgxq .gt_bottom_border {
   border-bottom-style: solid;
   /* heading.border.bottom.style */
   border-bottom-width: 2px;
@@ -3127,7 +3127,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* heading.border.bottom.color */
 }
 
-#afedwvooul .gt_column_spanner {
+#ovimgxpgxq .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -3135,7 +3135,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   padding-bottom: 4px;
 }
 
-#afedwvooul .gt_col_headings {
+#ovimgxpgxq .gt_col_headings {
   border-top-style: solid;
   /* column_labels.border.top.style */
   border-top-width: 2px;
@@ -3162,7 +3162,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* column_labels.border.lr.color */
 }
 
-#afedwvooul .gt_col_heading {
+#ovimgxpgxq .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   /* column_labels.background.color */
@@ -3178,11 +3178,11 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   overflow-x: hidden;
 }
 
-#afedwvooul .gt_sep_right {
+#ovimgxpgxq .gt_sep_right {
   border-right: 5px solid #FFFFFF;
 }
 
-#afedwvooul .gt_group_heading {
+#ovimgxpgxq .gt_group_heading {
   padding: 8px;
   /* row_group.padding */
   color: #333333;
@@ -3221,7 +3221,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   vertical-align: middle;
 }
 
-#afedwvooul .gt_empty_group_heading {
+#ovimgxpgxq .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -3245,20 +3245,20 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   vertical-align: middle;
 }
 
-#afedwvooul .gt_striped {
+#ovimgxpgxq .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
   /* row.striping.background_color */
 }
 
-#afedwvooul .gt_from_md > :first-child {
+#ovimgxpgxq .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#afedwvooul .gt_from_md > :last-child {
+#ovimgxpgxq .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#afedwvooul .gt_row {
+#ovimgxpgxq .gt_row {
   padding-top: 8px;
   /* data_row.padding */
   padding-bottom: 8px;
@@ -3288,7 +3288,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   overflow-x: hidden;
 }
 
-#afedwvooul .gt_stub {
+#ovimgxpgxq .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   /* stub.background.color */
@@ -3305,7 +3305,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   padding-left: 12px;
 }
 
-#afedwvooul .gt_summary_row {
+#ovimgxpgxq .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* summary_row.background.color */
@@ -3319,7 +3319,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   padding-right: 5px;
 }
 
-#afedwvooul .gt_first_summary_row {
+#ovimgxpgxq .gt_first_summary_row {
   padding-top: 8px;
   /* summary_row.padding */
   padding-bottom: 8px;
@@ -3334,7 +3334,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* summary_row.border.color */
 }
 
-#afedwvooul .gt_grand_summary_row {
+#ovimgxpgxq .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* grand_summary_row.background.color */
@@ -3348,7 +3348,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   padding-right: 5px;
 }
 
-#afedwvooul .gt_first_grand_summary_row {
+#ovimgxpgxq .gt_first_grand_summary_row {
   padding-top: 8px;
   /* grand_summary_row.padding */
   padding-bottom: 8px;
@@ -3363,7 +3363,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* grand_summary_row.border.color */
 }
 
-#afedwvooul .gt_table_body {
+#ovimgxpgxq .gt_table_body {
   border-top-style: solid;
   /* table_body.border.top.style */
   border-top-width: 2px;
@@ -3378,7 +3378,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* table_body.border.bottom.color */
 }
 
-#afedwvooul .gt_footnotes {
+#ovimgxpgxq .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   /* footnotes.background.color */
@@ -3402,7 +3402,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* footnotes.border.lr.color */
 }
 
-#afedwvooul .gt_footnote {
+#ovimgxpgxq .gt_footnote {
   margin: 0px;
   font-size: 90%;
   /* footnotes.font.size */
@@ -3410,7 +3410,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* footnotes.padding */
 }
 
-#afedwvooul .gt_sourcenotes {
+#ovimgxpgxq .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   /* source_notes.background.color */
@@ -3434,48 +3434,48 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* source_notes.border.lr.style */
 }
 
-#afedwvooul .gt_sourcenote {
+#ovimgxpgxq .gt_sourcenote {
   font-size: 90%;
   /* source_notes.font.size */
   padding: 4px;
   /* source_notes.padding */
 }
 
-#afedwvooul .gt_left {
+#ovimgxpgxq .gt_left {
   text-align: left;
 }
 
-#afedwvooul .gt_center {
+#ovimgxpgxq .gt_center {
   text-align: center;
 }
 
-#afedwvooul .gt_right {
+#ovimgxpgxq .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#afedwvooul .gt_font_normal {
+#ovimgxpgxq .gt_font_normal {
   font-weight: normal;
 }
 
-#afedwvooul .gt_font_bold {
+#ovimgxpgxq .gt_font_bold {
   font-weight: bold;
 }
 
-#afedwvooul .gt_font_italic {
+#ovimgxpgxq .gt_font_italic {
   font-style: italic;
 }
 
-#afedwvooul .gt_super {
+#ovimgxpgxq .gt_super {
   font-size: 65%;
 }
 
-#afedwvooul .gt_footnote_marks {
+#ovimgxpgxq .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="afedwvooul" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="ovimgxpgxq" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   <thead class="gt_header">
     <tr>
       <th colspan="11" class="gt_heading gt_title gt_font_normal gt_center" style>Updated jag2b fish sex labels.</th>
@@ -3701,6 +3701,82 @@ anova(lm_w)
     ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
 ``` r
+aov_w = aov(weight_gr ~ age2 + genotype2, data=tab2)
+tukey_res_w = TukeyHSD(aov_w)
+tukey_res_w
+```
+
+    ##   Tukey multiple comparisons of means
+    ##     95% family-wise confidence level
+    ## 
+    ## Fit: aov(formula = weight_gr ~ age2 + genotype2, data = tab2)
+    ## 
+    ## $age2
+    ##                            diff          lwr          upr     p adj
+    ## 8 weeks-6 weeks      0.07906667 -0.005498070  0.163631403 0.0890017
+    ## 10 weeks-6 weeks     0.15070435  0.065055999  0.236352696 0.0000024
+    ## 12 weeks-6 weeks     0.17462222  0.055367936  0.293876509 0.0002095
+    ## 4 months-6 weeks     0.28173333  0.210810293  0.352656373 0.0000000
+    ## 6 months-6 weeks     0.20942857  0.133153274  0.285703869 0.0000000
+    ## 8 months-6 weeks     0.35846250  0.262169657  0.454755343 0.0000000
+    ## 10 months-6 weeks    0.54396250  0.447669657  0.640255343 0.0000000
+    ## 13 months-6 weeks    0.52078889  0.428240130  0.613337647 0.0000000
+    ## 24 months-6 weeks    0.64087368  0.549947494  0.731799874 0.0000000
+    ## 10 weeks-8 weeks     0.07163768 -0.021469317  0.164744680 0.2969700
+    ## 12 weeks-8 weeks     0.09555556 -0.029163563  0.220274674 0.3028340
+    ## 4 months-8 weeks     0.20266667  0.122896051  0.282437283 0.0000000
+    ## 6 months-8 weeks     0.13036190  0.045797168  0.214926641 0.0000694
+    ## 8 months-8 weeks     0.27939583  0.176412411  0.382379256 0.0000000
+    ## 10 months-8 weeks    0.46489583  0.361912411  0.567879256 0.0000000
+    ## 13 months-8 weeks    0.44172222  0.342230784  0.541213660 0.0000000
+    ## 24 months-8 weeks    0.56180702  0.463823113  0.659790922 0.0000000
+    ## 12 weeks-10 weeks    0.02391787 -0.101538506  0.149374255 0.9998394
+    ## 4 months-10 weeks    0.13102899  0.050110532  0.211947439 0.0000218
+    ## 6 months-10 weeks    0.05872422 -0.026924125  0.144372572 0.4662558
+    ## 8 months-10 weeks    0.20775815  0.103883082  0.311633223 0.0000000
+    ## 10 months-10 weeks   0.39325815  0.289383082  0.497133223 0.0000000
+    ## 13 months-10 weeks   0.37008454  0.269670442  0.470498640 0.0000000
+    ## 24 months-10 weeks   0.49016934  0.391248709  0.589089964 0.0000000
+    ## 4 months-12 weeks    0.10711111 -0.008792907  0.223015129 0.0974633
+    ## 6 months-12 weeks    0.03480635 -0.084447937  0.154060636 0.9952450
+    ## 8 months-12 weeks    0.18384028  0.050889251  0.316791304 0.0006366
+    ## 10 months-12 weeks   0.36934028  0.236389251  0.502291304 0.0000000
+    ## 13 months-12 weeks   0.34616667  0.215901796  0.476431537 0.0000000
+    ## 24 months-12 weeks   0.46625146  0.337134322  0.595368602 0.0000000
+    ## 6 months-4 months   -0.07230476 -0.143227802 -0.001381722 0.0416292
+    ## 8 months-4 months    0.07672917 -0.015382007  0.168840340 0.1959880
+    ## 10 months-4 months   0.26222917  0.170117993  0.354340340 0.0000000
+    ## 13 months-4 months   0.23905556  0.150865821  0.327245290 0.0000000
+    ## 24 months-4 months   0.35914035  0.272654927  0.445625775 0.0000000
+    ## 8 months-6 months    0.14903393  0.052741085  0.245326772 0.0000634
+    ## 10 months-6 months   0.33453393  0.238241085  0.430826772 0.0000000
+    ## 13 months-6 months   0.31136032  0.218811559  0.403909076 0.0000000
+    ## 24 months-6 months   0.43144511  0.340518923  0.522371303 0.0000000
+    ## 10 months-8 months   0.18550000  0.072687313  0.298312687 0.0000149
+    ## 13 months-8 months   0.16232639  0.052692164  0.271960614 0.0001665
+    ## 24 months-8 months   0.28241118  0.174143171  0.390679197 0.0000000
+    ## 13 months-10 months -0.02317361 -0.132807836  0.086460614 0.9996236
+    ## 24 months-10 months  0.09691118 -0.011356829  0.205179197 0.1233078
+    ## 24 months-13 months  0.12008480  0.015132789  0.225036802 0.0115858
+    ## 
+    ## $genotype2
+    ##               diff         lwr         upr     p adj
+    ## HET-WT  -0.0125394 -0.04826866  0.02318987 0.6861151
+    ## MUT-WT  -0.1526947 -0.19048349 -0.11490593 0.0000000
+    ## MUT-HET -0.1401553 -0.17833042 -0.10198021 0.0000000
+
+``` r
+plot(tukey_res_w)
+```
+
+![](figure_1A_1B_weight_and_length_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->![](figure_1A_1B_weight_and_length_files/figure-gfm/unnamed-chunk-8-2.png)<!-- -->
+
+``` r
+# To do:
+# Figure out how to use TukeyHSD to output
+# genotype-pairs results _separately_ for each timepoint.
+
+
 lm_l = lm(length_cm ~ age2 + genotype2, data=tab2)
 summary(lm_l)
 ```
@@ -3748,3 +3824,74 @@ anova(lm_l)
     ## Residuals 229 16.546  0.0723                      
     ## ---
     ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+
+``` r
+aov_l = aov(length_cm ~ age2 + genotype2, data=tab2)
+tukey_res_l = TukeyHSD(aov_l)
+tukey_res_l
+```
+
+    ##   Tukey multiple comparisons of means
+    ##     95% family-wise confidence level
+    ## 
+    ## Fit: aov(formula = length_cm ~ age2 + genotype2, data = tab2)
+    ## 
+    ## $age2
+    ##                             diff         lwr         upr     p adj
+    ## 8 weeks-6 weeks      0.433601190  0.20597720  0.66122518 0.0000002
+    ## 10 weeks-6 weeks     0.521881988  0.29134122  0.75242275 0.0000000
+    ## 12 weeks-6 weeks     0.589031746  0.26803344  0.91003005 0.0000007
+    ## 4 months-6 weeks     0.869017857  0.67811339  1.05992232 0.0000000
+    ## 6 months-6 weeks     0.871407563  0.66459223  1.07822290 0.0000000
+    ## 8 months-6 weeks     1.266580357  1.00738767  1.52577305 0.0000000
+    ## 10 months-6 weeks    1.761955357  1.50276267  2.02114805 0.0000000
+    ## 13 months-6 weeks    1.400025210  1.14611810  1.65393232 0.0000000
+    ## 24 months-6 weeks    2.244511278  1.99976408  2.48925848 0.0000000
+    ## 10 weeks-8 weeks     0.088280797 -0.16233651  0.33889811 0.9816408
+    ## 12 weeks-8 weeks     0.155430556 -0.18027751  0.49113862 0.8990736
+    ## 4 months-8 weeks     0.435416667  0.22069707  0.65013626 0.0000000
+    ## 6 months-8 weeks     0.437806373  0.20882477  0.66678798 0.0000002
+    ## 8 months-8 weeks     0.832979167  0.55577736  1.11018098 0.0000000
+    ## 10 months-8 weeks    1.328354167  1.05115236  1.60555598 0.0000000
+    ## 13 months-8 weeks    0.966424020  0.69415795  1.23869009 0.0000000
+    ## 24 months-8 weeks    1.810910088  1.54716554  2.07465463 0.0000000
+    ## 12 weeks-10 weeks    0.067149758 -0.27054280  0.40484232 0.9997719
+    ## 4 months-10 weeks    0.347135870  0.12932662  0.56494512 0.0000322
+    ## 6 months-10 weeks    0.349525575  0.11764427  0.58140688 0.0001142
+    ## 8 months-10 weeks    0.744698370  0.46509650  1.02430024 0.0000000
+    ## 10 months-10 weeks   1.240073370  0.96047150  1.51967524 0.0000000
+    ## 13 months-10 weeks   0.878143223  0.60343397  1.15285248 0.0000000
+    ## 24 months-10 weeks   1.722629291  1.45636336  1.98889522 0.0000000
+    ## 4 months-12 weeks    0.279986111 -0.03199423  0.59196645 0.1210206
+    ## 6 months-12 weeks    0.282375817 -0.03958661  0.60433824 0.1418710
+    ## 8 months-12 weeks    0.677548611  0.31968261  1.03541461 0.0000003
+    ## 10 months-12 weeks   1.172923611  0.81505761  1.53078961 0.0000000
+    ## 13 months-12 weeks   0.810993464  0.45693691  1.16505002 0.0000000
+    ## 24 months-12 weeks   1.655479532  1.30793326  2.00302581 0.0000000
+    ## 6 months-4 months    0.002389706 -0.19013148  0.19491089 1.0000000
+    ## 8 months-4 months    0.397562500  0.14962566  0.64549934 0.0000278
+    ## 10 months-4 months   0.892937500  0.64500066  1.14087434 0.0000000
+    ## 13 months-4 months   0.531007353  0.28860140  0.77341330 0.0000000
+    ## 24 months-4 months   1.375493421  1.14269949  1.60828736 0.0000000
+    ## 8 months-6 months    0.395172794  0.13478703  0.65555855 0.0000985
+    ## 10 months-6 months   0.890547794  0.63016203  1.15093355 0.0000000
+    ## 13 months-6 months   0.528617647  0.27349275  0.78374255 0.0000000
+    ## 24 months-6 months   1.373103715  1.12709338  1.61911405 0.0000000
+    ## 10 months-8 months   0.495375000  0.19171563  0.79903437 0.0000182
+    ## 13 months-8 months   0.133444853 -0.16571561  0.43260531 0.9182024
+    ## 24 months-8 months   0.977930921  0.68650451  1.26935733 0.0000000
+    ## 13 months-10 months -0.361930147 -0.66109061 -0.06276969 0.0055203
+    ## 24 months-10 months  0.482555921  0.19112951  0.77398233 0.0000125
+    ## 24 months-13 months  0.844486068  0.55775044  1.13122170 0.0000000
+    ## 
+    ## $genotype2
+    ##                diff        lwr         upr     p adj
+    ## HET-WT  -0.03530065 -0.1317631  0.06116183 0.6639677
+    ## MUT-WT  -0.52642422 -0.6285582 -0.42429021 0.0000000
+    ## MUT-HET -0.49112357 -0.5945658 -0.38768138 0.0000000
+
+``` r
+plot(tukey_res_l)
+```
+
+![](figure_1A_1B_weight_and_length_files/figure-gfm/unnamed-chunk-8-3.png)<!-- -->![](figure_1A_1B_weight_and_length_files/figure-gfm/unnamed-chunk-8-4.png)<!-- -->
