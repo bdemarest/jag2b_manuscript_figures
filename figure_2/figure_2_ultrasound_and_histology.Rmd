@@ -1,0 +1,188 @@
+---
+title: "figure 2 - ultrasound and histology data"
+author: "Bradley Demarest"
+date: '2023-03-15'
+output: github_document
+---
+
+```{r load-packages, warning = FALSE, message = FALSE}
+library(data.table)
+library(ggplot2)
+library(tidyverse)
+library(gt)
+library(here)
+library(stringr)
+library(patchwork)
+
+
+```
+
+
+```{r load-ultrasound-data}
+
+# Load ultrasound data for 4- and 6-month from two tab-delimited text files.
+
+utab4 = fread(here("figure_2",
+                   "jag2b_summarized_ultrasound_4month_batch_1_2_n42_20230315.txt"))
+
+# Remove 'line' column.
+set(utab4, j="line", value=NULL)
+
+# March 17 2023. fish f0092 is missing As and Ad values. 
+# Leo found the values in the original csv files. 
+# We will insert the correct mean As and mean Ad values into the 
+# current working tab-delimited text file. 
+# Warning! We have not corrected the fish f0092 values in the intermediate
+# data files (where ultrasound replicate values are in separate columns
+# such as As_1, As_2, etc.) Also, we do not have value ventricle Volume data for
+# fish f0092. Eventually, we should go back and re-run the csv processing
+# script.
+
+utab6 = fread(here("figure_2",
+                   "jag2b_summarized_ultrasound_6_8_month_n46_f0092_update_20230317.txt"))
+# Add batch column (containing NA values).
+utab6[, batch:=NA_character_]
+
+utab = rbind(utab4, utab6)
+
+# Remove 8-month old fish data. We are not including this timepoint
+# in plots because of very small sample sizes.
+utab = utab[age %in% c("4month", "6month")]
+
+# Compute derived ultrasound variables.
+utab[, SA:=Ad_avg - As_avg]
+utab[, EFA:=SA / Ad_avg]
+utab[, CO:=SA * HR_avg]
+
+# Create new group variable.
+utab[age %in% "4month" & batch %in% "batch_1", group:="4-month old, batch 1"]
+utab[age %in% "4month" & batch %in% "batch_2", group:="4-month old, batch 2"]
+utab[age %in% "6month", group:="6-month old"]
+
+```
+
+
+```{r ultrasound-data-panels}
+
+# Create panels for 3 groups (4-month batch 1, 4-month batch 2, 6-month)
+# and 6 variables (weight, HR, Ad, As, CO, SA).
+
+group_vec = c("4-month old, batch 1", "4-month old, batch 2", "6-month old")
+
+
+variable_vec = c("weight_gr", "HR_avg", "Ad_avg", "As_avg", "CO", "SA")
+variable_labels = c("Weight (grams)", "Heart rate (minute^-1)",
+                    "Ventricle area - diastole (mm^2)",
+                    "Ventricle area - systole (mm^2)",
+                    "Cardiac output (mm^2 * minute^-1)",
+                    "Stroke area (mm^2)")
+
+# Collect y-axis ranges for all variables.
+yrange_res = list()
+
+for (i in seq_along(variable_vec)) {
+  tmp_var = variable_vec[i]
+  yrange_res[[tmp_var]] = range(utab[[tmp_var]], na.rm=TRUE)
+}
+
+
+# Ultrasound data panel loop.
+# as.name() is equivalent to rlang::sym()
+
+genotype_colors  = c( "WT"="#80b1d3",
+                     "HET"="#b3de69",
+                     "MUT"="#fb8072")
+
+point_size = 2.0
+
+
+group_res = list()
+
+for (g in seq_along(group_vec)) {
+  tmp_group = group_vec[g]
+  tmp_data = utab[group %in% tmp_group]
+  
+  panel_res = list()
+  
+  for (v in seq_along(variable_vec)) {
+    tmp_var = variable_vec[v]
+    tmp_label = variable_labels[v]
+    tmp_data[, label:=tmp_label]
+    
+    tmp_by_genotype = tmp_data[, list(mean_value=mean(get(tmp_var), na.rm=TRUE),
+                                      sd_value=sd(get(tmp_var), na.rm=TRUE)),
+                               by=list(genotype)]
+    
+    tmp_panel = ggplot(data=tmp_data,
+                       aes(y=!!as.name(tmp_var),
+                           x=genotype,
+                           color=genotype,
+                           fill=genotype)) +
+                theme_bw() +
+                geom_point(size=point_size) +
+                scale_fill_manual(values=genotype_colors) +
+                labs(y=tmp_label)
+    
+    panel_res[[tmp_var]] = tmp_panel
+  }
+  
+  group_res[[tmp_group]] = wrap_plots(panel_res, nrow=1) +
+                           plot_layout(guides="collect") +
+                           plot_annotation(title=tmp_group)
+
+}
+
+
+ultrasound_fig = group_res[[1]] / group_res[[2]] / group_res[[3]]
+
+ggsave(here("figure_2", "figure2_ultrasound_panels_20230317.pdf"),
+       plot=ultrasound_fig,
+       width=18, height=6)
+
+# Problem: patchwork is not printing group titles for each set of panels
+# when I try to combine the 3 panels.
+
+print(ultrasound_fig)
+
+
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+```{r old-plot-attempt, eval=FALSE, include=FALSE}
+
+
+utab_long = melt(utab,
+                 id.vars=c("fish_id", "genotype", "age", "batch", "group"),
+                 measure.vars=c("weight_gr", "As_avg", "Ad_avg", 
+                                "HR_avg", "SA", "CO"),
+                 value.name="measurement_value",
+                 variable.name="measurement_variable")
+
+
+
+u1_w = ggplot(data=utab_long[measurement_variable %in% "weight_gr"],
+              aes(y=measurement_value, x=genotype, color=genotype, fill=genotype)) +
+  geom_point() +
+  facet_grid(rows=vars(group))
+
+
+
+
+```
+
+
+
+
+
