@@ -18,7 +18,7 @@ library(patchwork)
 # Load data from excel sheet.
 # 
 
-tab = readxl::read_excel(path=here("figure_1A_1B",
+tab = readxl::read_excel(path=here("figure_1",
   "summary_weight_length_data_jag2b_6wpf_to_2yrold_20230303bld.xlsx"),
   na="NA")
 
@@ -26,8 +26,13 @@ tab = as.data.table(tab)
 
 # Standardize all genotypes to uppercase.
 tab[, genotype:=toupper(genotype)]
-# Set order of genotypes.
-tab[, genotype2:=factor(genotype, levels=c("WT", "HET", "MUT"))]
+
+# Use simple genotype labels (+/+, +/-, etc.)
+convert_genotype_labels = c(WT="+/+", HET="+/-", MUT="-/-")
+tab[, genotype2:=convert_genotype_labels[genotype]]
+# Set factor and level order of 'genotype2' column.
+tab[, genotype2:=factor(genotype2, levels=convert_genotype_labels)]
+
 
 # Change age labels to format "6 weeks", "6 months", etc..    
 tab[, age2:=str_replace(age, "month", " months")]
@@ -55,7 +60,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#mahljzxdys .gt_table {
+#rfhwtdkpih .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -83,7 +88,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   /* table.border.bottom.color */
 }
 
-#mahljzxdys .gt_heading {
+#rfhwtdkpih .gt_heading {
   background-color: #FFFFFF;
   /* heading.background.color */
   border-bottom-color: #FFFFFF;
@@ -102,7 +107,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   /* heading.border.lr.color */
 }
 
-#mahljzxdys .gt_title {
+#rfhwtdkpih .gt_title {
   color: #333333;
   font-size: 125%;
   /* heading.title.font.size */
@@ -116,7 +121,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   border-bottom-width: 0;
 }
 
-#mahljzxdys .gt_subtitle {
+#rfhwtdkpih .gt_subtitle {
   color: #333333;
   font-size: 85%;
   /* heading.subtitle.font.size */
@@ -130,7 +135,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   border-top-width: 0;
 }
 
-#mahljzxdys .gt_bottom_border {
+#rfhwtdkpih .gt_bottom_border {
   border-bottom-style: solid;
   /* heading.border.bottom.style */
   border-bottom-width: 2px;
@@ -139,7 +144,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   /* heading.border.bottom.color */
 }
 
-#mahljzxdys .gt_column_spanner {
+#rfhwtdkpih .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -147,7 +152,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   padding-bottom: 4px;
 }
 
-#mahljzxdys .gt_col_headings {
+#rfhwtdkpih .gt_col_headings {
   border-top-style: solid;
   /* column_labels.border.top.style */
   border-top-width: 2px;
@@ -174,7 +179,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   /* column_labels.border.lr.color */
 }
 
-#mahljzxdys .gt_col_heading {
+#rfhwtdkpih .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   /* column_labels.background.color */
@@ -190,11 +195,11 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   overflow-x: hidden;
 }
 
-#mahljzxdys .gt_sep_right {
+#rfhwtdkpih .gt_sep_right {
   border-right: 5px solid #FFFFFF;
 }
 
-#mahljzxdys .gt_group_heading {
+#rfhwtdkpih .gt_group_heading {
   padding: 8px;
   /* row_group.padding */
   color: #333333;
@@ -233,7 +238,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   vertical-align: middle;
 }
 
-#mahljzxdys .gt_empty_group_heading {
+#rfhwtdkpih .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -257,20 +262,20 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   vertical-align: middle;
 }
 
-#mahljzxdys .gt_striped {
+#rfhwtdkpih .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
   /* row.striping.background_color */
 }
 
-#mahljzxdys .gt_from_md > :first-child {
+#rfhwtdkpih .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#mahljzxdys .gt_from_md > :last-child {
+#rfhwtdkpih .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#mahljzxdys .gt_row {
+#rfhwtdkpih .gt_row {
   padding-top: 8px;
   /* data_row.padding */
   padding-bottom: 8px;
@@ -300,7 +305,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   overflow-x: hidden;
 }
 
-#mahljzxdys .gt_stub {
+#rfhwtdkpih .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   /* stub.background.color */
@@ -317,7 +322,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   padding-left: 12px;
 }
 
-#mahljzxdys .gt_summary_row {
+#rfhwtdkpih .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* summary_row.background.color */
@@ -331,7 +336,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   padding-right: 5px;
 }
 
-#mahljzxdys .gt_first_summary_row {
+#rfhwtdkpih .gt_first_summary_row {
   padding-top: 8px;
   /* summary_row.padding */
   padding-bottom: 8px;
@@ -346,7 +351,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   /* summary_row.border.color */
 }
 
-#mahljzxdys .gt_grand_summary_row {
+#rfhwtdkpih .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* grand_summary_row.background.color */
@@ -360,7 +365,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   padding-right: 5px;
 }
 
-#mahljzxdys .gt_first_grand_summary_row {
+#rfhwtdkpih .gt_first_grand_summary_row {
   padding-top: 8px;
   /* grand_summary_row.padding */
   padding-bottom: 8px;
@@ -375,7 +380,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   /* grand_summary_row.border.color */
 }
 
-#mahljzxdys .gt_table_body {
+#rfhwtdkpih .gt_table_body {
   border-top-style: solid;
   /* table_body.border.top.style */
   border-top-width: 2px;
@@ -390,7 +395,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   /* table_body.border.bottom.color */
 }
 
-#mahljzxdys .gt_footnotes {
+#rfhwtdkpih .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   /* footnotes.background.color */
@@ -414,7 +419,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   /* footnotes.border.lr.color */
 }
 
-#mahljzxdys .gt_footnote {
+#rfhwtdkpih .gt_footnote {
   margin: 0px;
   font-size: 90%;
   /* footnotes.font.size */
@@ -422,7 +427,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   /* footnotes.padding */
 }
 
-#mahljzxdys .gt_sourcenotes {
+#rfhwtdkpih .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   /* source_notes.background.color */
@@ -446,48 +451,48 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   /* source_notes.border.lr.style */
 }
 
-#mahljzxdys .gt_sourcenote {
+#rfhwtdkpih .gt_sourcenote {
   font-size: 90%;
   /* source_notes.font.size */
   padding: 4px;
   /* source_notes.padding */
 }
 
-#mahljzxdys .gt_left {
+#rfhwtdkpih .gt_left {
   text-align: left;
 }
 
-#mahljzxdys .gt_center {
+#rfhwtdkpih .gt_center {
   text-align: center;
 }
 
-#mahljzxdys .gt_right {
+#rfhwtdkpih .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#mahljzxdys .gt_font_normal {
+#rfhwtdkpih .gt_font_normal {
   font-weight: normal;
 }
 
-#mahljzxdys .gt_font_bold {
+#rfhwtdkpih .gt_font_bold {
   font-weight: bold;
 }
 
-#mahljzxdys .gt_font_italic {
+#rfhwtdkpih .gt_font_italic {
   font-style: italic;
 }
 
-#mahljzxdys .gt_super {
+#rfhwtdkpih .gt_super {
   font-size: 65%;
 }
 
-#mahljzxdys .gt_footnote_marks {
+#rfhwtdkpih .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="mahljzxdys" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="rfhwtdkpih" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   <thead class="gt_header">
     <tr>
       <th colspan="11" class="gt_heading gt_title gt_font_normal gt_center" style>1. jag2b fish counts by timepoint and genotype.</th>
@@ -513,7 +518,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   </thead>
   <tbody class="gt_table_body">
     <tr>
-      <td class="gt_row gt_center">WT</td>
+      <td class="gt_row gt_center">+/+</td>
       <td class="gt_row gt_center">10</td>
       <td class="gt_row gt_center">8</td>
       <td class="gt_row gt_center">8</td>
@@ -526,7 +531,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
       <td class="gt_row gt_center">11</td>
     </tr>
     <tr>
-      <td class="gt_row gt_center gt_striped">HET</td>
+      <td class="gt_row gt_center gt_striped">+/-</td>
       <td class="gt_row gt_center gt_striped">13</td>
       <td class="gt_row gt_center gt_striped">8</td>
       <td class="gt_row gt_center gt_striped">8</td>
@@ -539,7 +544,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
       <td class="gt_row gt_center gt_striped">13</td>
     </tr>
     <tr>
-      <td class="gt_row gt_center">MUT</td>
+      <td class="gt_row gt_center">-/-</td>
       <td class="gt_row gt_center">12</td>
       <td class="gt_row gt_center">8</td>
       <td class="gt_row gt_center">7</td>
@@ -581,7 +586,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#glmqktiizv .gt_table {
+#zycicusoar .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -609,7 +614,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   /* table.border.bottom.color */
 }
 
-#glmqktiizv .gt_heading {
+#zycicusoar .gt_heading {
   background-color: #FFFFFF;
   /* heading.background.color */
   border-bottom-color: #FFFFFF;
@@ -628,7 +633,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   /* heading.border.lr.color */
 }
 
-#glmqktiizv .gt_title {
+#zycicusoar .gt_title {
   color: #333333;
   font-size: 125%;
   /* heading.title.font.size */
@@ -642,7 +647,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   border-bottom-width: 0;
 }
 
-#glmqktiizv .gt_subtitle {
+#zycicusoar .gt_subtitle {
   color: #333333;
   font-size: 85%;
   /* heading.subtitle.font.size */
@@ -656,7 +661,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   border-top-width: 0;
 }
 
-#glmqktiizv .gt_bottom_border {
+#zycicusoar .gt_bottom_border {
   border-bottom-style: solid;
   /* heading.border.bottom.style */
   border-bottom-width: 2px;
@@ -665,7 +670,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   /* heading.border.bottom.color */
 }
 
-#glmqktiizv .gt_column_spanner {
+#zycicusoar .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -673,7 +678,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   padding-bottom: 4px;
 }
 
-#glmqktiizv .gt_col_headings {
+#zycicusoar .gt_col_headings {
   border-top-style: solid;
   /* column_labels.border.top.style */
   border-top-width: 2px;
@@ -700,7 +705,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   /* column_labels.border.lr.color */
 }
 
-#glmqktiizv .gt_col_heading {
+#zycicusoar .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   /* column_labels.background.color */
@@ -716,11 +721,11 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   overflow-x: hidden;
 }
 
-#glmqktiizv .gt_sep_right {
+#zycicusoar .gt_sep_right {
   border-right: 5px solid #FFFFFF;
 }
 
-#glmqktiizv .gt_group_heading {
+#zycicusoar .gt_group_heading {
   padding: 8px;
   /* row_group.padding */
   color: #333333;
@@ -759,7 +764,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   vertical-align: middle;
 }
 
-#glmqktiizv .gt_empty_group_heading {
+#zycicusoar .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -783,20 +788,20 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   vertical-align: middle;
 }
 
-#glmqktiizv .gt_striped {
+#zycicusoar .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
   /* row.striping.background_color */
 }
 
-#glmqktiizv .gt_from_md > :first-child {
+#zycicusoar .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#glmqktiizv .gt_from_md > :last-child {
+#zycicusoar .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#glmqktiizv .gt_row {
+#zycicusoar .gt_row {
   padding-top: 8px;
   /* data_row.padding */
   padding-bottom: 8px;
@@ -826,7 +831,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   overflow-x: hidden;
 }
 
-#glmqktiizv .gt_stub {
+#zycicusoar .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   /* stub.background.color */
@@ -843,7 +848,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   padding-left: 12px;
 }
 
-#glmqktiizv .gt_summary_row {
+#zycicusoar .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* summary_row.background.color */
@@ -857,7 +862,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   padding-right: 5px;
 }
 
-#glmqktiizv .gt_first_summary_row {
+#zycicusoar .gt_first_summary_row {
   padding-top: 8px;
   /* summary_row.padding */
   padding-bottom: 8px;
@@ -872,7 +877,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   /* summary_row.border.color */
 }
 
-#glmqktiizv .gt_grand_summary_row {
+#zycicusoar .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* grand_summary_row.background.color */
@@ -886,7 +891,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   padding-right: 5px;
 }
 
-#glmqktiizv .gt_first_grand_summary_row {
+#zycicusoar .gt_first_grand_summary_row {
   padding-top: 8px;
   /* grand_summary_row.padding */
   padding-bottom: 8px;
@@ -901,7 +906,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   /* grand_summary_row.border.color */
 }
 
-#glmqktiizv .gt_table_body {
+#zycicusoar .gt_table_body {
   border-top-style: solid;
   /* table_body.border.top.style */
   border-top-width: 2px;
@@ -916,7 +921,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   /* table_body.border.bottom.color */
 }
 
-#glmqktiizv .gt_footnotes {
+#zycicusoar .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   /* footnotes.background.color */
@@ -940,7 +945,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   /* footnotes.border.lr.color */
 }
 
-#glmqktiizv .gt_footnote {
+#zycicusoar .gt_footnote {
   margin: 0px;
   font-size: 90%;
   /* footnotes.font.size */
@@ -948,7 +953,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   /* footnotes.padding */
 }
 
-#glmqktiizv .gt_sourcenotes {
+#zycicusoar .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   /* source_notes.background.color */
@@ -972,48 +977,48 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   /* source_notes.border.lr.style */
 }
 
-#glmqktiizv .gt_sourcenote {
+#zycicusoar .gt_sourcenote {
   font-size: 90%;
   /* source_notes.font.size */
   padding: 4px;
   /* source_notes.padding */
 }
 
-#glmqktiizv .gt_left {
+#zycicusoar .gt_left {
   text-align: left;
 }
 
-#glmqktiizv .gt_center {
+#zycicusoar .gt_center {
   text-align: center;
 }
 
-#glmqktiizv .gt_right {
+#zycicusoar .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#glmqktiizv .gt_font_normal {
+#zycicusoar .gt_font_normal {
   font-weight: normal;
 }
 
-#glmqktiizv .gt_font_bold {
+#zycicusoar .gt_font_bold {
   font-weight: bold;
 }
 
-#glmqktiizv .gt_font_italic {
+#zycicusoar .gt_font_italic {
   font-style: italic;
 }
 
-#glmqktiizv .gt_super {
+#zycicusoar .gt_super {
   font-size: 65%;
 }
 
-#glmqktiizv .gt_footnote_marks {
+#zycicusoar .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="glmqktiizv" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="zycicusoar" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   <thead class="gt_header">
     <tr>
       <th colspan="11" class="gt_heading gt_title gt_font_normal gt_center" style>2. jag2b fish counts by timepoint, genotype, and sex</th>
@@ -1039,7 +1044,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   </thead>
   <tbody class="gt_table_body">
     <tr class="gt_group_heading_row">
-      <td colspan="11" class="gt_group_heading">WT</td>
+      <td colspan="11" class="gt_group_heading">+/+</td>
     </tr>
     <tr>
       <td class="gt_row gt_left">F</td>
@@ -1068,7 +1073,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
       <td class="gt_row gt_center gt_striped">9</td>
     </tr>
     <tr class="gt_group_heading_row">
-      <td colspan="11" class="gt_group_heading">HET</td>
+      <td colspan="11" class="gt_group_heading">+/-</td>
     </tr>
     <tr>
       <td class="gt_row gt_left">F</td>
@@ -1097,7 +1102,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
       <td class="gt_row gt_center gt_striped">10</td>
     </tr>
     <tr class="gt_group_heading_row">
-      <td colspan="11" class="gt_group_heading">MUT</td>
+      <td colspan="11" class="gt_group_heading">-/-</td>
     </tr>
     <tr>
       <td class="gt_row gt_left">F</td>
@@ -1157,7 +1162,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#psxkrcszca .gt_table {
+#zuysnoztzm .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -1185,7 +1190,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   /* table.border.bottom.color */
 }
 
-#psxkrcszca .gt_heading {
+#zuysnoztzm .gt_heading {
   background-color: #FFFFFF;
   /* heading.background.color */
   border-bottom-color: #FFFFFF;
@@ -1204,7 +1209,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   /* heading.border.lr.color */
 }
 
-#psxkrcszca .gt_title {
+#zuysnoztzm .gt_title {
   color: #333333;
   font-size: 125%;
   /* heading.title.font.size */
@@ -1218,7 +1223,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   border-bottom-width: 0;
 }
 
-#psxkrcszca .gt_subtitle {
+#zuysnoztzm .gt_subtitle {
   color: #333333;
   font-size: 85%;
   /* heading.subtitle.font.size */
@@ -1232,7 +1237,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   border-top-width: 0;
 }
 
-#psxkrcszca .gt_bottom_border {
+#zuysnoztzm .gt_bottom_border {
   border-bottom-style: solid;
   /* heading.border.bottom.style */
   border-bottom-width: 2px;
@@ -1241,7 +1246,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   /* heading.border.bottom.color */
 }
 
-#psxkrcszca .gt_column_spanner {
+#zuysnoztzm .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1249,7 +1254,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   padding-bottom: 4px;
 }
 
-#psxkrcszca .gt_col_headings {
+#zuysnoztzm .gt_col_headings {
   border-top-style: solid;
   /* column_labels.border.top.style */
   border-top-width: 2px;
@@ -1276,7 +1281,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   /* column_labels.border.lr.color */
 }
 
-#psxkrcszca .gt_col_heading {
+#zuysnoztzm .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   /* column_labels.background.color */
@@ -1292,11 +1297,11 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   overflow-x: hidden;
 }
 
-#psxkrcszca .gt_sep_right {
+#zuysnoztzm .gt_sep_right {
   border-right: 5px solid #FFFFFF;
 }
 
-#psxkrcszca .gt_group_heading {
+#zuysnoztzm .gt_group_heading {
   padding: 8px;
   /* row_group.padding */
   color: #333333;
@@ -1335,7 +1340,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   vertical-align: middle;
 }
 
-#psxkrcszca .gt_empty_group_heading {
+#zuysnoztzm .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1359,20 +1364,20 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   vertical-align: middle;
 }
 
-#psxkrcszca .gt_striped {
+#zuysnoztzm .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
   /* row.striping.background_color */
 }
 
-#psxkrcszca .gt_from_md > :first-child {
+#zuysnoztzm .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#psxkrcszca .gt_from_md > :last-child {
+#zuysnoztzm .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#psxkrcszca .gt_row {
+#zuysnoztzm .gt_row {
   padding-top: 8px;
   /* data_row.padding */
   padding-bottom: 8px;
@@ -1402,7 +1407,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   overflow-x: hidden;
 }
 
-#psxkrcszca .gt_stub {
+#zuysnoztzm .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   /* stub.background.color */
@@ -1419,7 +1424,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   padding-left: 12px;
 }
 
-#psxkrcszca .gt_summary_row {
+#zuysnoztzm .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* summary_row.background.color */
@@ -1433,7 +1438,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   padding-right: 5px;
 }
 
-#psxkrcszca .gt_first_summary_row {
+#zuysnoztzm .gt_first_summary_row {
   padding-top: 8px;
   /* summary_row.padding */
   padding-bottom: 8px;
@@ -1448,7 +1453,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   /* summary_row.border.color */
 }
 
-#psxkrcszca .gt_grand_summary_row {
+#zuysnoztzm .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* grand_summary_row.background.color */
@@ -1462,7 +1467,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   padding-right: 5px;
 }
 
-#psxkrcszca .gt_first_grand_summary_row {
+#zuysnoztzm .gt_first_grand_summary_row {
   padding-top: 8px;
   /* grand_summary_row.padding */
   padding-bottom: 8px;
@@ -1477,7 +1482,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   /* grand_summary_row.border.color */
 }
 
-#psxkrcszca .gt_table_body {
+#zuysnoztzm .gt_table_body {
   border-top-style: solid;
   /* table_body.border.top.style */
   border-top-width: 2px;
@@ -1492,7 +1497,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   /* table_body.border.bottom.color */
 }
 
-#psxkrcszca .gt_footnotes {
+#zuysnoztzm .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   /* footnotes.background.color */
@@ -1516,7 +1521,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   /* footnotes.border.lr.color */
 }
 
-#psxkrcszca .gt_footnote {
+#zuysnoztzm .gt_footnote {
   margin: 0px;
   font-size: 90%;
   /* footnotes.font.size */
@@ -1524,7 +1529,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   /* footnotes.padding */
 }
 
-#psxkrcszca .gt_sourcenotes {
+#zuysnoztzm .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   /* source_notes.background.color */
@@ -1548,48 +1553,48 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   /* source_notes.border.lr.style */
 }
 
-#psxkrcszca .gt_sourcenote {
+#zuysnoztzm .gt_sourcenote {
   font-size: 90%;
   /* source_notes.font.size */
   padding: 4px;
   /* source_notes.padding */
 }
 
-#psxkrcszca .gt_left {
+#zuysnoztzm .gt_left {
   text-align: left;
 }
 
-#psxkrcszca .gt_center {
+#zuysnoztzm .gt_center {
   text-align: center;
 }
 
-#psxkrcszca .gt_right {
+#zuysnoztzm .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#psxkrcszca .gt_font_normal {
+#zuysnoztzm .gt_font_normal {
   font-weight: normal;
 }
 
-#psxkrcszca .gt_font_bold {
+#zuysnoztzm .gt_font_bold {
   font-weight: bold;
 }
 
-#psxkrcszca .gt_font_italic {
+#zuysnoztzm .gt_font_italic {
   font-style: italic;
 }
 
-#psxkrcszca .gt_super {
+#zuysnoztzm .gt_super {
   font-size: 65%;
 }
 
-#psxkrcszca .gt_footnote_marks {
+#zuysnoztzm .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="psxkrcszca" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="zuysnoztzm" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   <thead class="gt_header">
     <tr>
       <th colspan="11" class="gt_heading gt_title gt_font_normal gt_center" style>jag2b fish counts by timepoint and date-of-birth.</th>
@@ -1737,7 +1742,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#frnqscharr .gt_table {
+#jrhtxfenvo .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -1765,7 +1770,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   /* table.border.bottom.color */
 }
 
-#frnqscharr .gt_heading {
+#jrhtxfenvo .gt_heading {
   background-color: #FFFFFF;
   /* heading.background.color */
   border-bottom-color: #FFFFFF;
@@ -1784,7 +1789,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   /* heading.border.lr.color */
 }
 
-#frnqscharr .gt_title {
+#jrhtxfenvo .gt_title {
   color: #333333;
   font-size: 125%;
   /* heading.title.font.size */
@@ -1798,7 +1803,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   border-bottom-width: 0;
 }
 
-#frnqscharr .gt_subtitle {
+#jrhtxfenvo .gt_subtitle {
   color: #333333;
   font-size: 85%;
   /* heading.subtitle.font.size */
@@ -1812,7 +1817,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   border-top-width: 0;
 }
 
-#frnqscharr .gt_bottom_border {
+#jrhtxfenvo .gt_bottom_border {
   border-bottom-style: solid;
   /* heading.border.bottom.style */
   border-bottom-width: 2px;
@@ -1821,7 +1826,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   /* heading.border.bottom.color */
 }
 
-#frnqscharr .gt_column_spanner {
+#jrhtxfenvo .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1829,7 +1834,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   padding-bottom: 4px;
 }
 
-#frnqscharr .gt_col_headings {
+#jrhtxfenvo .gt_col_headings {
   border-top-style: solid;
   /* column_labels.border.top.style */
   border-top-width: 2px;
@@ -1856,7 +1861,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   /* column_labels.border.lr.color */
 }
 
-#frnqscharr .gt_col_heading {
+#jrhtxfenvo .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   /* column_labels.background.color */
@@ -1872,11 +1877,11 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   overflow-x: hidden;
 }
 
-#frnqscharr .gt_sep_right {
+#jrhtxfenvo .gt_sep_right {
   border-right: 5px solid #FFFFFF;
 }
 
-#frnqscharr .gt_group_heading {
+#jrhtxfenvo .gt_group_heading {
   padding: 8px;
   /* row_group.padding */
   color: #333333;
@@ -1915,7 +1920,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   vertical-align: middle;
 }
 
-#frnqscharr .gt_empty_group_heading {
+#jrhtxfenvo .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1939,20 +1944,20 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   vertical-align: middle;
 }
 
-#frnqscharr .gt_striped {
+#jrhtxfenvo .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
   /* row.striping.background_color */
 }
 
-#frnqscharr .gt_from_md > :first-child {
+#jrhtxfenvo .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#frnqscharr .gt_from_md > :last-child {
+#jrhtxfenvo .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#frnqscharr .gt_row {
+#jrhtxfenvo .gt_row {
   padding-top: 8px;
   /* data_row.padding */
   padding-bottom: 8px;
@@ -1982,7 +1987,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   overflow-x: hidden;
 }
 
-#frnqscharr .gt_stub {
+#jrhtxfenvo .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   /* stub.background.color */
@@ -1999,7 +2004,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   padding-left: 12px;
 }
 
-#frnqscharr .gt_summary_row {
+#jrhtxfenvo .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* summary_row.background.color */
@@ -2013,7 +2018,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   padding-right: 5px;
 }
 
-#frnqscharr .gt_first_summary_row {
+#jrhtxfenvo .gt_first_summary_row {
   padding-top: 8px;
   /* summary_row.padding */
   padding-bottom: 8px;
@@ -2028,7 +2033,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   /* summary_row.border.color */
 }
 
-#frnqscharr .gt_grand_summary_row {
+#jrhtxfenvo .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* grand_summary_row.background.color */
@@ -2042,7 +2047,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   padding-right: 5px;
 }
 
-#frnqscharr .gt_first_grand_summary_row {
+#jrhtxfenvo .gt_first_grand_summary_row {
   padding-top: 8px;
   /* grand_summary_row.padding */
   padding-bottom: 8px;
@@ -2057,7 +2062,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   /* grand_summary_row.border.color */
 }
 
-#frnqscharr .gt_table_body {
+#jrhtxfenvo .gt_table_body {
   border-top-style: solid;
   /* table_body.border.top.style */
   border-top-width: 2px;
@@ -2072,7 +2077,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   /* table_body.border.bottom.color */
 }
 
-#frnqscharr .gt_footnotes {
+#jrhtxfenvo .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   /* footnotes.background.color */
@@ -2096,7 +2101,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   /* footnotes.border.lr.color */
 }
 
-#frnqscharr .gt_footnote {
+#jrhtxfenvo .gt_footnote {
   margin: 0px;
   font-size: 90%;
   /* footnotes.font.size */
@@ -2104,7 +2109,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   /* footnotes.padding */
 }
 
-#frnqscharr .gt_sourcenotes {
+#jrhtxfenvo .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   /* source_notes.background.color */
@@ -2128,48 +2133,48 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   /* source_notes.border.lr.style */
 }
 
-#frnqscharr .gt_sourcenote {
+#jrhtxfenvo .gt_sourcenote {
   font-size: 90%;
   /* source_notes.font.size */
   padding: 4px;
   /* source_notes.padding */
 }
 
-#frnqscharr .gt_left {
+#jrhtxfenvo .gt_left {
   text-align: left;
 }
 
-#frnqscharr .gt_center {
+#jrhtxfenvo .gt_center {
   text-align: center;
 }
 
-#frnqscharr .gt_right {
+#jrhtxfenvo .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#frnqscharr .gt_font_normal {
+#jrhtxfenvo .gt_font_normal {
   font-weight: normal;
 }
 
-#frnqscharr .gt_font_bold {
+#jrhtxfenvo .gt_font_bold {
   font-weight: bold;
 }
 
-#frnqscharr .gt_font_italic {
+#jrhtxfenvo .gt_font_italic {
   font-style: italic;
 }
 
-#frnqscharr .gt_super {
+#jrhtxfenvo .gt_super {
   font-size: 65%;
 }
 
-#frnqscharr .gt_footnote_marks {
+#jrhtxfenvo .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="frnqscharr" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="jrhtxfenvo" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   <thead class="gt_header">
     <tr>
       <th colspan="11" class="gt_heading gt_title gt_font_normal gt_center" style>jag2b fish counts by timepoint, data-of-birth, and genotype.</th>
@@ -2198,7 +2203,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
       <td colspan="11" class="gt_group_heading">20190813</td>
     </tr>
     <tr>
-      <td class="gt_row gt_center">WT</td>
+      <td class="gt_row gt_center">+/+</td>
       <td class="gt_row gt_center">0</td>
       <td class="gt_row gt_center">0</td>
       <td class="gt_row gt_center">0</td>
@@ -2211,7 +2216,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
       <td class="gt_row gt_center">11</td>
     </tr>
     <tr>
-      <td class="gt_row gt_center gt_striped">HET</td>
+      <td class="gt_row gt_center gt_striped">+/-</td>
       <td class="gt_row gt_center gt_striped">0</td>
       <td class="gt_row gt_center gt_striped">0</td>
       <td class="gt_row gt_center gt_striped">0</td>
@@ -2227,7 +2232,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
       <td colspan="11" class="gt_group_heading">20200922</td>
     </tr>
     <tr>
-      <td class="gt_row gt_center">WT</td>
+      <td class="gt_row gt_center">+/+</td>
       <td class="gt_row gt_center">0</td>
       <td class="gt_row gt_center">0</td>
       <td class="gt_row gt_center">0</td>
@@ -2240,7 +2245,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
       <td class="gt_row gt_center">0</td>
     </tr>
     <tr>
-      <td class="gt_row gt_center gt_striped">HET</td>
+      <td class="gt_row gt_center gt_striped">+/-</td>
       <td class="gt_row gt_center gt_striped">0</td>
       <td class="gt_row gt_center gt_striped">0</td>
       <td class="gt_row gt_center gt_striped">0</td>
@@ -2253,7 +2258,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
       <td class="gt_row gt_center gt_striped">0</td>
     </tr>
     <tr>
-      <td class="gt_row gt_center">MUT</td>
+      <td class="gt_row gt_center">-/-</td>
       <td class="gt_row gt_center">0</td>
       <td class="gt_row gt_center">0</td>
       <td class="gt_row gt_center">0</td>
@@ -2269,7 +2274,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
       <td colspan="11" class="gt_group_heading">20201014</td>
     </tr>
     <tr>
-      <td class="gt_row gt_center gt_striped">WT</td>
+      <td class="gt_row gt_center gt_striped">+/+</td>
       <td class="gt_row gt_center gt_striped">0</td>
       <td class="gt_row gt_center gt_striped">0</td>
       <td class="gt_row gt_center gt_striped">0</td>
@@ -2282,7 +2287,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
       <td class="gt_row gt_center gt_striped">0</td>
     </tr>
     <tr>
-      <td class="gt_row gt_center">HET</td>
+      <td class="gt_row gt_center">+/-</td>
       <td class="gt_row gt_center">0</td>
       <td class="gt_row gt_center">0</td>
       <td class="gt_row gt_center">0</td>
@@ -2295,7 +2300,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
       <td class="gt_row gt_center">0</td>
     </tr>
     <tr>
-      <td class="gt_row gt_center gt_striped">MUT</td>
+      <td class="gt_row gt_center gt_striped">-/-</td>
       <td class="gt_row gt_center gt_striped">0</td>
       <td class="gt_row gt_center gt_striped">0</td>
       <td class="gt_row gt_center gt_striped">0</td>
@@ -2311,7 +2316,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
       <td colspan="11" class="gt_group_heading">20210715</td>
     </tr>
     <tr>
-      <td class="gt_row gt_center">WT</td>
+      <td class="gt_row gt_center">+/+</td>
       <td class="gt_row gt_center">3</td>
       <td class="gt_row gt_center">4</td>
       <td class="gt_row gt_center">4</td>
@@ -2324,7 +2329,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
       <td class="gt_row gt_center">0</td>
     </tr>
     <tr>
-      <td class="gt_row gt_center gt_striped">HET</td>
+      <td class="gt_row gt_center gt_striped">+/-</td>
       <td class="gt_row gt_center gt_striped">4</td>
       <td class="gt_row gt_center gt_striped">4</td>
       <td class="gt_row gt_center gt_striped">4</td>
@@ -2337,7 +2342,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
       <td class="gt_row gt_center gt_striped">0</td>
     </tr>
     <tr>
-      <td class="gt_row gt_center">MUT</td>
+      <td class="gt_row gt_center">-/-</td>
       <td class="gt_row gt_center">3</td>
       <td class="gt_row gt_center">4</td>
       <td class="gt_row gt_center">4</td>
@@ -2353,7 +2358,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
       <td colspan="11" class="gt_group_heading">20210728</td>
     </tr>
     <tr>
-      <td class="gt_row gt_center gt_striped">WT</td>
+      <td class="gt_row gt_center gt_striped">+/+</td>
       <td class="gt_row gt_center gt_striped">3</td>
       <td class="gt_row gt_center gt_striped">4</td>
       <td class="gt_row gt_center gt_striped">4</td>
@@ -2366,7 +2371,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
       <td class="gt_row gt_center gt_striped">0</td>
     </tr>
     <tr>
-      <td class="gt_row gt_center">HET</td>
+      <td class="gt_row gt_center">+/-</td>
       <td class="gt_row gt_center">5</td>
       <td class="gt_row gt_center">4</td>
       <td class="gt_row gt_center">4</td>
@@ -2379,7 +2384,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
       <td class="gt_row gt_center">0</td>
     </tr>
     <tr>
-      <td class="gt_row gt_center gt_striped">MUT</td>
+      <td class="gt_row gt_center gt_striped">-/-</td>
       <td class="gt_row gt_center gt_striped">5</td>
       <td class="gt_row gt_center gt_striped">4</td>
       <td class="gt_row gt_center gt_striped">3</td>
@@ -2395,7 +2400,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
       <td colspan="11" class="gt_group_heading">20210819</td>
     </tr>
     <tr>
-      <td class="gt_row gt_center">WT</td>
+      <td class="gt_row gt_center">+/+</td>
       <td class="gt_row gt_center">4</td>
       <td class="gt_row gt_center">0</td>
       <td class="gt_row gt_center">0</td>
@@ -2408,7 +2413,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
       <td class="gt_row gt_center">0</td>
     </tr>
     <tr>
-      <td class="gt_row gt_center gt_striped">HET</td>
+      <td class="gt_row gt_center gt_striped">+/-</td>
       <td class="gt_row gt_center gt_striped">4</td>
       <td class="gt_row gt_center gt_striped">0</td>
       <td class="gt_row gt_center gt_striped">0</td>
@@ -2421,7 +2426,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
       <td class="gt_row gt_center gt_striped">0</td>
     </tr>
     <tr>
-      <td class="gt_row gt_center">MUT</td>
+      <td class="gt_row gt_center">-/-</td>
       <td class="gt_row gt_center">4</td>
       <td class="gt_row gt_center">0</td>
       <td class="gt_row gt_center">0</td>
@@ -2437,7 +2442,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
       <td colspan="11" class="gt_group_heading">20211003</td>
     </tr>
     <tr>
-      <td class="gt_row gt_center gt_striped">WT</td>
+      <td class="gt_row gt_center gt_striped">+/+</td>
       <td class="gt_row gt_center gt_striped">0</td>
       <td class="gt_row gt_center gt_striped">0</td>
       <td class="gt_row gt_center gt_striped">0</td>
@@ -2450,7 +2455,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
       <td class="gt_row gt_center gt_striped">0</td>
     </tr>
     <tr>
-      <td class="gt_row gt_center">HET</td>
+      <td class="gt_row gt_center">+/-</td>
       <td class="gt_row gt_center">0</td>
       <td class="gt_row gt_center">0</td>
       <td class="gt_row gt_center">0</td>
@@ -2463,7 +2468,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
       <td class="gt_row gt_center">0</td>
     </tr>
     <tr>
-      <td class="gt_row gt_center gt_striped">MUT</td>
+      <td class="gt_row gt_center gt_striped">-/-</td>
       <td class="gt_row gt_center gt_striped">0</td>
       <td class="gt_row gt_center gt_striped">0</td>
       <td class="gt_row gt_center gt_striped">0</td>
@@ -2479,7 +2484,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
       <td colspan="11" class="gt_group_heading">20211210</td>
     </tr>
     <tr>
-      <td class="gt_row gt_center">WT</td>
+      <td class="gt_row gt_center">+/+</td>
       <td class="gt_row gt_center">0</td>
       <td class="gt_row gt_center">0</td>
       <td class="gt_row gt_center">0</td>
@@ -2492,7 +2497,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
       <td class="gt_row gt_center">0</td>
     </tr>
     <tr>
-      <td class="gt_row gt_center gt_striped">HET</td>
+      <td class="gt_row gt_center gt_striped">+/-</td>
       <td class="gt_row gt_center gt_striped">0</td>
       <td class="gt_row gt_center gt_striped">0</td>
       <td class="gt_row gt_center gt_striped">0</td>
@@ -2505,7 +2510,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
       <td class="gt_row gt_center gt_striped">0</td>
     </tr>
     <tr>
-      <td class="gt_row gt_center">MUT</td>
+      <td class="gt_row gt_center">-/-</td>
       <td class="gt_row gt_center">0</td>
       <td class="gt_row gt_center">0</td>
       <td class="gt_row gt_center">0</td>
@@ -2541,7 +2546,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#nvzwkhqsjo .gt_table {
+#xskdsorwqi .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -2569,7 +2574,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* table.border.bottom.color */
 }
 
-#nvzwkhqsjo .gt_heading {
+#xskdsorwqi .gt_heading {
   background-color: #FFFFFF;
   /* heading.background.color */
   border-bottom-color: #FFFFFF;
@@ -2588,7 +2593,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* heading.border.lr.color */
 }
 
-#nvzwkhqsjo .gt_title {
+#xskdsorwqi .gt_title {
   color: #333333;
   font-size: 125%;
   /* heading.title.font.size */
@@ -2602,7 +2607,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   border-bottom-width: 0;
 }
 
-#nvzwkhqsjo .gt_subtitle {
+#xskdsorwqi .gt_subtitle {
   color: #333333;
   font-size: 85%;
   /* heading.subtitle.font.size */
@@ -2616,7 +2621,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   border-top-width: 0;
 }
 
-#nvzwkhqsjo .gt_bottom_border {
+#xskdsorwqi .gt_bottom_border {
   border-bottom-style: solid;
   /* heading.border.bottom.style */
   border-bottom-width: 2px;
@@ -2625,7 +2630,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* heading.border.bottom.color */
 }
 
-#nvzwkhqsjo .gt_column_spanner {
+#xskdsorwqi .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -2633,7 +2638,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   padding-bottom: 4px;
 }
 
-#nvzwkhqsjo .gt_col_headings {
+#xskdsorwqi .gt_col_headings {
   border-top-style: solid;
   /* column_labels.border.top.style */
   border-top-width: 2px;
@@ -2660,7 +2665,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* column_labels.border.lr.color */
 }
 
-#nvzwkhqsjo .gt_col_heading {
+#xskdsorwqi .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   /* column_labels.background.color */
@@ -2676,11 +2681,11 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   overflow-x: hidden;
 }
 
-#nvzwkhqsjo .gt_sep_right {
+#xskdsorwqi .gt_sep_right {
   border-right: 5px solid #FFFFFF;
 }
 
-#nvzwkhqsjo .gt_group_heading {
+#xskdsorwqi .gt_group_heading {
   padding: 8px;
   /* row_group.padding */
   color: #333333;
@@ -2719,7 +2724,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   vertical-align: middle;
 }
 
-#nvzwkhqsjo .gt_empty_group_heading {
+#xskdsorwqi .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -2743,20 +2748,20 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   vertical-align: middle;
 }
 
-#nvzwkhqsjo .gt_striped {
+#xskdsorwqi .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
   /* row.striping.background_color */
 }
 
-#nvzwkhqsjo .gt_from_md > :first-child {
+#xskdsorwqi .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#nvzwkhqsjo .gt_from_md > :last-child {
+#xskdsorwqi .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#nvzwkhqsjo .gt_row {
+#xskdsorwqi .gt_row {
   padding-top: 8px;
   /* data_row.padding */
   padding-bottom: 8px;
@@ -2786,7 +2791,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   overflow-x: hidden;
 }
 
-#nvzwkhqsjo .gt_stub {
+#xskdsorwqi .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   /* stub.background.color */
@@ -2803,7 +2808,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   padding-left: 12px;
 }
 
-#nvzwkhqsjo .gt_summary_row {
+#xskdsorwqi .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* summary_row.background.color */
@@ -2817,7 +2822,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   padding-right: 5px;
 }
 
-#nvzwkhqsjo .gt_first_summary_row {
+#xskdsorwqi .gt_first_summary_row {
   padding-top: 8px;
   /* summary_row.padding */
   padding-bottom: 8px;
@@ -2832,7 +2837,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* summary_row.border.color */
 }
 
-#nvzwkhqsjo .gt_grand_summary_row {
+#xskdsorwqi .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* grand_summary_row.background.color */
@@ -2846,7 +2851,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   padding-right: 5px;
 }
 
-#nvzwkhqsjo .gt_first_grand_summary_row {
+#xskdsorwqi .gt_first_grand_summary_row {
   padding-top: 8px;
   /* grand_summary_row.padding */
   padding-bottom: 8px;
@@ -2861,7 +2866,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* grand_summary_row.border.color */
 }
 
-#nvzwkhqsjo .gt_table_body {
+#xskdsorwqi .gt_table_body {
   border-top-style: solid;
   /* table_body.border.top.style */
   border-top-width: 2px;
@@ -2876,7 +2881,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* table_body.border.bottom.color */
 }
 
-#nvzwkhqsjo .gt_footnotes {
+#xskdsorwqi .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   /* footnotes.background.color */
@@ -2900,7 +2905,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* footnotes.border.lr.color */
 }
 
-#nvzwkhqsjo .gt_footnote {
+#xskdsorwqi .gt_footnote {
   margin: 0px;
   font-size: 90%;
   /* footnotes.font.size */
@@ -2908,7 +2913,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* footnotes.padding */
 }
 
-#nvzwkhqsjo .gt_sourcenotes {
+#xskdsorwqi .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   /* source_notes.background.color */
@@ -2932,48 +2937,48 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* source_notes.border.lr.style */
 }
 
-#nvzwkhqsjo .gt_sourcenote {
+#xskdsorwqi .gt_sourcenote {
   font-size: 90%;
   /* source_notes.font.size */
   padding: 4px;
   /* source_notes.padding */
 }
 
-#nvzwkhqsjo .gt_left {
+#xskdsorwqi .gt_left {
   text-align: left;
 }
 
-#nvzwkhqsjo .gt_center {
+#xskdsorwqi .gt_center {
   text-align: center;
 }
 
-#nvzwkhqsjo .gt_right {
+#xskdsorwqi .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#nvzwkhqsjo .gt_font_normal {
+#xskdsorwqi .gt_font_normal {
   font-weight: normal;
 }
 
-#nvzwkhqsjo .gt_font_bold {
+#xskdsorwqi .gt_font_bold {
   font-weight: bold;
 }
 
-#nvzwkhqsjo .gt_font_italic {
+#xskdsorwqi .gt_font_italic {
   font-style: italic;
 }
 
-#nvzwkhqsjo .gt_super {
+#xskdsorwqi .gt_super {
   font-size: 65%;
 }
 
-#nvzwkhqsjo .gt_footnote_marks {
+#xskdsorwqi .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="nvzwkhqsjo" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="xskdsorwqi" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   <thead class="gt_header">
     <tr>
       <th colspan="11" class="gt_heading gt_title gt_font_normal gt_center" style>Updated jag2b fish counts by timepoint and sex.</th>
@@ -3043,7 +3048,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#ovimgxpgxq .gt_table {
+#ykpbjenzbh .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -3071,7 +3076,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* table.border.bottom.color */
 }
 
-#ovimgxpgxq .gt_heading {
+#ykpbjenzbh .gt_heading {
   background-color: #FFFFFF;
   /* heading.background.color */
   border-bottom-color: #FFFFFF;
@@ -3090,7 +3095,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* heading.border.lr.color */
 }
 
-#ovimgxpgxq .gt_title {
+#ykpbjenzbh .gt_title {
   color: #333333;
   font-size: 125%;
   /* heading.title.font.size */
@@ -3104,7 +3109,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   border-bottom-width: 0;
 }
 
-#ovimgxpgxq .gt_subtitle {
+#ykpbjenzbh .gt_subtitle {
   color: #333333;
   font-size: 85%;
   /* heading.subtitle.font.size */
@@ -3118,7 +3123,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   border-top-width: 0;
 }
 
-#ovimgxpgxq .gt_bottom_border {
+#ykpbjenzbh .gt_bottom_border {
   border-bottom-style: solid;
   /* heading.border.bottom.style */
   border-bottom-width: 2px;
@@ -3127,7 +3132,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* heading.border.bottom.color */
 }
 
-#ovimgxpgxq .gt_column_spanner {
+#ykpbjenzbh .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -3135,7 +3140,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   padding-bottom: 4px;
 }
 
-#ovimgxpgxq .gt_col_headings {
+#ykpbjenzbh .gt_col_headings {
   border-top-style: solid;
   /* column_labels.border.top.style */
   border-top-width: 2px;
@@ -3162,7 +3167,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* column_labels.border.lr.color */
 }
 
-#ovimgxpgxq .gt_col_heading {
+#ykpbjenzbh .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   /* column_labels.background.color */
@@ -3178,11 +3183,11 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   overflow-x: hidden;
 }
 
-#ovimgxpgxq .gt_sep_right {
+#ykpbjenzbh .gt_sep_right {
   border-right: 5px solid #FFFFFF;
 }
 
-#ovimgxpgxq .gt_group_heading {
+#ykpbjenzbh .gt_group_heading {
   padding: 8px;
   /* row_group.padding */
   color: #333333;
@@ -3221,7 +3226,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   vertical-align: middle;
 }
 
-#ovimgxpgxq .gt_empty_group_heading {
+#ykpbjenzbh .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -3245,20 +3250,20 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   vertical-align: middle;
 }
 
-#ovimgxpgxq .gt_striped {
+#ykpbjenzbh .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
   /* row.striping.background_color */
 }
 
-#ovimgxpgxq .gt_from_md > :first-child {
+#ykpbjenzbh .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ovimgxpgxq .gt_from_md > :last-child {
+#ykpbjenzbh .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ovimgxpgxq .gt_row {
+#ykpbjenzbh .gt_row {
   padding-top: 8px;
   /* data_row.padding */
   padding-bottom: 8px;
@@ -3288,7 +3293,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   overflow-x: hidden;
 }
 
-#ovimgxpgxq .gt_stub {
+#ykpbjenzbh .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   /* stub.background.color */
@@ -3305,7 +3310,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   padding-left: 12px;
 }
 
-#ovimgxpgxq .gt_summary_row {
+#ykpbjenzbh .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* summary_row.background.color */
@@ -3319,7 +3324,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   padding-right: 5px;
 }
 
-#ovimgxpgxq .gt_first_summary_row {
+#ykpbjenzbh .gt_first_summary_row {
   padding-top: 8px;
   /* summary_row.padding */
   padding-bottom: 8px;
@@ -3334,7 +3339,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* summary_row.border.color */
 }
 
-#ovimgxpgxq .gt_grand_summary_row {
+#ykpbjenzbh .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* grand_summary_row.background.color */
@@ -3348,7 +3353,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   padding-right: 5px;
 }
 
-#ovimgxpgxq .gt_first_grand_summary_row {
+#ykpbjenzbh .gt_first_grand_summary_row {
   padding-top: 8px;
   /* grand_summary_row.padding */
   padding-bottom: 8px;
@@ -3363,7 +3368,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* grand_summary_row.border.color */
 }
 
-#ovimgxpgxq .gt_table_body {
+#ykpbjenzbh .gt_table_body {
   border-top-style: solid;
   /* table_body.border.top.style */
   border-top-width: 2px;
@@ -3378,7 +3383,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* table_body.border.bottom.color */
 }
 
-#ovimgxpgxq .gt_footnotes {
+#ykpbjenzbh .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   /* footnotes.background.color */
@@ -3402,7 +3407,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* footnotes.border.lr.color */
 }
 
-#ovimgxpgxq .gt_footnote {
+#ykpbjenzbh .gt_footnote {
   margin: 0px;
   font-size: 90%;
   /* footnotes.font.size */
@@ -3410,7 +3415,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* footnotes.padding */
 }
 
-#ovimgxpgxq .gt_sourcenotes {
+#ykpbjenzbh .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   /* source_notes.background.color */
@@ -3434,48 +3439,48 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* source_notes.border.lr.style */
 }
 
-#ovimgxpgxq .gt_sourcenote {
+#ykpbjenzbh .gt_sourcenote {
   font-size: 90%;
   /* source_notes.font.size */
   padding: 4px;
   /* source_notes.padding */
 }
 
-#ovimgxpgxq .gt_left {
+#ykpbjenzbh .gt_left {
   text-align: left;
 }
 
-#ovimgxpgxq .gt_center {
+#ykpbjenzbh .gt_center {
   text-align: center;
 }
 
-#ovimgxpgxq .gt_right {
+#ykpbjenzbh .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ovimgxpgxq .gt_font_normal {
+#ykpbjenzbh .gt_font_normal {
   font-weight: normal;
 }
 
-#ovimgxpgxq .gt_font_bold {
+#ykpbjenzbh .gt_font_bold {
   font-weight: bold;
 }
 
-#ovimgxpgxq .gt_font_italic {
+#ykpbjenzbh .gt_font_italic {
   font-style: italic;
 }
 
-#ovimgxpgxq .gt_super {
+#ykpbjenzbh .gt_super {
   font-size: 65%;
 }
 
-#ovimgxpgxq .gt_footnote_marks {
+#ykpbjenzbh .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="ovimgxpgxq" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="ykpbjenzbh" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   <thead class="gt_header">
     <tr>
       <th colspan="11" class="gt_heading gt_title gt_font_normal gt_center" style>Updated jag2b fish sex labels.</th>
@@ -3539,12 +3544,19 @@ genotype_colors  = c( "WT"="#80b1d3",
                      "HET"="#b3de69",
                      "MUT"="#fb8072")
 
+genotype2_colors  = c("+/+"="#80b1d3",
+                      "+/-"="#b3de69",
+                      "-/-"="#fb8072")
+
 # Compute summary statistics, grouped by age2 and genotype2.
 by_genotype = tab2[, list(mean_weight=mean(weight_gr, na.rm=TRUE),
                            sd_weight=sd(weight_gr, na.rm=TRUE),
                          mean_length=mean(length_cm, na.rm=TRUE),
                          sd_length=sd(length_cm, na.rm=TRUE)),
                       by=list(age2, genotype2)]
+
+# Expand y-axis 5% on bottom end and 25% on upper end, to make room for p-values.
+yaxis_expand = expansion(mult=c(0.05, 0.25))
 
 p2 = ggplot() +
      theme_bw() +
@@ -3571,12 +3583,13 @@ p2 = ggplot() +
                 color="grey30",
                 size=1.4) +
      scale_shape_manual(values=c(M=21, unknown=24)) +
-     scale_color_manual(values=genotype_colors) +
-     scale_fill_manual(values=genotype_colors) +
+     scale_color_manual(values=genotype2_colors) +
+     scale_fill_manual(values=genotype2_colors) +
+     scale_y_continuous(expand=yaxis_expand) +
      guides(fill="none") +
      # theme(panel.grid.minor.y=element_blank()) +
      # theme(panel.grid.major.x=element_blank()) +
-     theme(axis.text.x=element_text(size=rel(0.8))) +
+     # theme(axis.text.x=element_text(size=rel(0.8))) +
 #     labs(title="Jag2b weight data, 10 developmental time points.") +
 #     labs(subtitle="Horizontal bar = mean, whiskers = +/- standard deviation") +
      labs(x=NULL, y="Weight (grams)", color="Genotype", shape="Sex") +
@@ -3609,8 +3622,9 @@ p3 = ggplot() +
                 color="grey30",
                 size=1.4) +
      scale_shape_manual(values=c(M=21, unknown=24)) +
-     scale_color_manual(values=genotype_colors) +
-     scale_fill_manual(values=genotype_colors) +
+     scale_color_manual(values=genotype2_colors) +
+     scale_fill_manual(values=genotype2_colors) +
+     scale_y_continuous(expand=yaxis_expand) +
      guides(fill="none") +
      # theme(panel.grid.minor.y=element_blank()) +
      # theme(panel.grid.major.x=element_blank()) +
@@ -3621,13 +3635,13 @@ p3 = ggplot() +
      facet_grid(cols=vars(age2))
 
 
-p2_p3 = p2 / p3 + plot_layout(guides='collect') +
-         plot_annotation(title="Jag2b weight and length data, 10 developmental time points.",
-                         subtitle="Horizontal bar = mean, whiskers = +/- standard deviation")
+p2_p3 = p2 / p3 + plot_layout(guides='collect')
+      #  + plot_annotation(title="Jag2b weight and length data, 10 developmental time points.",
+      #    subtitle="Horizontal bar = mean, whiskers = +/- standard deviation")
 
 
 # add 'useDingbats=FALSE' to allow file to open correctly in Illustrator.
-ggsave(here("figure_1A_1B", "weights_lengths_10ages_20230307.pdf"),
+ggsave(here("figure_1", "weights_lengths_10ages_20230329.pdf"),
        plot=p2_p3, 
        height=6, width=10, 
        useDingbats=FALSE)
@@ -3642,9 +3656,10 @@ print(p2_p3)
 ```
 
     ## Warning: Removed 2 rows containing missing values (`geom_point()`).
-    ## Removed 4 rows containing missing values (`geom_point()`).
 
-![](figure_1A_1B_weight_and_length_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
+    ## Warning: Removed 4 rows containing missing values (`geom_point()`).
+
+![](figure_1_weight_and_length_files/figure-gfm/print-figure-in-markdown-1.png)<!-- -->
 
 ``` r
 # Statistics. Use 'tab2' data set!!
@@ -3676,8 +3691,8 @@ summary(lm_w)
     ## age210 months  0.55929    0.03018  18.531  < 2e-16 ***
     ## age213 months  0.50077    0.02906  17.233  < 2e-16 ***
     ## age224 months  0.58774    0.02890  20.340  < 2e-16 ***
-    ## genotype2HET  -0.01430    0.01526  -0.937    0.350    
-    ## genotype2MUT  -0.16143    0.01644  -9.820  < 2e-16 ***
+    ## genotype2+/-  -0.01430    0.01526  -0.937    0.350    
+    ## genotype2-/-  -0.16143    0.01644  -9.820  < 2e-16 ***
     ## ---
     ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
     ## 
@@ -3761,15 +3776,15 @@ tukey_res_w
     ## 
     ## $genotype2
     ##               diff         lwr         upr     p adj
-    ## HET-WT  -0.0125394 -0.04826866  0.02318987 0.6861151
-    ## MUT-WT  -0.1526947 -0.19048349 -0.11490593 0.0000000
-    ## MUT-HET -0.1401553 -0.17833042 -0.10198021 0.0000000
+    ## +/--+/+ -0.0125394 -0.04826866  0.02318987 0.6861151
+    ## -/--+/+ -0.1526947 -0.19048349 -0.11490593 0.0000000
+    ## -/--+/- -0.1401553 -0.17833042 -0.10198021 0.0000000
 
 ``` r
 plot(tukey_res_w)
 ```
 
-![](figure_1A_1B_weight_and_length_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->![](figure_1A_1B_weight_and_length_files/figure-gfm/unnamed-chunk-8-2.png)<!-- -->
+![](figure_1_weight_and_length_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->![](figure_1_weight_and_length_files/figure-gfm/unnamed-chunk-8-2.png)<!-- -->
 
 ``` r
 # To do:
@@ -3801,8 +3816,8 @@ summary(lm_l)
     ## age210 months  1.81496    0.08123  22.343  < 2e-16 ***
     ## age213 months  1.30632    0.07985  16.361  < 2e-16 ***
     ## age224 months  2.05947    0.07779  26.474  < 2e-16 ***
-    ## genotype2HET  -0.04167    0.04125  -1.010    0.313    
-    ## genotype2MUT  -0.55852    0.04451 -12.549  < 2e-16 ***
+    ## genotype2+/-  -0.04167    0.04125  -1.010    0.313    
+    ## genotype2-/-  -0.55852    0.04451 -12.549  < 2e-16 ***
     ## ---
     ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
     ## 
@@ -3886,12 +3901,12 @@ tukey_res_l
     ## 
     ## $genotype2
     ##                diff        lwr         upr     p adj
-    ## HET-WT  -0.03530065 -0.1317631  0.06116183 0.6639677
-    ## MUT-WT  -0.52642422 -0.6285582 -0.42429021 0.0000000
-    ## MUT-HET -0.49112357 -0.5945658 -0.38768138 0.0000000
+    ## +/--+/+ -0.03530065 -0.1317631  0.06116183 0.6639677
+    ## -/--+/+ -0.52642422 -0.6285582 -0.42429021 0.0000000
+    ## -/--+/- -0.49112357 -0.5945658 -0.38768138 0.0000000
 
 ``` r
 plot(tukey_res_l)
 ```
 
-![](figure_1A_1B_weight_and_length_files/figure-gfm/unnamed-chunk-8-3.png)<!-- -->![](figure_1A_1B_weight_and_length_files/figure-gfm/unnamed-chunk-8-4.png)<!-- -->
+![](figure_1_weight_and_length_files/figure-gfm/unnamed-chunk-8-3.png)<!-- -->![](figure_1_weight_and_length_files/figure-gfm/unnamed-chunk-8-4.png)<!-- -->

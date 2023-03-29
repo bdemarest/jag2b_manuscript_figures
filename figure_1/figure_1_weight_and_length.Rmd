@@ -23,7 +23,7 @@ library(patchwork)
 # Load data from excel sheet.
 # 
 
-tab = readxl::read_excel(path=here("figure_1A_1B",
+tab = readxl::read_excel(path=here("figure_1",
   "summary_weight_length_data_jag2b_6wpf_to_2yrold_20230303bld.xlsx"),
   na="NA")
 
@@ -31,8 +31,13 @@ tab = as.data.table(tab)
 
 # Standardize all genotypes to uppercase.
 tab[, genotype:=toupper(genotype)]
-# Set order of genotypes.
-tab[, genotype2:=factor(genotype, levels=c("WT", "HET", "MUT"))]
+
+# Use simple genotype labels (+/+, +/-, etc.)
+convert_genotype_labels = c(WT="+/+", HET="+/-", MUT="-/-")
+tab[, genotype2:=convert_genotype_labels[genotype]]
+# Set factor and level order of 'genotype2' column.
+tab[, genotype2:=factor(genotype2, levels=convert_genotype_labels)]
+
 
 # Change age labels to format "6 weeks", "6 months", etc..    
 tab[, age2:=str_replace(age, "month", " months")]
@@ -45,6 +50,10 @@ tab[, age2:=factor(age2, levels=age_order_vec)]
 
 # Convert dob to character.
 tab[, dob:=as.character(dob)]
+
+
+
+
 
 ```
 
@@ -139,12 +148,19 @@ genotype_colors  = c( "WT"="#80b1d3",
                      "HET"="#b3de69",
                      "MUT"="#fb8072")
 
+genotype2_colors  = c("+/+"="#80b1d3",
+                      "+/-"="#b3de69",
+                      "-/-"="#fb8072")
+
 # Compute summary statistics, grouped by age2 and genotype2.
 by_genotype = tab2[, list(mean_weight=mean(weight_gr, na.rm=TRUE),
                            sd_weight=sd(weight_gr, na.rm=TRUE),
                          mean_length=mean(length_cm, na.rm=TRUE),
                          sd_length=sd(length_cm, na.rm=TRUE)),
                       by=list(age2, genotype2)]
+
+# Expand y-axis 5% on bottom end and 25% on upper end, to make room for p-values.
+yaxis_expand = expansion(mult=c(0.05, 0.25))
 
 p2 = ggplot() +
      theme_bw() +
@@ -171,12 +187,13 @@ p2 = ggplot() +
                 color="grey30",
                 size=1.4) +
      scale_shape_manual(values=c(M=21, unknown=24)) +
-     scale_color_manual(values=genotype_colors) +
-     scale_fill_manual(values=genotype_colors) +
+     scale_color_manual(values=genotype2_colors) +
+     scale_fill_manual(values=genotype2_colors) +
+     scale_y_continuous(expand=yaxis_expand) +
      guides(fill="none") +
      # theme(panel.grid.minor.y=element_blank()) +
      # theme(panel.grid.major.x=element_blank()) +
-     theme(axis.text.x=element_text(size=rel(0.8))) +
+     # theme(axis.text.x=element_text(size=rel(0.8))) +
 #     labs(title="Jag2b weight data, 10 developmental time points.") +
 #     labs(subtitle="Horizontal bar = mean, whiskers = +/- standard deviation") +
      labs(x=NULL, y="Weight (grams)", color="Genotype", shape="Sex") +
@@ -209,8 +226,9 @@ p3 = ggplot() +
                 color="grey30",
                 size=1.4) +
      scale_shape_manual(values=c(M=21, unknown=24)) +
-     scale_color_manual(values=genotype_colors) +
-     scale_fill_manual(values=genotype_colors) +
+     scale_color_manual(values=genotype2_colors) +
+     scale_fill_manual(values=genotype2_colors) +
+     scale_y_continuous(expand=yaxis_expand) +
      guides(fill="none") +
      # theme(panel.grid.minor.y=element_blank()) +
      # theme(panel.grid.major.x=element_blank()) +
@@ -221,16 +239,19 @@ p3 = ggplot() +
      facet_grid(cols=vars(age2))
 
 
-p2_p3 = p2 / p3 + plot_layout(guides='collect') +
-         plot_annotation(title="Jag2b weight and length data, 10 developmental time points.",
-                         subtitle="Horizontal bar = mean, whiskers = +/- standard deviation")
+p2_p3 = p2 / p3 + plot_layout(guides='collect')
+      #  + plot_annotation(title="Jag2b weight and length data, 10 developmental time points.",
+      #    subtitle="Horizontal bar = mean, whiskers = +/- standard deviation")
 
 
 # add 'useDingbats=FALSE' to allow file to open correctly in Illustrator.
-ggsave(here("figure_1A_1B", "weights_lengths_10ages_20230307.pdf"),
+ggsave(here("figure_1", "weights_lengths_10ages_20230329.pdf"),
        plot=p2_p3, 
        height=6, width=10, 
        useDingbats=FALSE)
+```
+
+```{r print-figure-in-markdown}
 
 print(p2_p3)
 
