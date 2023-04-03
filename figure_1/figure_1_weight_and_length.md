@@ -1,4 +1,4 @@
-figure 1A, 1B - weight and length
+figure 1 - weight and length
 ================
 Bradley Demarest
 2023-03-03
@@ -60,7 +60,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#rfhwtdkpih .gt_table {
+#hhbqqdsrhf .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -88,7 +88,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   /* table.border.bottom.color */
 }
 
-#rfhwtdkpih .gt_heading {
+#hhbqqdsrhf .gt_heading {
   background-color: #FFFFFF;
   /* heading.background.color */
   border-bottom-color: #FFFFFF;
@@ -107,7 +107,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   /* heading.border.lr.color */
 }
 
-#rfhwtdkpih .gt_title {
+#hhbqqdsrhf .gt_title {
   color: #333333;
   font-size: 125%;
   /* heading.title.font.size */
@@ -121,7 +121,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   border-bottom-width: 0;
 }
 
-#rfhwtdkpih .gt_subtitle {
+#hhbqqdsrhf .gt_subtitle {
   color: #333333;
   font-size: 85%;
   /* heading.subtitle.font.size */
@@ -135,7 +135,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   border-top-width: 0;
 }
 
-#rfhwtdkpih .gt_bottom_border {
+#hhbqqdsrhf .gt_bottom_border {
   border-bottom-style: solid;
   /* heading.border.bottom.style */
   border-bottom-width: 2px;
@@ -144,7 +144,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   /* heading.border.bottom.color */
 }
 
-#rfhwtdkpih .gt_column_spanner {
+#hhbqqdsrhf .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -152,7 +152,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   padding-bottom: 4px;
 }
 
-#rfhwtdkpih .gt_col_headings {
+#hhbqqdsrhf .gt_col_headings {
   border-top-style: solid;
   /* column_labels.border.top.style */
   border-top-width: 2px;
@@ -179,7 +179,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   /* column_labels.border.lr.color */
 }
 
-#rfhwtdkpih .gt_col_heading {
+#hhbqqdsrhf .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   /* column_labels.background.color */
@@ -195,11 +195,11 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   overflow-x: hidden;
 }
 
-#rfhwtdkpih .gt_sep_right {
+#hhbqqdsrhf .gt_sep_right {
   border-right: 5px solid #FFFFFF;
 }
 
-#rfhwtdkpih .gt_group_heading {
+#hhbqqdsrhf .gt_group_heading {
   padding: 8px;
   /* row_group.padding */
   color: #333333;
@@ -238,7 +238,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   vertical-align: middle;
 }
 
-#rfhwtdkpih .gt_empty_group_heading {
+#hhbqqdsrhf .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -262,20 +262,20 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   vertical-align: middle;
 }
 
-#rfhwtdkpih .gt_striped {
+#hhbqqdsrhf .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
   /* row.striping.background_color */
 }
 
-#rfhwtdkpih .gt_from_md > :first-child {
+#hhbqqdsrhf .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#rfhwtdkpih .gt_from_md > :last-child {
+#hhbqqdsrhf .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#rfhwtdkpih .gt_row {
+#hhbqqdsrhf .gt_row {
   padding-top: 8px;
   /* data_row.padding */
   padding-bottom: 8px;
@@ -305,7 +305,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   overflow-x: hidden;
 }
 
-#rfhwtdkpih .gt_stub {
+#hhbqqdsrhf .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   /* stub.background.color */
@@ -322,7 +322,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   padding-left: 12px;
 }
 
-#rfhwtdkpih .gt_summary_row {
+#hhbqqdsrhf .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* summary_row.background.color */
@@ -336,7 +336,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   padding-right: 5px;
 }
 
-#rfhwtdkpih .gt_first_summary_row {
+#hhbqqdsrhf .gt_first_summary_row {
   padding-top: 8px;
   /* summary_row.padding */
   padding-bottom: 8px;
@@ -351,7 +351,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   /* summary_row.border.color */
 }
 
-#rfhwtdkpih .gt_grand_summary_row {
+#hhbqqdsrhf .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* grand_summary_row.background.color */
@@ -365,7 +365,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   padding-right: 5px;
 }
 
-#rfhwtdkpih .gt_first_grand_summary_row {
+#hhbqqdsrhf .gt_first_grand_summary_row {
   padding-top: 8px;
   /* grand_summary_row.padding */
   padding-bottom: 8px;
@@ -380,7 +380,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   /* grand_summary_row.border.color */
 }
 
-#rfhwtdkpih .gt_table_body {
+#hhbqqdsrhf .gt_table_body {
   border-top-style: solid;
   /* table_body.border.top.style */
   border-top-width: 2px;
@@ -395,7 +395,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   /* table_body.border.bottom.color */
 }
 
-#rfhwtdkpih .gt_footnotes {
+#hhbqqdsrhf .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   /* footnotes.background.color */
@@ -419,7 +419,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   /* footnotes.border.lr.color */
 }
 
-#rfhwtdkpih .gt_footnote {
+#hhbqqdsrhf .gt_footnote {
   margin: 0px;
   font-size: 90%;
   /* footnotes.font.size */
@@ -427,7 +427,7 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   /* footnotes.padding */
 }
 
-#rfhwtdkpih .gt_sourcenotes {
+#hhbqqdsrhf .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   /* source_notes.background.color */
@@ -451,48 +451,48 @@ dcast(data=tab, genotype2 ~ age2, fun.aggregate=length) %>%
   /* source_notes.border.lr.style */
 }
 
-#rfhwtdkpih .gt_sourcenote {
+#hhbqqdsrhf .gt_sourcenote {
   font-size: 90%;
   /* source_notes.font.size */
   padding: 4px;
   /* source_notes.padding */
 }
 
-#rfhwtdkpih .gt_left {
+#hhbqqdsrhf .gt_left {
   text-align: left;
 }
 
-#rfhwtdkpih .gt_center {
+#hhbqqdsrhf .gt_center {
   text-align: center;
 }
 
-#rfhwtdkpih .gt_right {
+#hhbqqdsrhf .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#rfhwtdkpih .gt_font_normal {
+#hhbqqdsrhf .gt_font_normal {
   font-weight: normal;
 }
 
-#rfhwtdkpih .gt_font_bold {
+#hhbqqdsrhf .gt_font_bold {
   font-weight: bold;
 }
 
-#rfhwtdkpih .gt_font_italic {
+#hhbqqdsrhf .gt_font_italic {
   font-style: italic;
 }
 
-#rfhwtdkpih .gt_super {
+#hhbqqdsrhf .gt_super {
   font-size: 65%;
 }
 
-#rfhwtdkpih .gt_footnote_marks {
+#hhbqqdsrhf .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="rfhwtdkpih" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="hhbqqdsrhf" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   <thead class="gt_header">
     <tr>
       <th colspan="11" class="gt_heading gt_title gt_font_normal gt_center" style>1. jag2b fish counts by timepoint and genotype.</th>
@@ -586,7 +586,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#zycicusoar .gt_table {
+#rjvemecial .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -614,7 +614,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   /* table.border.bottom.color */
 }
 
-#zycicusoar .gt_heading {
+#rjvemecial .gt_heading {
   background-color: #FFFFFF;
   /* heading.background.color */
   border-bottom-color: #FFFFFF;
@@ -633,7 +633,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   /* heading.border.lr.color */
 }
 
-#zycicusoar .gt_title {
+#rjvemecial .gt_title {
   color: #333333;
   font-size: 125%;
   /* heading.title.font.size */
@@ -647,7 +647,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   border-bottom-width: 0;
 }
 
-#zycicusoar .gt_subtitle {
+#rjvemecial .gt_subtitle {
   color: #333333;
   font-size: 85%;
   /* heading.subtitle.font.size */
@@ -661,7 +661,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   border-top-width: 0;
 }
 
-#zycicusoar .gt_bottom_border {
+#rjvemecial .gt_bottom_border {
   border-bottom-style: solid;
   /* heading.border.bottom.style */
   border-bottom-width: 2px;
@@ -670,7 +670,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   /* heading.border.bottom.color */
 }
 
-#zycicusoar .gt_column_spanner {
+#rjvemecial .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -678,7 +678,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   padding-bottom: 4px;
 }
 
-#zycicusoar .gt_col_headings {
+#rjvemecial .gt_col_headings {
   border-top-style: solid;
   /* column_labels.border.top.style */
   border-top-width: 2px;
@@ -705,7 +705,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   /* column_labels.border.lr.color */
 }
 
-#zycicusoar .gt_col_heading {
+#rjvemecial .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   /* column_labels.background.color */
@@ -721,11 +721,11 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   overflow-x: hidden;
 }
 
-#zycicusoar .gt_sep_right {
+#rjvemecial .gt_sep_right {
   border-right: 5px solid #FFFFFF;
 }
 
-#zycicusoar .gt_group_heading {
+#rjvemecial .gt_group_heading {
   padding: 8px;
   /* row_group.padding */
   color: #333333;
@@ -764,7 +764,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   vertical-align: middle;
 }
 
-#zycicusoar .gt_empty_group_heading {
+#rjvemecial .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -788,20 +788,20 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   vertical-align: middle;
 }
 
-#zycicusoar .gt_striped {
+#rjvemecial .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
   /* row.striping.background_color */
 }
 
-#zycicusoar .gt_from_md > :first-child {
+#rjvemecial .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#zycicusoar .gt_from_md > :last-child {
+#rjvemecial .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#zycicusoar .gt_row {
+#rjvemecial .gt_row {
   padding-top: 8px;
   /* data_row.padding */
   padding-bottom: 8px;
@@ -831,7 +831,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   overflow-x: hidden;
 }
 
-#zycicusoar .gt_stub {
+#rjvemecial .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   /* stub.background.color */
@@ -848,7 +848,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   padding-left: 12px;
 }
 
-#zycicusoar .gt_summary_row {
+#rjvemecial .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* summary_row.background.color */
@@ -862,7 +862,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   padding-right: 5px;
 }
 
-#zycicusoar .gt_first_summary_row {
+#rjvemecial .gt_first_summary_row {
   padding-top: 8px;
   /* summary_row.padding */
   padding-bottom: 8px;
@@ -877,7 +877,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   /* summary_row.border.color */
 }
 
-#zycicusoar .gt_grand_summary_row {
+#rjvemecial .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* grand_summary_row.background.color */
@@ -891,7 +891,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   padding-right: 5px;
 }
 
-#zycicusoar .gt_first_grand_summary_row {
+#rjvemecial .gt_first_grand_summary_row {
   padding-top: 8px;
   /* grand_summary_row.padding */
   padding-bottom: 8px;
@@ -906,7 +906,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   /* grand_summary_row.border.color */
 }
 
-#zycicusoar .gt_table_body {
+#rjvemecial .gt_table_body {
   border-top-style: solid;
   /* table_body.border.top.style */
   border-top-width: 2px;
@@ -921,7 +921,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   /* table_body.border.bottom.color */
 }
 
-#zycicusoar .gt_footnotes {
+#rjvemecial .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   /* footnotes.background.color */
@@ -945,7 +945,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   /* footnotes.border.lr.color */
 }
 
-#zycicusoar .gt_footnote {
+#rjvemecial .gt_footnote {
   margin: 0px;
   font-size: 90%;
   /* footnotes.font.size */
@@ -953,7 +953,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   /* footnotes.padding */
 }
 
-#zycicusoar .gt_sourcenotes {
+#rjvemecial .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   /* source_notes.background.color */
@@ -977,48 +977,48 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
   /* source_notes.border.lr.style */
 }
 
-#zycicusoar .gt_sourcenote {
+#rjvemecial .gt_sourcenote {
   font-size: 90%;
   /* source_notes.font.size */
   padding: 4px;
   /* source_notes.padding */
 }
 
-#zycicusoar .gt_left {
+#rjvemecial .gt_left {
   text-align: left;
 }
 
-#zycicusoar .gt_center {
+#rjvemecial .gt_center {
   text-align: center;
 }
 
-#zycicusoar .gt_right {
+#rjvemecial .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#zycicusoar .gt_font_normal {
+#rjvemecial .gt_font_normal {
   font-weight: normal;
 }
 
-#zycicusoar .gt_font_bold {
+#rjvemecial .gt_font_bold {
   font-weight: bold;
 }
 
-#zycicusoar .gt_font_italic {
+#rjvemecial .gt_font_italic {
   font-style: italic;
 }
 
-#zycicusoar .gt_super {
+#rjvemecial .gt_super {
   font-size: 65%;
 }
 
-#zycicusoar .gt_footnote_marks {
+#rjvemecial .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="zycicusoar" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="rjvemecial" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   <thead class="gt_header">
     <tr>
       <th colspan="11" class="gt_heading gt_title gt_font_normal gt_center" style>2. jag2b fish counts by timepoint, genotype, and sex</th>
@@ -1162,7 +1162,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#zuysnoztzm .gt_table {
+#lippbrsxac .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -1190,7 +1190,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   /* table.border.bottom.color */
 }
 
-#zuysnoztzm .gt_heading {
+#lippbrsxac .gt_heading {
   background-color: #FFFFFF;
   /* heading.background.color */
   border-bottom-color: #FFFFFF;
@@ -1209,7 +1209,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   /* heading.border.lr.color */
 }
 
-#zuysnoztzm .gt_title {
+#lippbrsxac .gt_title {
   color: #333333;
   font-size: 125%;
   /* heading.title.font.size */
@@ -1223,7 +1223,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   border-bottom-width: 0;
 }
 
-#zuysnoztzm .gt_subtitle {
+#lippbrsxac .gt_subtitle {
   color: #333333;
   font-size: 85%;
   /* heading.subtitle.font.size */
@@ -1237,7 +1237,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   border-top-width: 0;
 }
 
-#zuysnoztzm .gt_bottom_border {
+#lippbrsxac .gt_bottom_border {
   border-bottom-style: solid;
   /* heading.border.bottom.style */
   border-bottom-width: 2px;
@@ -1246,7 +1246,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   /* heading.border.bottom.color */
 }
 
-#zuysnoztzm .gt_column_spanner {
+#lippbrsxac .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1254,7 +1254,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   padding-bottom: 4px;
 }
 
-#zuysnoztzm .gt_col_headings {
+#lippbrsxac .gt_col_headings {
   border-top-style: solid;
   /* column_labels.border.top.style */
   border-top-width: 2px;
@@ -1281,7 +1281,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   /* column_labels.border.lr.color */
 }
 
-#zuysnoztzm .gt_col_heading {
+#lippbrsxac .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   /* column_labels.background.color */
@@ -1297,11 +1297,11 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   overflow-x: hidden;
 }
 
-#zuysnoztzm .gt_sep_right {
+#lippbrsxac .gt_sep_right {
   border-right: 5px solid #FFFFFF;
 }
 
-#zuysnoztzm .gt_group_heading {
+#lippbrsxac .gt_group_heading {
   padding: 8px;
   /* row_group.padding */
   color: #333333;
@@ -1340,7 +1340,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   vertical-align: middle;
 }
 
-#zuysnoztzm .gt_empty_group_heading {
+#lippbrsxac .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1364,20 +1364,20 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   vertical-align: middle;
 }
 
-#zuysnoztzm .gt_striped {
+#lippbrsxac .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
   /* row.striping.background_color */
 }
 
-#zuysnoztzm .gt_from_md > :first-child {
+#lippbrsxac .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#zuysnoztzm .gt_from_md > :last-child {
+#lippbrsxac .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#zuysnoztzm .gt_row {
+#lippbrsxac .gt_row {
   padding-top: 8px;
   /* data_row.padding */
   padding-bottom: 8px;
@@ -1407,7 +1407,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   overflow-x: hidden;
 }
 
-#zuysnoztzm .gt_stub {
+#lippbrsxac .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   /* stub.background.color */
@@ -1424,7 +1424,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   padding-left: 12px;
 }
 
-#zuysnoztzm .gt_summary_row {
+#lippbrsxac .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* summary_row.background.color */
@@ -1438,7 +1438,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   padding-right: 5px;
 }
 
-#zuysnoztzm .gt_first_summary_row {
+#lippbrsxac .gt_first_summary_row {
   padding-top: 8px;
   /* summary_row.padding */
   padding-bottom: 8px;
@@ -1453,7 +1453,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   /* summary_row.border.color */
 }
 
-#zuysnoztzm .gt_grand_summary_row {
+#lippbrsxac .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* grand_summary_row.background.color */
@@ -1467,7 +1467,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   padding-right: 5px;
 }
 
-#zuysnoztzm .gt_first_grand_summary_row {
+#lippbrsxac .gt_first_grand_summary_row {
   padding-top: 8px;
   /* grand_summary_row.padding */
   padding-bottom: 8px;
@@ -1482,7 +1482,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   /* grand_summary_row.border.color */
 }
 
-#zuysnoztzm .gt_table_body {
+#lippbrsxac .gt_table_body {
   border-top-style: solid;
   /* table_body.border.top.style */
   border-top-width: 2px;
@@ -1497,7 +1497,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   /* table_body.border.bottom.color */
 }
 
-#zuysnoztzm .gt_footnotes {
+#lippbrsxac .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   /* footnotes.background.color */
@@ -1521,7 +1521,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   /* footnotes.border.lr.color */
 }
 
-#zuysnoztzm .gt_footnote {
+#lippbrsxac .gt_footnote {
   margin: 0px;
   font-size: 90%;
   /* footnotes.font.size */
@@ -1529,7 +1529,7 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   /* footnotes.padding */
 }
 
-#zuysnoztzm .gt_sourcenotes {
+#lippbrsxac .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   /* source_notes.background.color */
@@ -1553,48 +1553,48 @@ dcast(data=tab, dob ~ age2, fun.aggregate=length) %>%
   /* source_notes.border.lr.style */
 }
 
-#zuysnoztzm .gt_sourcenote {
+#lippbrsxac .gt_sourcenote {
   font-size: 90%;
   /* source_notes.font.size */
   padding: 4px;
   /* source_notes.padding */
 }
 
-#zuysnoztzm .gt_left {
+#lippbrsxac .gt_left {
   text-align: left;
 }
 
-#zuysnoztzm .gt_center {
+#lippbrsxac .gt_center {
   text-align: center;
 }
 
-#zuysnoztzm .gt_right {
+#lippbrsxac .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#zuysnoztzm .gt_font_normal {
+#lippbrsxac .gt_font_normal {
   font-weight: normal;
 }
 
-#zuysnoztzm .gt_font_bold {
+#lippbrsxac .gt_font_bold {
   font-weight: bold;
 }
 
-#zuysnoztzm .gt_font_italic {
+#lippbrsxac .gt_font_italic {
   font-style: italic;
 }
 
-#zuysnoztzm .gt_super {
+#lippbrsxac .gt_super {
   font-size: 65%;
 }
 
-#zuysnoztzm .gt_footnote_marks {
+#lippbrsxac .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="zuysnoztzm" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="lippbrsxac" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   <thead class="gt_header">
     <tr>
       <th colspan="11" class="gt_heading gt_title gt_font_normal gt_center" style>jag2b fish counts by timepoint and date-of-birth.</th>
@@ -1742,7 +1742,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#jrhtxfenvo .gt_table {
+#wzkbxugzci .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -1770,7 +1770,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   /* table.border.bottom.color */
 }
 
-#jrhtxfenvo .gt_heading {
+#wzkbxugzci .gt_heading {
   background-color: #FFFFFF;
   /* heading.background.color */
   border-bottom-color: #FFFFFF;
@@ -1789,7 +1789,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   /* heading.border.lr.color */
 }
 
-#jrhtxfenvo .gt_title {
+#wzkbxugzci .gt_title {
   color: #333333;
   font-size: 125%;
   /* heading.title.font.size */
@@ -1803,7 +1803,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   border-bottom-width: 0;
 }
 
-#jrhtxfenvo .gt_subtitle {
+#wzkbxugzci .gt_subtitle {
   color: #333333;
   font-size: 85%;
   /* heading.subtitle.font.size */
@@ -1817,7 +1817,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   border-top-width: 0;
 }
 
-#jrhtxfenvo .gt_bottom_border {
+#wzkbxugzci .gt_bottom_border {
   border-bottom-style: solid;
   /* heading.border.bottom.style */
   border-bottom-width: 2px;
@@ -1826,7 +1826,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   /* heading.border.bottom.color */
 }
 
-#jrhtxfenvo .gt_column_spanner {
+#wzkbxugzci .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1834,7 +1834,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   padding-bottom: 4px;
 }
 
-#jrhtxfenvo .gt_col_headings {
+#wzkbxugzci .gt_col_headings {
   border-top-style: solid;
   /* column_labels.border.top.style */
   border-top-width: 2px;
@@ -1861,7 +1861,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   /* column_labels.border.lr.color */
 }
 
-#jrhtxfenvo .gt_col_heading {
+#wzkbxugzci .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   /* column_labels.background.color */
@@ -1877,11 +1877,11 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   overflow-x: hidden;
 }
 
-#jrhtxfenvo .gt_sep_right {
+#wzkbxugzci .gt_sep_right {
   border-right: 5px solid #FFFFFF;
 }
 
-#jrhtxfenvo .gt_group_heading {
+#wzkbxugzci .gt_group_heading {
   padding: 8px;
   /* row_group.padding */
   color: #333333;
@@ -1920,7 +1920,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   vertical-align: middle;
 }
 
-#jrhtxfenvo .gt_empty_group_heading {
+#wzkbxugzci .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1944,20 +1944,20 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   vertical-align: middle;
 }
 
-#jrhtxfenvo .gt_striped {
+#wzkbxugzci .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
   /* row.striping.background_color */
 }
 
-#jrhtxfenvo .gt_from_md > :first-child {
+#wzkbxugzci .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#jrhtxfenvo .gt_from_md > :last-child {
+#wzkbxugzci .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#jrhtxfenvo .gt_row {
+#wzkbxugzci .gt_row {
   padding-top: 8px;
   /* data_row.padding */
   padding-bottom: 8px;
@@ -1987,7 +1987,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   overflow-x: hidden;
 }
 
-#jrhtxfenvo .gt_stub {
+#wzkbxugzci .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   /* stub.background.color */
@@ -2004,7 +2004,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   padding-left: 12px;
 }
 
-#jrhtxfenvo .gt_summary_row {
+#wzkbxugzci .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* summary_row.background.color */
@@ -2018,7 +2018,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   padding-right: 5px;
 }
 
-#jrhtxfenvo .gt_first_summary_row {
+#wzkbxugzci .gt_first_summary_row {
   padding-top: 8px;
   /* summary_row.padding */
   padding-bottom: 8px;
@@ -2033,7 +2033,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   /* summary_row.border.color */
 }
 
-#jrhtxfenvo .gt_grand_summary_row {
+#wzkbxugzci .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* grand_summary_row.background.color */
@@ -2047,7 +2047,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   padding-right: 5px;
 }
 
-#jrhtxfenvo .gt_first_grand_summary_row {
+#wzkbxugzci .gt_first_grand_summary_row {
   padding-top: 8px;
   /* grand_summary_row.padding */
   padding-bottom: 8px;
@@ -2062,7 +2062,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   /* grand_summary_row.border.color */
 }
 
-#jrhtxfenvo .gt_table_body {
+#wzkbxugzci .gt_table_body {
   border-top-style: solid;
   /* table_body.border.top.style */
   border-top-width: 2px;
@@ -2077,7 +2077,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   /* table_body.border.bottom.color */
 }
 
-#jrhtxfenvo .gt_footnotes {
+#wzkbxugzci .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   /* footnotes.background.color */
@@ -2101,7 +2101,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   /* footnotes.border.lr.color */
 }
 
-#jrhtxfenvo .gt_footnote {
+#wzkbxugzci .gt_footnote {
   margin: 0px;
   font-size: 90%;
   /* footnotes.font.size */
@@ -2109,7 +2109,7 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   /* footnotes.padding */
 }
 
-#jrhtxfenvo .gt_sourcenotes {
+#wzkbxugzci .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   /* source_notes.background.color */
@@ -2133,48 +2133,48 @@ dcast(data=tab, dob + genotype2 ~ age2, fun.aggregate=length) %>%
   /* source_notes.border.lr.style */
 }
 
-#jrhtxfenvo .gt_sourcenote {
+#wzkbxugzci .gt_sourcenote {
   font-size: 90%;
   /* source_notes.font.size */
   padding: 4px;
   /* source_notes.padding */
 }
 
-#jrhtxfenvo .gt_left {
+#wzkbxugzci .gt_left {
   text-align: left;
 }
 
-#jrhtxfenvo .gt_center {
+#wzkbxugzci .gt_center {
   text-align: center;
 }
 
-#jrhtxfenvo .gt_right {
+#wzkbxugzci .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#jrhtxfenvo .gt_font_normal {
+#wzkbxugzci .gt_font_normal {
   font-weight: normal;
 }
 
-#jrhtxfenvo .gt_font_bold {
+#wzkbxugzci .gt_font_bold {
   font-weight: bold;
 }
 
-#jrhtxfenvo .gt_font_italic {
+#wzkbxugzci .gt_font_italic {
   font-style: italic;
 }
 
-#jrhtxfenvo .gt_super {
+#wzkbxugzci .gt_super {
   font-size: 65%;
 }
 
-#jrhtxfenvo .gt_footnote_marks {
+#wzkbxugzci .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="jrhtxfenvo" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="wzkbxugzci" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   <thead class="gt_header">
     <tr>
       <th colspan="11" class="gt_heading gt_title gt_font_normal gt_center" style>jag2b fish counts by timepoint, data-of-birth, and genotype.</th>
@@ -2546,7 +2546,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#xskdsorwqi .gt_table {
+#klavjfwtik .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -2574,7 +2574,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* table.border.bottom.color */
 }
 
-#xskdsorwqi .gt_heading {
+#klavjfwtik .gt_heading {
   background-color: #FFFFFF;
   /* heading.background.color */
   border-bottom-color: #FFFFFF;
@@ -2593,7 +2593,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* heading.border.lr.color */
 }
 
-#xskdsorwqi .gt_title {
+#klavjfwtik .gt_title {
   color: #333333;
   font-size: 125%;
   /* heading.title.font.size */
@@ -2607,7 +2607,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   border-bottom-width: 0;
 }
 
-#xskdsorwqi .gt_subtitle {
+#klavjfwtik .gt_subtitle {
   color: #333333;
   font-size: 85%;
   /* heading.subtitle.font.size */
@@ -2621,7 +2621,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   border-top-width: 0;
 }
 
-#xskdsorwqi .gt_bottom_border {
+#klavjfwtik .gt_bottom_border {
   border-bottom-style: solid;
   /* heading.border.bottom.style */
   border-bottom-width: 2px;
@@ -2630,7 +2630,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* heading.border.bottom.color */
 }
 
-#xskdsorwqi .gt_column_spanner {
+#klavjfwtik .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -2638,7 +2638,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   padding-bottom: 4px;
 }
 
-#xskdsorwqi .gt_col_headings {
+#klavjfwtik .gt_col_headings {
   border-top-style: solid;
   /* column_labels.border.top.style */
   border-top-width: 2px;
@@ -2665,7 +2665,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* column_labels.border.lr.color */
 }
 
-#xskdsorwqi .gt_col_heading {
+#klavjfwtik .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   /* column_labels.background.color */
@@ -2681,11 +2681,11 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   overflow-x: hidden;
 }
 
-#xskdsorwqi .gt_sep_right {
+#klavjfwtik .gt_sep_right {
   border-right: 5px solid #FFFFFF;
 }
 
-#xskdsorwqi .gt_group_heading {
+#klavjfwtik .gt_group_heading {
   padding: 8px;
   /* row_group.padding */
   color: #333333;
@@ -2724,7 +2724,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   vertical-align: middle;
 }
 
-#xskdsorwqi .gt_empty_group_heading {
+#klavjfwtik .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -2748,20 +2748,20 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   vertical-align: middle;
 }
 
-#xskdsorwqi .gt_striped {
+#klavjfwtik .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
   /* row.striping.background_color */
 }
 
-#xskdsorwqi .gt_from_md > :first-child {
+#klavjfwtik .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#xskdsorwqi .gt_from_md > :last-child {
+#klavjfwtik .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#xskdsorwqi .gt_row {
+#klavjfwtik .gt_row {
   padding-top: 8px;
   /* data_row.padding */
   padding-bottom: 8px;
@@ -2791,7 +2791,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   overflow-x: hidden;
 }
 
-#xskdsorwqi .gt_stub {
+#klavjfwtik .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   /* stub.background.color */
@@ -2808,7 +2808,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   padding-left: 12px;
 }
 
-#xskdsorwqi .gt_summary_row {
+#klavjfwtik .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* summary_row.background.color */
@@ -2822,7 +2822,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   padding-right: 5px;
 }
 
-#xskdsorwqi .gt_first_summary_row {
+#klavjfwtik .gt_first_summary_row {
   padding-top: 8px;
   /* summary_row.padding */
   padding-bottom: 8px;
@@ -2837,7 +2837,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* summary_row.border.color */
 }
 
-#xskdsorwqi .gt_grand_summary_row {
+#klavjfwtik .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* grand_summary_row.background.color */
@@ -2851,7 +2851,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   padding-right: 5px;
 }
 
-#xskdsorwqi .gt_first_grand_summary_row {
+#klavjfwtik .gt_first_grand_summary_row {
   padding-top: 8px;
   /* grand_summary_row.padding */
   padding-bottom: 8px;
@@ -2866,7 +2866,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* grand_summary_row.border.color */
 }
 
-#xskdsorwqi .gt_table_body {
+#klavjfwtik .gt_table_body {
   border-top-style: solid;
   /* table_body.border.top.style */
   border-top-width: 2px;
@@ -2881,7 +2881,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* table_body.border.bottom.color */
 }
 
-#xskdsorwqi .gt_footnotes {
+#klavjfwtik .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   /* footnotes.background.color */
@@ -2905,7 +2905,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* footnotes.border.lr.color */
 }
 
-#xskdsorwqi .gt_footnote {
+#klavjfwtik .gt_footnote {
   margin: 0px;
   font-size: 90%;
   /* footnotes.font.size */
@@ -2913,7 +2913,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* footnotes.padding */
 }
 
-#xskdsorwqi .gt_sourcenotes {
+#klavjfwtik .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   /* source_notes.background.color */
@@ -2937,48 +2937,48 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* source_notes.border.lr.style */
 }
 
-#xskdsorwqi .gt_sourcenote {
+#klavjfwtik .gt_sourcenote {
   font-size: 90%;
   /* source_notes.font.size */
   padding: 4px;
   /* source_notes.padding */
 }
 
-#xskdsorwqi .gt_left {
+#klavjfwtik .gt_left {
   text-align: left;
 }
 
-#xskdsorwqi .gt_center {
+#klavjfwtik .gt_center {
   text-align: center;
 }
 
-#xskdsorwqi .gt_right {
+#klavjfwtik .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#xskdsorwqi .gt_font_normal {
+#klavjfwtik .gt_font_normal {
   font-weight: normal;
 }
 
-#xskdsorwqi .gt_font_bold {
+#klavjfwtik .gt_font_bold {
   font-weight: bold;
 }
 
-#xskdsorwqi .gt_font_italic {
+#klavjfwtik .gt_font_italic {
   font-style: italic;
 }
 
-#xskdsorwqi .gt_super {
+#klavjfwtik .gt_super {
   font-size: 65%;
 }
 
-#xskdsorwqi .gt_footnote_marks {
+#klavjfwtik .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="xskdsorwqi" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="klavjfwtik" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   <thead class="gt_header">
     <tr>
       <th colspan="11" class="gt_heading gt_title gt_font_normal gt_center" style>Updated jag2b fish counts by timepoint and sex.</th>
@@ -3048,7 +3048,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#ykpbjenzbh .gt_table {
+#crdiqhjnjh .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -3076,7 +3076,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* table.border.bottom.color */
 }
 
-#ykpbjenzbh .gt_heading {
+#crdiqhjnjh .gt_heading {
   background-color: #FFFFFF;
   /* heading.background.color */
   border-bottom-color: #FFFFFF;
@@ -3095,7 +3095,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* heading.border.lr.color */
 }
 
-#ykpbjenzbh .gt_title {
+#crdiqhjnjh .gt_title {
   color: #333333;
   font-size: 125%;
   /* heading.title.font.size */
@@ -3109,7 +3109,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   border-bottom-width: 0;
 }
 
-#ykpbjenzbh .gt_subtitle {
+#crdiqhjnjh .gt_subtitle {
   color: #333333;
   font-size: 85%;
   /* heading.subtitle.font.size */
@@ -3123,7 +3123,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   border-top-width: 0;
 }
 
-#ykpbjenzbh .gt_bottom_border {
+#crdiqhjnjh .gt_bottom_border {
   border-bottom-style: solid;
   /* heading.border.bottom.style */
   border-bottom-width: 2px;
@@ -3132,7 +3132,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* heading.border.bottom.color */
 }
 
-#ykpbjenzbh .gt_column_spanner {
+#crdiqhjnjh .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -3140,7 +3140,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   padding-bottom: 4px;
 }
 
-#ykpbjenzbh .gt_col_headings {
+#crdiqhjnjh .gt_col_headings {
   border-top-style: solid;
   /* column_labels.border.top.style */
   border-top-width: 2px;
@@ -3167,7 +3167,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* column_labels.border.lr.color */
 }
 
-#ykpbjenzbh .gt_col_heading {
+#crdiqhjnjh .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   /* column_labels.background.color */
@@ -3183,11 +3183,11 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   overflow-x: hidden;
 }
 
-#ykpbjenzbh .gt_sep_right {
+#crdiqhjnjh .gt_sep_right {
   border-right: 5px solid #FFFFFF;
 }
 
-#ykpbjenzbh .gt_group_heading {
+#crdiqhjnjh .gt_group_heading {
   padding: 8px;
   /* row_group.padding */
   color: #333333;
@@ -3226,7 +3226,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   vertical-align: middle;
 }
 
-#ykpbjenzbh .gt_empty_group_heading {
+#crdiqhjnjh .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -3250,20 +3250,20 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   vertical-align: middle;
 }
 
-#ykpbjenzbh .gt_striped {
+#crdiqhjnjh .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
   /* row.striping.background_color */
 }
 
-#ykpbjenzbh .gt_from_md > :first-child {
+#crdiqhjnjh .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#ykpbjenzbh .gt_from_md > :last-child {
+#crdiqhjnjh .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#ykpbjenzbh .gt_row {
+#crdiqhjnjh .gt_row {
   padding-top: 8px;
   /* data_row.padding */
   padding-bottom: 8px;
@@ -3293,7 +3293,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   overflow-x: hidden;
 }
 
-#ykpbjenzbh .gt_stub {
+#crdiqhjnjh .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   /* stub.background.color */
@@ -3310,7 +3310,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   padding-left: 12px;
 }
 
-#ykpbjenzbh .gt_summary_row {
+#crdiqhjnjh .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* summary_row.background.color */
@@ -3324,7 +3324,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   padding-right: 5px;
 }
 
-#ykpbjenzbh .gt_first_summary_row {
+#crdiqhjnjh .gt_first_summary_row {
   padding-top: 8px;
   /* summary_row.padding */
   padding-bottom: 8px;
@@ -3339,7 +3339,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* summary_row.border.color */
 }
 
-#ykpbjenzbh .gt_grand_summary_row {
+#crdiqhjnjh .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* grand_summary_row.background.color */
@@ -3353,7 +3353,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   padding-right: 5px;
 }
 
-#ykpbjenzbh .gt_first_grand_summary_row {
+#crdiqhjnjh .gt_first_grand_summary_row {
   padding-top: 8px;
   /* grand_summary_row.padding */
   padding-bottom: 8px;
@@ -3368,7 +3368,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* grand_summary_row.border.color */
 }
 
-#ykpbjenzbh .gt_table_body {
+#crdiqhjnjh .gt_table_body {
   border-top-style: solid;
   /* table_body.border.top.style */
   border-top-width: 2px;
@@ -3383,7 +3383,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* table_body.border.bottom.color */
 }
 
-#ykpbjenzbh .gt_footnotes {
+#crdiqhjnjh .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   /* footnotes.background.color */
@@ -3407,7 +3407,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* footnotes.border.lr.color */
 }
 
-#ykpbjenzbh .gt_footnote {
+#crdiqhjnjh .gt_footnote {
   margin: 0px;
   font-size: 90%;
   /* footnotes.font.size */
@@ -3415,7 +3415,7 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* footnotes.padding */
 }
 
-#ykpbjenzbh .gt_sourcenotes {
+#crdiqhjnjh .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   /* source_notes.background.color */
@@ -3439,48 +3439,48 @@ dcast(data=tab2, sex ~ age2, fun.aggregate=length) %>%
   /* source_notes.border.lr.style */
 }
 
-#ykpbjenzbh .gt_sourcenote {
+#crdiqhjnjh .gt_sourcenote {
   font-size: 90%;
   /* source_notes.font.size */
   padding: 4px;
   /* source_notes.padding */
 }
 
-#ykpbjenzbh .gt_left {
+#crdiqhjnjh .gt_left {
   text-align: left;
 }
 
-#ykpbjenzbh .gt_center {
+#crdiqhjnjh .gt_center {
   text-align: center;
 }
 
-#ykpbjenzbh .gt_right {
+#crdiqhjnjh .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#ykpbjenzbh .gt_font_normal {
+#crdiqhjnjh .gt_font_normal {
   font-weight: normal;
 }
 
-#ykpbjenzbh .gt_font_bold {
+#crdiqhjnjh .gt_font_bold {
   font-weight: bold;
 }
 
-#ykpbjenzbh .gt_font_italic {
+#crdiqhjnjh .gt_font_italic {
   font-style: italic;
 }
 
-#ykpbjenzbh .gt_super {
+#crdiqhjnjh .gt_super {
   font-size: 65%;
 }
 
-#ykpbjenzbh .gt_footnote_marks {
+#crdiqhjnjh .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="ykpbjenzbh" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="crdiqhjnjh" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   <thead class="gt_header">
     <tr>
       <th colspan="11" class="gt_heading gt_title gt_font_normal gt_center" style>Updated jag2b fish sex labels.</th>
@@ -3662,251 +3662,2218 @@ print(p2_p3)
 ![](figure_1_weight_and_length_files/figure-gfm/print-figure-in-markdown-1.png)<!-- -->
 
 ``` r
-# Statistics. Use 'tab2' data set!!
-# 1. Do ANOVA for weight, length ~ age + genotype
-# 2. Possibly do pairwise t-tests for genotypes at each timepoint.
+# Example code for pairwise t-test (wt-mut, het-mut, wt-het) for
+# each timepoint.
+
+# (1) Using Anova + TukeyHSD does not allow us to choose only the comparisons
+#     of interest. For example we want 3 pairwise genotype comparison _within_
+#     each timepoint.
+# (2) Instead we will stick with previous method of running selected pairwise
+#     t-tests, combined with FDR-corrected p-values.
+# (3) Problem remaining -- How to correct 95% conf intervals for multiple
+#     comparisons? `multcomp` package may have Tukey-stype 'family-wise' 
+#     correction for confidence intervals.
 
 
-lm_w = lm(weight_gr ~ age2 + genotype2, data=tab2)
-summary(lm_w)
+
+comp_tab = data.table(group1=rep(c("WT", "WT", "HET"), times=2),
+                      group2=rep(c("HET", "MUT", "MUT"), times=2),
+                      variable=rep(c("weight_gr", "length_cm"), each=3),
+                      age=rep(levels(tab2$age2), each=6))
+
+table(comp_tab$age, comp_tab$variable)
 ```
 
-    ## 
-    ## Call:
-    ## lm(formula = weight_gr ~ age2 + genotype2, data = tab2)
-    ## 
-    ## Residuals:
-    ##      Min       1Q   Median       3Q      Max 
-    ## -0.36012 -0.05580 -0.00548  0.05521  0.28700 
-    ## 
-    ## Coefficients:
-    ##               Estimate Std. Error t value Pr(>|t|)    
-    ## (Intercept)    0.18526    0.01945   9.524  < 2e-16 ***
-    ## age28 weeks    0.07698    0.02648   2.908    0.004 ** 
-    ## age210 weeks   0.14415    0.02682   5.374 1.87e-07 ***
-    ## age212 weeks   0.17254    0.03733   4.622 6.33e-06 ***
-    ## age24 months   0.27965    0.02221  12.592  < 2e-16 ***
-    ## age26 months   0.19437    0.02399   8.103 3.10e-14 ***
-    ## age28 months   0.33254    0.03030  10.977  < 2e-16 ***
-    ## age210 months  0.55929    0.03018  18.531  < 2e-16 ***
-    ## age213 months  0.50077    0.02906  17.233  < 2e-16 ***
-    ## age224 months  0.58774    0.02890  20.340  < 2e-16 ***
-    ## genotype2+/-  -0.01430    0.01526  -0.937    0.350    
-    ## genotype2-/-  -0.16143    0.01644  -9.820  < 2e-16 ***
-    ## ---
-    ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-    ## 
-    ## Residual standard error: 0.09987 on 231 degrees of freedom
-    ##   (2 observations deleted due to missingness)
-    ## Multiple R-squared:  0.8151, Adjusted R-squared:  0.8063 
-    ## F-statistic: 92.55 on 11 and 231 DF,  p-value: < 2.2e-16
+    ##            
+    ##             length_cm weight_gr
+    ##   10 months         3         3
+    ##   10 weeks          3         3
+    ##   12 weeks          3         3
+    ##   13 months         3         3
+    ##   24 months         3         3
+    ##   4 months          3         3
+    ##   6 months          3         3
+    ##   6 weeks           3         3
+    ##   8 months          3         3
+    ##   8 weeks           3         3
 
 ``` r
-anova(lm_w)
-```
+tres_list = list()
 
-    ## Analysis of Variance Table
-    ## 
-    ## Response: weight_gr
-    ##            Df Sum Sq Mean Sq F value    Pr(>F)    
-    ## age2        9 9.0284 1.00316 100.575 < 2.2e-16 ***
-    ## genotype2   2 1.1262 0.56312  56.458 < 2.2e-16 ***
-    ## Residuals 231 2.3041 0.00997                      
-    ## ---
-    ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+for (i in seq(nrow(comp_tab))) {
+  row_i = comp_tab[i]
+  tmp_group1 = row_i$group1
+  tmp_group2 = row_i$group2
+  tmp_age = row_i$age
+  tmp_var = row_i$variable
+  # what is `..` syntax?
+  group1_data = tab2[genotype == tmp_group1 & age2 == tmp_age, ..tmp_var]
+  
+  group2_data = tab2[genotype == tmp_group2 & age2 == tmp_age, ..tmp_var]
+  
+  if (nrow(group1_data) > 0L & nrow(group2_data) > 0L) {
+      
+    tmp_res = t.test(x=group1_data,
+                     y=group2_data,
+                     alternative = "two.sided",
+                     conf.level=0.95)
+  
+    new_row = data.table(group1=tmp_group1,
+                         group2=tmp_group2,
+                         age=tmp_age,
+                         comparison_variable=tmp_var,
+                         effect_size=tmp_res$estimate[1] - tmp_res$estimate[2], # (mutant or het mean) - wt mean
+                         pvalue=tmp_res$p.value,
+                         conf_lower=tmp_res$conf.int[1],
+                         conf_upper=tmp_res$conf.int[2],
+                         sample_size_group1=nrow(group1_data),
+                         sample_size_group2=nrow(group2_data),
+                         t_statistic=tmp_res$statistic,
+                         df=tmp_res$parameter)
+  } else {
+    # When one group has no fish, fill in t-test results with NA values.
+    new_row = data.table(group1=tmp_group1,
+                         group2=tmp_group2,
+                         age=tmp_age,
+                         comparison_variable=tmp_var,
+                         effect_size=NA_real_,
+                         pvalue=NA_real_,
+                         conf_lower=NA_real_,
+                         conf_upper=NA_real_,
+                         sample_size_group1=nrow(group1_data),
+                         sample_size_group2=nrow(group2_data),
+                         t_statistic=NA_real_,
+                         df=NA_real_)
+  }
+  
+  tres_list[[i]] = new_row
+                       
+}
+
+
+# Summary table of all pair-wise t.test results and related values.
+stats_tab = rbindlist(tres_list)
+
+n_comparisons = sum(!is.na(stats_tab$pvalue))
+
+stats_tab[, padj:=p.adjust(pvalue, method="fdr", n=n_comparisons)]
+
+stats_tab[, genotype_pair:=paste(group1, group2, sep="-")]
+
+stats_tab[, genotype_pair:=factor(genotype_pair,
+                                  levels=c("WT-HET", "HET-MUT", "WT-MUT"))]
+
+# Format padj values for adding to figures.
+# Format string: 0 = leading zeros, .2 = precision , 
+# "g" = precision is interpreted as n of significant digits.
+stats_tab[, padj_format:=sprintf("%0.2g", padj)]
+
+# Output stats to text file.
+fwrite(stats_tab, 
+       file=here("figure_1",
+                 "pairwise_ttest_results_weight_length_10ages_20230403.txt"), 
+       sep="\t")
+
+
+# Write out a filtered, sorted version for Leo to use adding pvalues in AI.
+
+stats2 = stats_tab[padj < 0.05, 
+                   list(age, comparison_variable, genotype_pair, padj_format)]
+
+stats2[, age:=factor(age, levels=age_order_vec)]
+
+
+setorder(stats2, comparison_variable, age, -genotype_pair)
+
+library(writexl)
+write_xlsx(stats2, 
+           path=here("figure_1", 
+                     "pairwise_ttest_padj05_table_for_figure_1_20230403.xlsx"))
+```
 
 ``` r
-aov_w = aov(weight_gr ~ age2 + genotype2, data=tab2)
-tukey_res_w = TukeyHSD(aov_w)
-tukey_res_w
+  stats2 %>% as_tibble() %>%
+  gt() %>%
+  tab_header(title="Pairwise t-test results within each timepoint. FDR-adj p-value < 0.05")
 ```
 
-    ##   Tukey multiple comparisons of means
-    ##     95% family-wise confidence level
-    ## 
-    ## Fit: aov(formula = weight_gr ~ age2 + genotype2, data = tab2)
-    ## 
-    ## $age2
-    ##                            diff          lwr          upr     p adj
-    ## 8 weeks-6 weeks      0.07906667 -0.005498070  0.163631403 0.0890017
-    ## 10 weeks-6 weeks     0.15070435  0.065055999  0.236352696 0.0000024
-    ## 12 weeks-6 weeks     0.17462222  0.055367936  0.293876509 0.0002095
-    ## 4 months-6 weeks     0.28173333  0.210810293  0.352656373 0.0000000
-    ## 6 months-6 weeks     0.20942857  0.133153274  0.285703869 0.0000000
-    ## 8 months-6 weeks     0.35846250  0.262169657  0.454755343 0.0000000
-    ## 10 months-6 weeks    0.54396250  0.447669657  0.640255343 0.0000000
-    ## 13 months-6 weeks    0.52078889  0.428240130  0.613337647 0.0000000
-    ## 24 months-6 weeks    0.64087368  0.549947494  0.731799874 0.0000000
-    ## 10 weeks-8 weeks     0.07163768 -0.021469317  0.164744680 0.2969700
-    ## 12 weeks-8 weeks     0.09555556 -0.029163563  0.220274674 0.3028340
-    ## 4 months-8 weeks     0.20266667  0.122896051  0.282437283 0.0000000
-    ## 6 months-8 weeks     0.13036190  0.045797168  0.214926641 0.0000694
-    ## 8 months-8 weeks     0.27939583  0.176412411  0.382379256 0.0000000
-    ## 10 months-8 weeks    0.46489583  0.361912411  0.567879256 0.0000000
-    ## 13 months-8 weeks    0.44172222  0.342230784  0.541213660 0.0000000
-    ## 24 months-8 weeks    0.56180702  0.463823113  0.659790922 0.0000000
-    ## 12 weeks-10 weeks    0.02391787 -0.101538506  0.149374255 0.9998394
-    ## 4 months-10 weeks    0.13102899  0.050110532  0.211947439 0.0000218
-    ## 6 months-10 weeks    0.05872422 -0.026924125  0.144372572 0.4662558
-    ## 8 months-10 weeks    0.20775815  0.103883082  0.311633223 0.0000000
-    ## 10 months-10 weeks   0.39325815  0.289383082  0.497133223 0.0000000
-    ## 13 months-10 weeks   0.37008454  0.269670442  0.470498640 0.0000000
-    ## 24 months-10 weeks   0.49016934  0.391248709  0.589089964 0.0000000
-    ## 4 months-12 weeks    0.10711111 -0.008792907  0.223015129 0.0974633
-    ## 6 months-12 weeks    0.03480635 -0.084447937  0.154060636 0.9952450
-    ## 8 months-12 weeks    0.18384028  0.050889251  0.316791304 0.0006366
-    ## 10 months-12 weeks   0.36934028  0.236389251  0.502291304 0.0000000
-    ## 13 months-12 weeks   0.34616667  0.215901796  0.476431537 0.0000000
-    ## 24 months-12 weeks   0.46625146  0.337134322  0.595368602 0.0000000
-    ## 6 months-4 months   -0.07230476 -0.143227802 -0.001381722 0.0416292
-    ## 8 months-4 months    0.07672917 -0.015382007  0.168840340 0.1959880
-    ## 10 months-4 months   0.26222917  0.170117993  0.354340340 0.0000000
-    ## 13 months-4 months   0.23905556  0.150865821  0.327245290 0.0000000
-    ## 24 months-4 months   0.35914035  0.272654927  0.445625775 0.0000000
-    ## 8 months-6 months    0.14903393  0.052741085  0.245326772 0.0000634
-    ## 10 months-6 months   0.33453393  0.238241085  0.430826772 0.0000000
-    ## 13 months-6 months   0.31136032  0.218811559  0.403909076 0.0000000
-    ## 24 months-6 months   0.43144511  0.340518923  0.522371303 0.0000000
-    ## 10 months-8 months   0.18550000  0.072687313  0.298312687 0.0000149
-    ## 13 months-8 months   0.16232639  0.052692164  0.271960614 0.0001665
-    ## 24 months-8 months   0.28241118  0.174143171  0.390679197 0.0000000
-    ## 13 months-10 months -0.02317361 -0.132807836  0.086460614 0.9996236
-    ## 24 months-10 months  0.09691118 -0.011356829  0.205179197 0.1233078
-    ## 24 months-13 months  0.12008480  0.015132789  0.225036802 0.0115858
-    ## 
-    ## $genotype2
-    ##               diff         lwr         upr     p adj
-    ## +/--+/+ -0.0125394 -0.04826866  0.02318987 0.6861151
-    ## -/--+/+ -0.1526947 -0.19048349 -0.11490593 0.0000000
-    ## -/--+/- -0.1401553 -0.17833042 -0.10198021 0.0000000
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
+
+#mknzyrseex .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  /* table.margin.left */
+  margin-right: auto;
+  /* table.margin.right */
+  color: #333333;
+  font-size: 16px;
+  /* table.font.size */
+  background-color: #FFFFFF;
+  /* table.background.color */
+  width: auto;
+  /* table.width */
+  border-top-style: solid;
+  /* table.border.top.style */
+  border-top-width: 2px;
+  /* table.border.top.width */
+  border-top-color: #A8A8A8;
+  /* table.border.top.color */
+  border-bottom-style: solid;
+  /* table.border.bottom.style */
+  border-bottom-width: 2px;
+  /* table.border.bottom.width */
+  border-bottom-color: #A8A8A8;
+  /* table.border.bottom.color */
+}
+
+#mknzyrseex .gt_heading {
+  background-color: #FFFFFF;
+  /* heading.background.color */
+  border-bottom-color: #FFFFFF;
+  /* table.background.color */
+  border-left-style: hidden;
+  /* heading.border.lr.style */
+  border-left-width: 1px;
+  /* heading.border.lr.width */
+  border-left-color: #D3D3D3;
+  /* heading.border.lr.color */
+  border-right-style: hidden;
+  /* heading.border.lr.style */
+  border-right-width: 1px;
+  /* heading.border.lr.width */
+  border-right-color: #D3D3D3;
+  /* heading.border.lr.color */
+}
+
+#mknzyrseex .gt_title {
+  color: #333333;
+  font-size: 125%;
+  /* heading.title.font.size */
+  font-weight: initial;
+  /* heading.title.font.weight */
+  padding-top: 4px;
+  /* heading.top.padding - not yet used */
+  padding-bottom: 4px;
+  border-bottom-color: #FFFFFF;
+  /* table.background.color */
+  border-bottom-width: 0;
+}
+
+#mknzyrseex .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  /* heading.subtitle.font.size */
+  font-weight: initial;
+  /* heading.subtitle.font.weight */
+  padding-top: 0;
+  padding-bottom: 4px;
+  /* heading.bottom.padding - not yet used */
+  border-top-color: #FFFFFF;
+  /* table.background.color */
+  border-top-width: 0;
+}
+
+#mknzyrseex .gt_bottom_border {
+  border-bottom-style: solid;
+  /* heading.border.bottom.style */
+  border-bottom-width: 2px;
+  /* heading.border.bottom.width */
+  border-bottom-color: #D3D3D3;
+  /* heading.border.bottom.color */
+}
+
+#mknzyrseex .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#mknzyrseex .gt_col_headings {
+  border-top-style: solid;
+  /* column_labels.border.top.style */
+  border-top-width: 2px;
+  /* column_labels.border.top.width */
+  border-top-color: #D3D3D3;
+  /* column_labels.border.top.color */
+  border-bottom-style: solid;
+  /* column_labels.border.bottom.style */
+  border-bottom-width: 2px;
+  /* column_labels.border.bottom.width */
+  border-bottom-color: #D3D3D3;
+  /* column_labels.border.bottom.color */
+  border-left-style: none;
+  /* column_labels.border.lr.style */
+  border-left-width: 1px;
+  /* column_labels.border.lr.width */
+  border-left-color: #D3D3D3;
+  /* column_labels.border.lr.color */
+  border-right-style: none;
+  /* column_labels.border.lr.style */
+  border-right-width: 1px;
+  /* column_labels.border.lr.width */
+  border-right-color: #D3D3D3;
+  /* column_labels.border.lr.color */
+}
+
+#mknzyrseex .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  /* column_labels.background.color */
+  font-size: 100%;
+  /* column_labels.font.size */
+  font-weight: normal;
+  /* column_labels.font.weight */
+  text-transform: inherit;
+  /* column_labels.text_transform */
+  vertical-align: middle;
+  padding: 5px;
+  margin: 10px;
+  overflow-x: hidden;
+}
+
+#mknzyrseex .gt_sep_right {
+  border-right: 5px solid #FFFFFF;
+}
+
+#mknzyrseex .gt_group_heading {
+  padding: 8px;
+  /* row_group.padding */
+  color: #333333;
+  background-color: #FFFFFF;
+  /* row_group.background.color */
+  font-size: 100%;
+  /* row_group.font.size */
+  font-weight: initial;
+  /* row_group.font.weight */
+  text-transform: inherit;
+  /* row_group.text_transform */
+  border-top-style: solid;
+  /* row_group.border.top.style */
+  border-top-width: 2px;
+  /* row_group.border.top.width */
+  border-top-color: #D3D3D3;
+  /* row_group.border.top.color */
+  border-bottom-style: solid;
+  /* row_group.border.bottom.style */
+  border-bottom-width: 2px;
+  /* row_group.border.bottom.width */
+  border-bottom-color: #D3D3D3;
+  /* row_group.border.bottom.color */
+  border-left-style: none;
+  /* row_group.border.left.style */
+  border-left-width: 1px;
+  /* row_group.border.left.width */
+  border-left-color: #D3D3D3;
+  /* row_group.border.left.color */
+  border-right-style: none;
+  /* row_group.border.right.style */
+  border-right-width: 1px;
+  /* row_group.border.right.width */
+  border-right-color: #D3D3D3;
+  /* row_group.border.right.color */
+  vertical-align: middle;
+}
+
+#mknzyrseex .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  /* row_group.background.color */
+  font-size: 100%;
+  /* row_group.font.size */
+  font-weight: initial;
+  /* row_group.font.weight */
+  border-top-style: solid;
+  /* row_group.border.top.style */
+  border-top-width: 2px;
+  /* row_group.border.top.width */
+  border-top-color: #D3D3D3;
+  /* row_group.border.top.color */
+  border-bottom-style: solid;
+  /* row_group.border.bottom.style */
+  border-bottom-width: 2px;
+  /* row_group.border.bottom.width */
+  border-bottom-color: #D3D3D3;
+  /* row_group.border.bottom.color */
+  vertical-align: middle;
+}
+
+#mknzyrseex .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+  /* row.striping.background_color */
+}
+
+#mknzyrseex .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#mknzyrseex .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#mknzyrseex .gt_row {
+  padding-top: 8px;
+  /* data_row.padding */
+  padding-bottom: 8px;
+  /* data_row.padding */
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  /* table_body.hlines.style */
+  border-top-width: 1px;
+  /* table_body.hlines.width */
+  border-top-color: #D3D3D3;
+  /* table_body.hlines.color */
+  border-left-style: none;
+  /* table_body.vlines.style */
+  border-left-width: 1px;
+  /* table_body.vlines.width */
+  border-left-color: #D3D3D3;
+  /* table_body.vlines.color */
+  border-right-style: none;
+  /* table_body.vlines.style */
+  border-right-width: 1px;
+  /* table_body.vlines.width */
+  border-right-color: #D3D3D3;
+  /* table_body.vlines.color */
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#mknzyrseex .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  /* stub.background.color */
+  font-weight: initial;
+  /* stub.font.weight */
+  text-transform: inherit;
+  /* stub.text_transform */
+  border-right-style: solid;
+  /* stub.border.style */
+  border-right-width: 2px;
+  /* stub.border.width */
+  border-right-color: #D3D3D3;
+  /* stub.border.color */
+  padding-left: 12px;
+}
+
+#mknzyrseex .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  /* summary_row.background.color */
+  text-transform: inherit;
+  /* summary_row.text_transform */
+  padding-top: 8px;
+  /* summary_row.padding */
+  padding-bottom: 8px;
+  /* summary_row.padding */
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#mknzyrseex .gt_first_summary_row {
+  padding-top: 8px;
+  /* summary_row.padding */
+  padding-bottom: 8px;
+  /* summary_row.padding */
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: solid;
+  /* summary_row.border.style */
+  border-top-width: 2px;
+  /* summary_row.border.width */
+  border-top-color: #D3D3D3;
+  /* summary_row.border.color */
+}
+
+#mknzyrseex .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  /* grand_summary_row.background.color */
+  text-transform: inherit;
+  /* grand_summary_row.text_transform */
+  padding-top: 8px;
+  /* grand_summary_row.padding */
+  padding-bottom: 8px;
+  /* grand_summary_row.padding */
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#mknzyrseex .gt_first_grand_summary_row {
+  padding-top: 8px;
+  /* grand_summary_row.padding */
+  padding-bottom: 8px;
+  /* grand_summary_row.padding */
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  /* grand_summary_row.border.style */
+  border-top-width: 6px;
+  /* grand_summary_row.border.width */
+  border-top-color: #D3D3D3;
+  /* grand_summary_row.border.color */
+}
+
+#mknzyrseex .gt_table_body {
+  border-top-style: solid;
+  /* table_body.border.top.style */
+  border-top-width: 2px;
+  /* table_body.border.top.width */
+  border-top-color: #D3D3D3;
+  /* table_body.border.top.color */
+  border-bottom-style: solid;
+  /* table_body.border.bottom.style */
+  border-bottom-width: 2px;
+  /* table_body.border.bottom.width */
+  border-bottom-color: #D3D3D3;
+  /* table_body.border.bottom.color */
+}
+
+#mknzyrseex .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  /* footnotes.background.color */
+  border-bottom-style: none;
+  /* footnotes.border.bottom.style */
+  border-bottom-width: 2px;
+  /* footnotes.border.bottom.width */
+  border-bottom-color: #D3D3D3;
+  /* footnotes.border.bottom.color */
+  border-left-style: none;
+  /* footnotes.border.lr.color */
+  border-left-width: 2px;
+  /* footnotes.border.lr.color */
+  border-left-color: #D3D3D3;
+  /* footnotes.border.lr.color */
+  border-right-style: none;
+  /* footnotes.border.lr.color */
+  border-right-width: 2px;
+  /* footnotes.border.lr.color */
+  border-right-color: #D3D3D3;
+  /* footnotes.border.lr.color */
+}
+
+#mknzyrseex .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  /* footnotes.font.size */
+  padding: 4px;
+  /* footnotes.padding */
+}
+
+#mknzyrseex .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  /* source_notes.background.color */
+  border-bottom-style: none;
+  /* source_notes.border.bottom.style */
+  border-bottom-width: 2px;
+  /* source_notes.border.bottom.width */
+  border-bottom-color: #D3D3D3;
+  /* source_notes.border.bottom.color */
+  border-left-style: none;
+  /* source_notes.border.lr.style */
+  border-left-width: 2px;
+  /* source_notes.border.lr.style */
+  border-left-color: #D3D3D3;
+  /* source_notes.border.lr.style */
+  border-right-style: none;
+  /* source_notes.border.lr.style */
+  border-right-width: 2px;
+  /* source_notes.border.lr.style */
+  border-right-color: #D3D3D3;
+  /* source_notes.border.lr.style */
+}
+
+#mknzyrseex .gt_sourcenote {
+  font-size: 90%;
+  /* source_notes.font.size */
+  padding: 4px;
+  /* source_notes.padding */
+}
+
+#mknzyrseex .gt_left {
+  text-align: left;
+}
+
+#mknzyrseex .gt_center {
+  text-align: center;
+}
+
+#mknzyrseex .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#mknzyrseex .gt_font_normal {
+  font-weight: normal;
+}
+
+#mknzyrseex .gt_font_bold {
+  font-weight: bold;
+}
+
+#mknzyrseex .gt_font_italic {
+  font-style: italic;
+}
+
+#mknzyrseex .gt_super {
+  font-size: 65%;
+}
+
+#mknzyrseex .gt_footnote_marks {
+  font-style: italic;
+  font-size: 65%;
+}
+</style>
+<div id="mknzyrseex" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+  <thead class="gt_header">
+    <tr>
+      <th colspan="4" class="gt_heading gt_title gt_font_normal gt_center" style>Pairwise t-test results within each timepoint. FDR-adj p-value &lt; 0.05</th>
+    </tr>
+    <tr>
+      <th colspan="4" class="gt_heading gt_subtitle gt_font_normal gt_center gt_bottom_border" style></th>
+    </tr>
+  </thead>
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">age</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">comparison_variable</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">genotype_pair</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">padj_format</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr>
+      <td class="gt_row gt_center">6 weeks</td>
+      <td class="gt_row gt_left">length_cm</td>
+      <td class="gt_row gt_center">WT-MUT</td>
+      <td class="gt_row gt_left">6.6e-07</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_center gt_striped">6 weeks</td>
+      <td class="gt_row gt_left gt_striped">length_cm</td>
+      <td class="gt_row gt_center gt_striped">HET-MUT</td>
+      <td class="gt_row gt_left gt_striped">7e-07</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_center">8 weeks</td>
+      <td class="gt_row gt_left">length_cm</td>
+      <td class="gt_row gt_center">WT-MUT</td>
+      <td class="gt_row gt_left">0.00098</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_center gt_striped">8 weeks</td>
+      <td class="gt_row gt_left gt_striped">length_cm</td>
+      <td class="gt_row gt_center gt_striped">HET-MUT</td>
+      <td class="gt_row gt_left gt_striped">0.00023</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_center">10 weeks</td>
+      <td class="gt_row gt_left">length_cm</td>
+      <td class="gt_row gt_center">WT-MUT</td>
+      <td class="gt_row gt_left">8.1e-05</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_center gt_striped">10 weeks</td>
+      <td class="gt_row gt_left gt_striped">length_cm</td>
+      <td class="gt_row gt_center gt_striped">HET-MUT</td>
+      <td class="gt_row gt_left gt_striped">0.00019</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_center">4 months</td>
+      <td class="gt_row gt_left">length_cm</td>
+      <td class="gt_row gt_center">WT-MUT</td>
+      <td class="gt_row gt_left">0.031</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_center gt_striped">4 months</td>
+      <td class="gt_row gt_left gt_striped">length_cm</td>
+      <td class="gt_row gt_center gt_striped">HET-MUT</td>
+      <td class="gt_row gt_left gt_striped">0.014</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_center">6 months</td>
+      <td class="gt_row gt_left">length_cm</td>
+      <td class="gt_row gt_center">WT-MUT</td>
+      <td class="gt_row gt_left">0.0072</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_center gt_striped">10 months</td>
+      <td class="gt_row gt_left gt_striped">length_cm</td>
+      <td class="gt_row gt_center gt_striped">HET-MUT</td>
+      <td class="gt_row gt_left gt_striped">0.0031</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_center">13 months</td>
+      <td class="gt_row gt_left">length_cm</td>
+      <td class="gt_row gt_center">WT-MUT</td>
+      <td class="gt_row gt_left">0.017</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_center gt_striped">6 weeks</td>
+      <td class="gt_row gt_left gt_striped">weight_gr</td>
+      <td class="gt_row gt_center gt_striped">WT-MUT</td>
+      <td class="gt_row gt_left gt_striped">7e-07</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_center">6 weeks</td>
+      <td class="gt_row gt_left">weight_gr</td>
+      <td class="gt_row gt_center">HET-MUT</td>
+      <td class="gt_row gt_left">2.2e-08</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_center gt_striped">8 weeks</td>
+      <td class="gt_row gt_left gt_striped">weight_gr</td>
+      <td class="gt_row gt_center gt_striped">WT-MUT</td>
+      <td class="gt_row gt_left gt_striped">0.00019</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_center">8 weeks</td>
+      <td class="gt_row gt_left">weight_gr</td>
+      <td class="gt_row gt_center">HET-MUT</td>
+      <td class="gt_row gt_left">6.5e-06</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_center gt_striped">10 weeks</td>
+      <td class="gt_row gt_left gt_striped">weight_gr</td>
+      <td class="gt_row gt_center gt_striped">WT-MUT</td>
+      <td class="gt_row gt_left gt_striped">0.00011</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_center">10 weeks</td>
+      <td class="gt_row gt_left">weight_gr</td>
+      <td class="gt_row gt_center">HET-MUT</td>
+      <td class="gt_row gt_left">0.00011</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_center gt_striped">4 months</td>
+      <td class="gt_row gt_left gt_striped">weight_gr</td>
+      <td class="gt_row gt_center gt_striped">HET-MUT</td>
+      <td class="gt_row gt_left gt_striped">0.025</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_center">10 months</td>
+      <td class="gt_row gt_left">weight_gr</td>
+      <td class="gt_row gt_center">HET-MUT</td>
+      <td class="gt_row gt_left">0.00041</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_center gt_striped">13 months</td>
+      <td class="gt_row gt_left gt_striped">weight_gr</td>
+      <td class="gt_row gt_center gt_striped">WT-MUT</td>
+      <td class="gt_row gt_left gt_striped">0.0016</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_center">13 months</td>
+      <td class="gt_row gt_left">weight_gr</td>
+      <td class="gt_row gt_center">HET-MUT</td>
+      <td class="gt_row gt_left">0.017</td>
+    </tr>
+  </tbody>
+  
+  
+</table></div>
 
 ``` r
-plot(tukey_res_w)
+  stats_tab %>% as_tibble() %>%
+  gt() %>%
+  tab_header(title="Pairwise t-test results with each timepoint. All results.")
 ```
 
-![](figure_1_weight_and_length_files/figure-gfm/unnamed-chunk-8-1.png)<!-- -->![](figure_1_weight_and_length_files/figure-gfm/unnamed-chunk-8-2.png)<!-- -->
+<style>html {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
+}
 
-``` r
-# To do:
-# Figure out how to use TukeyHSD to output
-# genotype-pairs results _separately_ for each timepoint.
+#yiufsyedoe .gt_table {
+  display: table;
+  border-collapse: collapse;
+  margin-left: auto;
+  /* table.margin.left */
+  margin-right: auto;
+  /* table.margin.right */
+  color: #333333;
+  font-size: 16px;
+  /* table.font.size */
+  background-color: #FFFFFF;
+  /* table.background.color */
+  width: auto;
+  /* table.width */
+  border-top-style: solid;
+  /* table.border.top.style */
+  border-top-width: 2px;
+  /* table.border.top.width */
+  border-top-color: #A8A8A8;
+  /* table.border.top.color */
+  border-bottom-style: solid;
+  /* table.border.bottom.style */
+  border-bottom-width: 2px;
+  /* table.border.bottom.width */
+  border-bottom-color: #A8A8A8;
+  /* table.border.bottom.color */
+}
 
+#yiufsyedoe .gt_heading {
+  background-color: #FFFFFF;
+  /* heading.background.color */
+  border-bottom-color: #FFFFFF;
+  /* table.background.color */
+  border-left-style: hidden;
+  /* heading.border.lr.style */
+  border-left-width: 1px;
+  /* heading.border.lr.width */
+  border-left-color: #D3D3D3;
+  /* heading.border.lr.color */
+  border-right-style: hidden;
+  /* heading.border.lr.style */
+  border-right-width: 1px;
+  /* heading.border.lr.width */
+  border-right-color: #D3D3D3;
+  /* heading.border.lr.color */
+}
 
-lm_l = lm(length_cm ~ age2 + genotype2, data=tab2)
-summary(lm_l)
-```
+#yiufsyedoe .gt_title {
+  color: #333333;
+  font-size: 125%;
+  /* heading.title.font.size */
+  font-weight: initial;
+  /* heading.title.font.weight */
+  padding-top: 4px;
+  /* heading.top.padding - not yet used */
+  padding-bottom: 4px;
+  border-bottom-color: #FFFFFF;
+  /* table.background.color */
+  border-bottom-width: 0;
+}
 
-    ## 
-    ## Call:
-    ## lm(formula = length_cm ~ age2 + genotype2, data = tab2)
-    ## 
-    ## Residuals:
-    ##      Min       1Q   Median       3Q      Max 
-    ## -0.84000 -0.13818 -0.00812  0.18017  0.67658 
-    ## 
-    ## Coefficients:
-    ##               Estimate Std. Error t value Pr(>|t|)    
-    ## (Intercept)    2.19983    0.05241  41.975  < 2e-16 ***
-    ## age28 weeks    0.42669    0.07126   5.988 8.16e-09 ***
-    ## age210 weeks   0.49939    0.07219   6.918 4.54e-11 ***
-    ## age212 weeks   0.58213    0.10048   5.794 2.26e-08 ***
-    ## age24 months   0.86211    0.05977  14.423  < 2e-16 ***
-    ## age26 months   0.82331    0.06508  12.651  < 2e-16 ***
-    ## age28 months   1.17735    0.08154  14.438  < 2e-16 ***
-    ## age210 months  1.81496    0.08123  22.343  < 2e-16 ***
-    ## age213 months  1.30632    0.07985  16.361  < 2e-16 ***
-    ## age224 months  2.05947    0.07779  26.474  < 2e-16 ***
-    ## genotype2+/-  -0.04167    0.04125  -1.010    0.313    
-    ## genotype2-/-  -0.55852    0.04451 -12.549  < 2e-16 ***
-    ## ---
-    ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
-    ## 
-    ## Residual standard error: 0.2688 on 229 degrees of freedom
-    ##   (4 observations deleted due to missingness)
-    ## Multiple R-squared:  0.8626, Adjusted R-squared:  0.856 
-    ## F-statistic: 130.7 on 11 and 229 DF,  p-value: < 2.2e-16
+#yiufsyedoe .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  /* heading.subtitle.font.size */
+  font-weight: initial;
+  /* heading.subtitle.font.weight */
+  padding-top: 0;
+  padding-bottom: 4px;
+  /* heading.bottom.padding - not yet used */
+  border-top-color: #FFFFFF;
+  /* table.background.color */
+  border-top-width: 0;
+}
 
-``` r
-anova(lm_l)
-```
+#yiufsyedoe .gt_bottom_border {
+  border-bottom-style: solid;
+  /* heading.border.bottom.style */
+  border-bottom-width: 2px;
+  /* heading.border.bottom.width */
+  border-bottom-color: #D3D3D3;
+  /* heading.border.bottom.color */
+}
 
-    ## Analysis of Variance Table
-    ## 
-    ## Response: length_cm
-    ##            Df Sum Sq Mean Sq F value    Pr(>F)    
-    ## age2        9 90.402 10.0446 139.018 < 2.2e-16 ***
-    ## genotype2   2 13.445  6.7226  93.041 < 2.2e-16 ***
-    ## Residuals 229 16.546  0.0723                      
-    ## ---
-    ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+#yiufsyedoe .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
 
-``` r
-aov_l = aov(length_cm ~ age2 + genotype2, data=tab2)
-tukey_res_l = TukeyHSD(aov_l)
-tukey_res_l
-```
+#yiufsyedoe .gt_col_headings {
+  border-top-style: solid;
+  /* column_labels.border.top.style */
+  border-top-width: 2px;
+  /* column_labels.border.top.width */
+  border-top-color: #D3D3D3;
+  /* column_labels.border.top.color */
+  border-bottom-style: solid;
+  /* column_labels.border.bottom.style */
+  border-bottom-width: 2px;
+  /* column_labels.border.bottom.width */
+  border-bottom-color: #D3D3D3;
+  /* column_labels.border.bottom.color */
+  border-left-style: none;
+  /* column_labels.border.lr.style */
+  border-left-width: 1px;
+  /* column_labels.border.lr.width */
+  border-left-color: #D3D3D3;
+  /* column_labels.border.lr.color */
+  border-right-style: none;
+  /* column_labels.border.lr.style */
+  border-right-width: 1px;
+  /* column_labels.border.lr.width */
+  border-right-color: #D3D3D3;
+  /* column_labels.border.lr.color */
+}
 
-    ##   Tukey multiple comparisons of means
-    ##     95% family-wise confidence level
-    ## 
-    ## Fit: aov(formula = length_cm ~ age2 + genotype2, data = tab2)
-    ## 
-    ## $age2
-    ##                             diff         lwr         upr     p adj
-    ## 8 weeks-6 weeks      0.433601190  0.20597720  0.66122518 0.0000002
-    ## 10 weeks-6 weeks     0.521881988  0.29134122  0.75242275 0.0000000
-    ## 12 weeks-6 weeks     0.589031746  0.26803344  0.91003005 0.0000007
-    ## 4 months-6 weeks     0.869017857  0.67811339  1.05992232 0.0000000
-    ## 6 months-6 weeks     0.871407563  0.66459223  1.07822290 0.0000000
-    ## 8 months-6 weeks     1.266580357  1.00738767  1.52577305 0.0000000
-    ## 10 months-6 weeks    1.761955357  1.50276267  2.02114805 0.0000000
-    ## 13 months-6 weeks    1.400025210  1.14611810  1.65393232 0.0000000
-    ## 24 months-6 weeks    2.244511278  1.99976408  2.48925848 0.0000000
-    ## 10 weeks-8 weeks     0.088280797 -0.16233651  0.33889811 0.9816408
-    ## 12 weeks-8 weeks     0.155430556 -0.18027751  0.49113862 0.8990736
-    ## 4 months-8 weeks     0.435416667  0.22069707  0.65013626 0.0000000
-    ## 6 months-8 weeks     0.437806373  0.20882477  0.66678798 0.0000002
-    ## 8 months-8 weeks     0.832979167  0.55577736  1.11018098 0.0000000
-    ## 10 months-8 weeks    1.328354167  1.05115236  1.60555598 0.0000000
-    ## 13 months-8 weeks    0.966424020  0.69415795  1.23869009 0.0000000
-    ## 24 months-8 weeks    1.810910088  1.54716554  2.07465463 0.0000000
-    ## 12 weeks-10 weeks    0.067149758 -0.27054280  0.40484232 0.9997719
-    ## 4 months-10 weeks    0.347135870  0.12932662  0.56494512 0.0000322
-    ## 6 months-10 weeks    0.349525575  0.11764427  0.58140688 0.0001142
-    ## 8 months-10 weeks    0.744698370  0.46509650  1.02430024 0.0000000
-    ## 10 months-10 weeks   1.240073370  0.96047150  1.51967524 0.0000000
-    ## 13 months-10 weeks   0.878143223  0.60343397  1.15285248 0.0000000
-    ## 24 months-10 weeks   1.722629291  1.45636336  1.98889522 0.0000000
-    ## 4 months-12 weeks    0.279986111 -0.03199423  0.59196645 0.1210206
-    ## 6 months-12 weeks    0.282375817 -0.03958661  0.60433824 0.1418710
-    ## 8 months-12 weeks    0.677548611  0.31968261  1.03541461 0.0000003
-    ## 10 months-12 weeks   1.172923611  0.81505761  1.53078961 0.0000000
-    ## 13 months-12 weeks   0.810993464  0.45693691  1.16505002 0.0000000
-    ## 24 months-12 weeks   1.655479532  1.30793326  2.00302581 0.0000000
-    ## 6 months-4 months    0.002389706 -0.19013148  0.19491089 1.0000000
-    ## 8 months-4 months    0.397562500  0.14962566  0.64549934 0.0000278
-    ## 10 months-4 months   0.892937500  0.64500066  1.14087434 0.0000000
-    ## 13 months-4 months   0.531007353  0.28860140  0.77341330 0.0000000
-    ## 24 months-4 months   1.375493421  1.14269949  1.60828736 0.0000000
-    ## 8 months-6 months    0.395172794  0.13478703  0.65555855 0.0000985
-    ## 10 months-6 months   0.890547794  0.63016203  1.15093355 0.0000000
-    ## 13 months-6 months   0.528617647  0.27349275  0.78374255 0.0000000
-    ## 24 months-6 months   1.373103715  1.12709338  1.61911405 0.0000000
-    ## 10 months-8 months   0.495375000  0.19171563  0.79903437 0.0000182
-    ## 13 months-8 months   0.133444853 -0.16571561  0.43260531 0.9182024
-    ## 24 months-8 months   0.977930921  0.68650451  1.26935733 0.0000000
-    ## 13 months-10 months -0.361930147 -0.66109061 -0.06276969 0.0055203
-    ## 24 months-10 months  0.482555921  0.19112951  0.77398233 0.0000125
-    ## 24 months-13 months  0.844486068  0.55775044  1.13122170 0.0000000
-    ## 
-    ## $genotype2
-    ##                diff        lwr         upr     p adj
-    ## +/--+/+ -0.03530065 -0.1317631  0.06116183 0.6639677
-    ## -/--+/+ -0.52642422 -0.6285582 -0.42429021 0.0000000
-    ## -/--+/- -0.49112357 -0.5945658 -0.38768138 0.0000000
+#yiufsyedoe .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  /* column_labels.background.color */
+  font-size: 100%;
+  /* column_labels.font.size */
+  font-weight: normal;
+  /* column_labels.font.weight */
+  text-transform: inherit;
+  /* column_labels.text_transform */
+  vertical-align: middle;
+  padding: 5px;
+  margin: 10px;
+  overflow-x: hidden;
+}
 
-``` r
-plot(tukey_res_l)
-```
+#yiufsyedoe .gt_sep_right {
+  border-right: 5px solid #FFFFFF;
+}
 
-![](figure_1_weight_and_length_files/figure-gfm/unnamed-chunk-8-3.png)<!-- -->![](figure_1_weight_and_length_files/figure-gfm/unnamed-chunk-8-4.png)<!-- -->
+#yiufsyedoe .gt_group_heading {
+  padding: 8px;
+  /* row_group.padding */
+  color: #333333;
+  background-color: #FFFFFF;
+  /* row_group.background.color */
+  font-size: 100%;
+  /* row_group.font.size */
+  font-weight: initial;
+  /* row_group.font.weight */
+  text-transform: inherit;
+  /* row_group.text_transform */
+  border-top-style: solid;
+  /* row_group.border.top.style */
+  border-top-width: 2px;
+  /* row_group.border.top.width */
+  border-top-color: #D3D3D3;
+  /* row_group.border.top.color */
+  border-bottom-style: solid;
+  /* row_group.border.bottom.style */
+  border-bottom-width: 2px;
+  /* row_group.border.bottom.width */
+  border-bottom-color: #D3D3D3;
+  /* row_group.border.bottom.color */
+  border-left-style: none;
+  /* row_group.border.left.style */
+  border-left-width: 1px;
+  /* row_group.border.left.width */
+  border-left-color: #D3D3D3;
+  /* row_group.border.left.color */
+  border-right-style: none;
+  /* row_group.border.right.style */
+  border-right-width: 1px;
+  /* row_group.border.right.width */
+  border-right-color: #D3D3D3;
+  /* row_group.border.right.color */
+  vertical-align: middle;
+}
+
+#yiufsyedoe .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  /* row_group.background.color */
+  font-size: 100%;
+  /* row_group.font.size */
+  font-weight: initial;
+  /* row_group.font.weight */
+  border-top-style: solid;
+  /* row_group.border.top.style */
+  border-top-width: 2px;
+  /* row_group.border.top.width */
+  border-top-color: #D3D3D3;
+  /* row_group.border.top.color */
+  border-bottom-style: solid;
+  /* row_group.border.bottom.style */
+  border-bottom-width: 2px;
+  /* row_group.border.bottom.width */
+  border-bottom-color: #D3D3D3;
+  /* row_group.border.bottom.color */
+  vertical-align: middle;
+}
+
+#yiufsyedoe .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+  /* row.striping.background_color */
+}
+
+#yiufsyedoe .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#yiufsyedoe .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#yiufsyedoe .gt_row {
+  padding-top: 8px;
+  /* data_row.padding */
+  padding-bottom: 8px;
+  /* data_row.padding */
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  /* table_body.hlines.style */
+  border-top-width: 1px;
+  /* table_body.hlines.width */
+  border-top-color: #D3D3D3;
+  /* table_body.hlines.color */
+  border-left-style: none;
+  /* table_body.vlines.style */
+  border-left-width: 1px;
+  /* table_body.vlines.width */
+  border-left-color: #D3D3D3;
+  /* table_body.vlines.color */
+  border-right-style: none;
+  /* table_body.vlines.style */
+  border-right-width: 1px;
+  /* table_body.vlines.width */
+  border-right-color: #D3D3D3;
+  /* table_body.vlines.color */
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#yiufsyedoe .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  /* stub.background.color */
+  font-weight: initial;
+  /* stub.font.weight */
+  text-transform: inherit;
+  /* stub.text_transform */
+  border-right-style: solid;
+  /* stub.border.style */
+  border-right-width: 2px;
+  /* stub.border.width */
+  border-right-color: #D3D3D3;
+  /* stub.border.color */
+  padding-left: 12px;
+}
+
+#yiufsyedoe .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  /* summary_row.background.color */
+  text-transform: inherit;
+  /* summary_row.text_transform */
+  padding-top: 8px;
+  /* summary_row.padding */
+  padding-bottom: 8px;
+  /* summary_row.padding */
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#yiufsyedoe .gt_first_summary_row {
+  padding-top: 8px;
+  /* summary_row.padding */
+  padding-bottom: 8px;
+  /* summary_row.padding */
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: solid;
+  /* summary_row.border.style */
+  border-top-width: 2px;
+  /* summary_row.border.width */
+  border-top-color: #D3D3D3;
+  /* summary_row.border.color */
+}
+
+#yiufsyedoe .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  /* grand_summary_row.background.color */
+  text-transform: inherit;
+  /* grand_summary_row.text_transform */
+  padding-top: 8px;
+  /* grand_summary_row.padding */
+  padding-bottom: 8px;
+  /* grand_summary_row.padding */
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#yiufsyedoe .gt_first_grand_summary_row {
+  padding-top: 8px;
+  /* grand_summary_row.padding */
+  padding-bottom: 8px;
+  /* grand_summary_row.padding */
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  /* grand_summary_row.border.style */
+  border-top-width: 6px;
+  /* grand_summary_row.border.width */
+  border-top-color: #D3D3D3;
+  /* grand_summary_row.border.color */
+}
+
+#yiufsyedoe .gt_table_body {
+  border-top-style: solid;
+  /* table_body.border.top.style */
+  border-top-width: 2px;
+  /* table_body.border.top.width */
+  border-top-color: #D3D3D3;
+  /* table_body.border.top.color */
+  border-bottom-style: solid;
+  /* table_body.border.bottom.style */
+  border-bottom-width: 2px;
+  /* table_body.border.bottom.width */
+  border-bottom-color: #D3D3D3;
+  /* table_body.border.bottom.color */
+}
+
+#yiufsyedoe .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  /* footnotes.background.color */
+  border-bottom-style: none;
+  /* footnotes.border.bottom.style */
+  border-bottom-width: 2px;
+  /* footnotes.border.bottom.width */
+  border-bottom-color: #D3D3D3;
+  /* footnotes.border.bottom.color */
+  border-left-style: none;
+  /* footnotes.border.lr.color */
+  border-left-width: 2px;
+  /* footnotes.border.lr.color */
+  border-left-color: #D3D3D3;
+  /* footnotes.border.lr.color */
+  border-right-style: none;
+  /* footnotes.border.lr.color */
+  border-right-width: 2px;
+  /* footnotes.border.lr.color */
+  border-right-color: #D3D3D3;
+  /* footnotes.border.lr.color */
+}
+
+#yiufsyedoe .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  /* footnotes.font.size */
+  padding: 4px;
+  /* footnotes.padding */
+}
+
+#yiufsyedoe .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  /* source_notes.background.color */
+  border-bottom-style: none;
+  /* source_notes.border.bottom.style */
+  border-bottom-width: 2px;
+  /* source_notes.border.bottom.width */
+  border-bottom-color: #D3D3D3;
+  /* source_notes.border.bottom.color */
+  border-left-style: none;
+  /* source_notes.border.lr.style */
+  border-left-width: 2px;
+  /* source_notes.border.lr.style */
+  border-left-color: #D3D3D3;
+  /* source_notes.border.lr.style */
+  border-right-style: none;
+  /* source_notes.border.lr.style */
+  border-right-width: 2px;
+  /* source_notes.border.lr.style */
+  border-right-color: #D3D3D3;
+  /* source_notes.border.lr.style */
+}
+
+#yiufsyedoe .gt_sourcenote {
+  font-size: 90%;
+  /* source_notes.font.size */
+  padding: 4px;
+  /* source_notes.padding */
+}
+
+#yiufsyedoe .gt_left {
+  text-align: left;
+}
+
+#yiufsyedoe .gt_center {
+  text-align: center;
+}
+
+#yiufsyedoe .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#yiufsyedoe .gt_font_normal {
+  font-weight: normal;
+}
+
+#yiufsyedoe .gt_font_bold {
+  font-weight: bold;
+}
+
+#yiufsyedoe .gt_font_italic {
+  font-style: italic;
+}
+
+#yiufsyedoe .gt_super {
+  font-size: 65%;
+}
+
+#yiufsyedoe .gt_footnote_marks {
+  font-style: italic;
+  font-size: 65%;
+}
+</style>
+<div id="yiufsyedoe" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+  <thead class="gt_header">
+    <tr>
+      <th colspan="15" class="gt_heading gt_title gt_font_normal gt_center" style>Pairwise t-test results with each timepoint. All results.</th>
+    </tr>
+    <tr>
+      <th colspan="15" class="gt_heading gt_subtitle gt_font_normal gt_center gt_bottom_border" style></th>
+    </tr>
+  </thead>
+  <thead class="gt_col_headings">
+    <tr>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">group1</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">group2</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">age</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">comparison_variable</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">effect_size</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">pvalue</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">conf_lower</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">conf_upper</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">sample_size_group1</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">sample_size_group2</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">t_statistic</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">df</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1">padj</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1">genotype_pair</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1">padj_format</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr>
+      <td class="gt_row gt_left">WT</td>
+      <td class="gt_row gt_left">HET</td>
+      <td class="gt_row gt_left">6 weeks</td>
+      <td class="gt_row gt_left">weight_gr</td>
+      <td class="gt_row gt_right">0.01077692</td>
+      <td class="gt_row gt_right">4.323546e-01</td>
+      <td class="gt_row gt_right">-0.0174340506</td>
+      <td class="gt_row gt_right">0.03898790</td>
+      <td class="gt_row gt_center">10</td>
+      <td class="gt_row gt_center">13</td>
+      <td class="gt_row gt_right">0.80344905</td>
+      <td class="gt_row gt_right">17.731454</td>
+      <td class="gt_row gt_right">5.098759e-01</td>
+      <td class="gt_row gt_center">WT-HET</td>
+      <td class="gt_row gt_left">0.51</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left gt_striped">WT</td>
+      <td class="gt_row gt_left gt_striped">MUT</td>
+      <td class="gt_row gt_left gt_striped">6 weeks</td>
+      <td class="gt_row gt_left gt_striped">weight_gr</td>
+      <td class="gt_row gt_right gt_striped">0.12278333</td>
+      <td class="gt_row gt_right gt_striped">4.965021e-08</td>
+      <td class="gt_row gt_right gt_striped">0.0954099997</td>
+      <td class="gt_row gt_right gt_striped">0.15015667</td>
+      <td class="gt_row gt_center gt_striped">10</td>
+      <td class="gt_row gt_center gt_striped">12</td>
+      <td class="gt_row gt_right gt_striped">9.49844560</td>
+      <td class="gt_row gt_right gt_striped">16.218665</td>
+      <td class="gt_row gt_right gt_striped">6.951029e-07</td>
+      <td class="gt_row gt_center gt_striped">WT-MUT</td>
+      <td class="gt_row gt_left gt_striped">7e-07</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">HET</td>
+      <td class="gt_row gt_left">MUT</td>
+      <td class="gt_row gt_left">6 weeks</td>
+      <td class="gt_row gt_left">weight_gr</td>
+      <td class="gt_row gt_right">0.11200641</td>
+      <td class="gt_row gt_right">3.922903e-10</td>
+      <td class="gt_row gt_right">0.0896874483</td>
+      <td class="gt_row gt_right">0.13432537</td>
+      <td class="gt_row gt_center">13</td>
+      <td class="gt_row gt_center">12</td>
+      <td class="gt_row gt_right">10.38399837</td>
+      <td class="gt_row gt_right">22.897953</td>
+      <td class="gt_row gt_right">2.196825e-08</td>
+      <td class="gt_row gt_center">HET-MUT</td>
+      <td class="gt_row gt_left">2.2e-08</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left gt_striped">WT</td>
+      <td class="gt_row gt_left gt_striped">HET</td>
+      <td class="gt_row gt_left gt_striped">6 weeks</td>
+      <td class="gt_row gt_left gt_striped">length_cm</td>
+      <td class="gt_row gt_right gt_striped">0.05346154</td>
+      <td class="gt_row gt_right gt_striped">4.557691e-01</td>
+      <td class="gt_row gt_right gt_striped">-0.0945445594</td>
+      <td class="gt_row gt_right gt_striped">0.20146764</td>
+      <td class="gt_row gt_center gt_striped">10</td>
+      <td class="gt_row gt_center gt_striped">13</td>
+      <td class="gt_row gt_right gt_striped">0.76377988</td>
+      <td class="gt_row gt_right gt_striped">16.520144</td>
+      <td class="gt_row gt_right gt_striped">5.208789e-01</td>
+      <td class="gt_row gt_center gt_striped">WT-HET</td>
+      <td class="gt_row gt_left gt_striped">0.52</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">WT</td>
+      <td class="gt_row gt_left">MUT</td>
+      <td class="gt_row gt_left">6 weeks</td>
+      <td class="gt_row gt_left">length_cm</td>
+      <td class="gt_row gt_right">0.84958333</td>
+      <td class="gt_row gt_right">2.342617e-08</td>
+      <td class="gt_row gt_right">0.6515672544</td>
+      <td class="gt_row gt_right">1.04759941</td>
+      <td class="gt_row gt_center">10</td>
+      <td class="gt_row gt_center">12</td>
+      <td class="gt_row gt_right">8.96310167</td>
+      <td class="gt_row gt_right">19.546689</td>
+      <td class="gt_row gt_right">6.559328e-07</td>
+      <td class="gt_row gt_center">WT-MUT</td>
+      <td class="gt_row gt_left">6.6e-07</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left gt_striped">HET</td>
+      <td class="gt_row gt_left gt_striped">MUT</td>
+      <td class="gt_row gt_left gt_striped">6 weeks</td>
+      <td class="gt_row gt_left gt_striped">length_cm</td>
+      <td class="gt_row gt_right gt_striped">0.79612179</td>
+      <td class="gt_row gt_right gt_striped">4.402406e-08</td>
+      <td class="gt_row gt_right gt_striped">0.6173549529</td>
+      <td class="gt_row gt_right gt_striped">0.97488864</td>
+      <td class="gt_row gt_center gt_striped">13</td>
+      <td class="gt_row gt_center gt_striped">12</td>
+      <td class="gt_row gt_right gt_striped">9.40904388</td>
+      <td class="gt_row gt_right gt_striped">16.693170</td>
+      <td class="gt_row gt_right gt_striped">6.951029e-07</td>
+      <td class="gt_row gt_center gt_striped">HET-MUT</td>
+      <td class="gt_row gt_left gt_striped">7e-07</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">WT</td>
+      <td class="gt_row gt_left">HET</td>
+      <td class="gt_row gt_left">8 weeks</td>
+      <td class="gt_row gt_left">weight_gr</td>
+      <td class="gt_row gt_right">0.01012500</td>
+      <td class="gt_row gt_right">7.593169e-01</td>
+      <td class="gt_row gt_right">-0.0603703185</td>
+      <td class="gt_row gt_right">0.08062032</td>
+      <td class="gt_row gt_center">8</td>
+      <td class="gt_row gt_center">8</td>
+      <td class="gt_row gt_right">0.31358926</td>
+      <td class="gt_row gt_right">11.778521</td>
+      <td class="gt_row gt_right">7.874397e-01</td>
+      <td class="gt_row gt_center">WT-HET</td>
+      <td class="gt_row gt_left">0.79</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left gt_striped">WT</td>
+      <td class="gt_row gt_left gt_striped">MUT</td>
+      <td class="gt_row gt_left gt_striped">8 weeks</td>
+      <td class="gt_row gt_left gt_striped">weight_gr</td>
+      <td class="gt_row gt_right gt_striped">0.20987500</td>
+      <td class="gt_row gt_right gt_striped">3.385485e-05</td>
+      <td class="gt_row gt_right gt_striped">0.1408659109</td>
+      <td class="gt_row gt_right gt_striped">0.27888409</td>
+      <td class="gt_row gt_center gt_striped">8</td>
+      <td class="gt_row gt_center gt_striped">8</td>
+      <td class="gt_row gt_right gt_striped">6.69258251</td>
+      <td class="gt_row gt_right gt_striped">11.016175</td>
+      <td class="gt_row gt_right gt_striped">1.895872e-04</td>
+      <td class="gt_row gt_center gt_striped">WT-MUT</td>
+      <td class="gt_row gt_left gt_striped">0.00019</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">HET</td>
+      <td class="gt_row gt_left">MUT</td>
+      <td class="gt_row gt_left">8 weeks</td>
+      <td class="gt_row gt_left">weight_gr</td>
+      <td class="gt_row gt_right">0.19975000</td>
+      <td class="gt_row gt_right">5.806347e-07</td>
+      <td class="gt_row gt_right">0.1502844146</td>
+      <td class="gt_row gt_right">0.24921559</td>
+      <td class="gt_row gt_center">8</td>
+      <td class="gt_row gt_center">8</td>
+      <td class="gt_row gt_right">8.67107293</td>
+      <td class="gt_row gt_right">13.828652</td>
+      <td class="gt_row gt_right">6.503109e-06</td>
+      <td class="gt_row gt_center">HET-MUT</td>
+      <td class="gt_row gt_left">6.5e-06</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left gt_striped">WT</td>
+      <td class="gt_row gt_left gt_striped">HET</td>
+      <td class="gt_row gt_left gt_striped">8 weeks</td>
+      <td class="gt_row gt_left gt_striped">length_cm</td>
+      <td class="gt_row gt_right gt_striped">-0.11950000</td>
+      <td class="gt_row gt_right gt_striped">5.061317e-01</td>
+      <td class="gt_row gt_right gt_striped">-0.4962426554</td>
+      <td class="gt_row gt_right gt_striped">0.25724266</td>
+      <td class="gt_row gt_center gt_striped">8</td>
+      <td class="gt_row gt_center gt_striped">8</td>
+      <td class="gt_row gt_right gt_striped">-0.68318612</td>
+      <td class="gt_row gt_right gt_striped">13.398681</td>
+      <td class="gt_row gt_right gt_striped">5.557524e-01</td>
+      <td class="gt_row gt_center gt_striped">WT-HET</td>
+      <td class="gt_row gt_left gt_striped">0.56</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">WT</td>
+      <td class="gt_row gt_left">MUT</td>
+      <td class="gt_row gt_left">8 weeks</td>
+      <td class="gt_row gt_left">length_cm</td>
+      <td class="gt_row gt_right">0.99600000</td>
+      <td class="gt_row gt_right">2.263872e-04</td>
+      <td class="gt_row gt_right">0.5624697422</td>
+      <td class="gt_row gt_right">1.42953026</td>
+      <td class="gt_row gt_center">8</td>
+      <td class="gt_row gt_center">8</td>
+      <td class="gt_row gt_right">4.93131059</td>
+      <td class="gt_row gt_right">13.884743</td>
+      <td class="gt_row gt_right">9.752062e-04</td>
+      <td class="gt_row gt_center">WT-MUT</td>
+      <td class="gt_row gt_left">0.00098</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left gt_striped">HET</td>
+      <td class="gt_row gt_left gt_striped">MUT</td>
+      <td class="gt_row gt_left gt_striped">8 weeks</td>
+      <td class="gt_row gt_left gt_striped">length_cm</td>
+      <td class="gt_row gt_right gt_striped">1.11550000</td>
+      <td class="gt_row gt_right gt_striped">4.484663e-05</td>
+      <td class="gt_row gt_right gt_striped">0.7148911472</td>
+      <td class="gt_row gt_right gt_striped">1.51610885</td>
+      <td class="gt_row gt_center gt_striped">8</td>
+      <td class="gt_row gt_center gt_striped">8</td>
+      <td class="gt_row gt_right gt_striped">6.02206054</td>
+      <td class="gt_row gt_right gt_striped">12.863633</td>
+      <td class="gt_row gt_right gt_striped">2.283101e-04</td>
+      <td class="gt_row gt_center gt_striped">HET-MUT</td>
+      <td class="gt_row gt_left gt_striped">0.00023</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">WT</td>
+      <td class="gt_row gt_left">HET</td>
+      <td class="gt_row gt_left">10 weeks</td>
+      <td class="gt_row gt_left">weight_gr</td>
+      <td class="gt_row gt_right">-0.00150000</td>
+      <td class="gt_row gt_right">9.583739e-01</td>
+      <td class="gt_row gt_right">-0.0620734358</td>
+      <td class="gt_row gt_right">0.05907344</td>
+      <td class="gt_row gt_center">8</td>
+      <td class="gt_row gt_center">8</td>
+      <td class="gt_row gt_right">-0.05314225</td>
+      <td class="gt_row gt_right">13.915728</td>
+      <td class="gt_row gt_right">9.583739e-01</td>
+      <td class="gt_row gt_center">WT-HET</td>
+      <td class="gt_row gt_left">0.96</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left gt_striped">WT</td>
+      <td class="gt_row gt_left gt_striped">MUT</td>
+      <td class="gt_row gt_left gt_striped">10 weeks</td>
+      <td class="gt_row gt_left gt_striped">weight_gr</td>
+      <td class="gt_row gt_right gt_striped">0.19621429</td>
+      <td class="gt_row gt_right gt_striped">1.333559e-05</td>
+      <td class="gt_row gt_right gt_striped">0.1343156943</td>
+      <td class="gt_row gt_right gt_striped">0.25811288</td>
+      <td class="gt_row gt_center gt_striped">8</td>
+      <td class="gt_row gt_center gt_striped">7</td>
+      <td class="gt_row gt_right gt_striped">6.87003379</td>
+      <td class="gt_row gt_right gt_striped">12.606143</td>
+      <td class="gt_row gt_right gt_striped">1.066847e-04</td>
+      <td class="gt_row gt_center gt_striped">WT-MUT</td>
+      <td class="gt_row gt_left gt_striped">0.00011</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">HET</td>
+      <td class="gt_row gt_left">MUT</td>
+      <td class="gt_row gt_left">10 weeks</td>
+      <td class="gt_row gt_left">weight_gr</td>
+      <td class="gt_row gt_right">0.19771429</td>
+      <td class="gt_row gt_right">1.607865e-05</td>
+      <td class="gt_row gt_right">0.1336466425</td>
+      <td class="gt_row gt_right">0.26178193</td>
+      <td class="gt_row gt_center">8</td>
+      <td class="gt_row gt_center">7</td>
+      <td class="gt_row gt_right">6.67358109</td>
+      <td class="gt_row gt_right">12.874140</td>
+      <td class="gt_row gt_right">1.125505e-04</td>
+      <td class="gt_row gt_center">HET-MUT</td>
+      <td class="gt_row gt_left">0.00011</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left gt_striped">WT</td>
+      <td class="gt_row gt_left gt_striped">HET</td>
+      <td class="gt_row gt_left gt_striped">10 weeks</td>
+      <td class="gt_row gt_left gt_striped">length_cm</td>
+      <td class="gt_row gt_right gt_striped">0.08350000</td>
+      <td class="gt_row gt_right gt_striped">3.510375e-01</td>
+      <td class="gt_row gt_right gt_striped">-0.1058374696</td>
+      <td class="gt_row gt_right gt_striped">0.27283747</td>
+      <td class="gt_row gt_center gt_striped">8</td>
+      <td class="gt_row gt_center gt_striped">8</td>
+      <td class="gt_row gt_right gt_striped">0.97573771</td>
+      <td class="gt_row gt_right gt_striped">10.549779</td>
+      <td class="gt_row gt_right gt_striped">4.273500e-01</td>
+      <td class="gt_row gt_center gt_striped">WT-HET</td>
+      <td class="gt_row gt_left gt_striped">0.43</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">WT</td>
+      <td class="gt_row gt_left">MUT</td>
+      <td class="gt_row gt_left">10 weeks</td>
+      <td class="gt_row gt_left">length_cm</td>
+      <td class="gt_row gt_right">0.75191071</td>
+      <td class="gt_row gt_right">8.723514e-06</td>
+      <td class="gt_row gt_right">0.5599991990</td>
+      <td class="gt_row gt_right">0.94382223</td>
+      <td class="gt_row gt_center">8</td>
+      <td class="gt_row gt_center">7</td>
+      <td class="gt_row gt_right">8.83750358</td>
+      <td class="gt_row gt_right">9.174596</td>
+      <td class="gt_row gt_right">8.141946e-05</td>
+      <td class="gt_row gt_center">WT-MUT</td>
+      <td class="gt_row gt_left">8.1e-05</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left gt_striped">HET</td>
+      <td class="gt_row gt_left gt_striped">MUT</td>
+      <td class="gt_row gt_left gt_striped">10 weeks</td>
+      <td class="gt_row gt_left gt_striped">length_cm</td>
+      <td class="gt_row gt_right gt_striped">0.66841071</td>
+      <td class="gt_row gt_right gt_striped">3.023609e-05</td>
+      <td class="gt_row gt_right gt_striped">0.4373599257</td>
+      <td class="gt_row gt_right gt_striped">0.89946150</td>
+      <td class="gt_row gt_center gt_striped">8</td>
+      <td class="gt_row gt_center gt_striped">7</td>
+      <td class="gt_row gt_right gt_striped">6.25285860</td>
+      <td class="gt_row gt_right gt_striped">12.937070</td>
+      <td class="gt_row gt_right gt_striped">1.881357e-04</td>
+      <td class="gt_row gt_center gt_striped">HET-MUT</td>
+      <td class="gt_row gt_left gt_striped">0.00019</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">WT</td>
+      <td class="gt_row gt_left">HET</td>
+      <td class="gt_row gt_left">12 weeks</td>
+      <td class="gt_row gt_left">weight_gr</td>
+      <td class="gt_row gt_right">0.05400000</td>
+      <td class="gt_row gt_right">4.370365e-01</td>
+      <td class="gt_row gt_right">-0.1339873597</td>
+      <td class="gt_row gt_right">0.24198736</td>
+      <td class="gt_row gt_center">3</td>
+      <td class="gt_row gt_center">3</td>
+      <td class="gt_row gt_right">0.88748806</td>
+      <td class="gt_row gt_right">3.167037</td>
+      <td class="gt_row gt_right">5.098759e-01</td>
+      <td class="gt_row gt_center">WT-HET</td>
+      <td class="gt_row gt_left">0.51</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left gt_striped">WT</td>
+      <td class="gt_row gt_left gt_striped">MUT</td>
+      <td class="gt_row gt_left gt_striped">12 weeks</td>
+      <td class="gt_row gt_left gt_striped">weight_gr</td>
+      <td class="gt_row gt_right gt_striped">0.25833333</td>
+      <td class="gt_row gt_right gt_striped">2.213631e-02</td>
+      <td class="gt_row gt_right gt_striped">0.0612446532</td>
+      <td class="gt_row gt_right gt_striped">0.45542201</td>
+      <td class="gt_row gt_center gt_striped">3</td>
+      <td class="gt_row gt_center gt_striped">3</td>
+      <td class="gt_row gt_right gt_striped">3.66189868</td>
+      <td class="gt_row gt_right gt_striped">3.938069</td>
+      <td class="gt_row gt_right gt_striped">5.634696e-02</td>
+      <td class="gt_row gt_center gt_striped">WT-MUT</td>
+      <td class="gt_row gt_left gt_striped">0.056</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">HET</td>
+      <td class="gt_row gt_left">MUT</td>
+      <td class="gt_row gt_left">12 weeks</td>
+      <td class="gt_row gt_left">weight_gr</td>
+      <td class="gt_row gt_right">0.20433333</td>
+      <td class="gt_row gt_right">2.783766e-02</td>
+      <td class="gt_row gt_right">0.0392977280</td>
+      <td class="gt_row gt_right">0.36936894</td>
+      <td class="gt_row gt_center">3</td>
+      <td class="gt_row gt_center">3</td>
+      <td class="gt_row gt_right">3.68296061</td>
+      <td class="gt_row gt_right">3.414558</td>
+      <td class="gt_row gt_right">6.449014e-02</td>
+      <td class="gt_row gt_center">HET-MUT</td>
+      <td class="gt_row gt_left">0.064</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left gt_striped">WT</td>
+      <td class="gt_row gt_left gt_striped">HET</td>
+      <td class="gt_row gt_left gt_striped">12 weeks</td>
+      <td class="gt_row gt_left gt_striped">length_cm</td>
+      <td class="gt_row gt_right gt_striped">0.19633333</td>
+      <td class="gt_row gt_right gt_striped">2.981030e-01</td>
+      <td class="gt_row gt_right gt_striped">-0.3798161233</td>
+      <td class="gt_row gt_right gt_striped">0.77248279</td>
+      <td class="gt_row gt_center gt_striped">3</td>
+      <td class="gt_row gt_center gt_striped">3</td>
+      <td class="gt_row gt_right gt_striped">1.35791808</td>
+      <td class="gt_row gt_right gt_striped">2.176574</td>
+      <td class="gt_row gt_right gt_striped">3.794038e-01</td>
+      <td class="gt_row gt_center gt_striped">WT-HET</td>
+      <td class="gt_row gt_left gt_striped">0.38</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">WT</td>
+      <td class="gt_row gt_left">MUT</td>
+      <td class="gt_row gt_left">12 weeks</td>
+      <td class="gt_row gt_left">length_cm</td>
+      <td class="gt_row gt_right">0.79600000</td>
+      <td class="gt_row gt_right">3.092026e-02</td>
+      <td class="gt_row gt_right">0.1233967954</td>
+      <td class="gt_row gt_right">1.46860320</td>
+      <td class="gt_row gt_center">3</td>
+      <td class="gt_row gt_center">3</td>
+      <td class="gt_row gt_right">3.38643016</td>
+      <td class="gt_row gt_right">3.718117</td>
+      <td class="gt_row gt_right">6.659749e-02</td>
+      <td class="gt_row gt_center">WT-MUT</td>
+      <td class="gt_row gt_left">0.067</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left gt_striped">HET</td>
+      <td class="gt_row gt_left gt_striped">MUT</td>
+      <td class="gt_row gt_left gt_striped">12 weeks</td>
+      <td class="gt_row gt_left gt_striped">length_cm</td>
+      <td class="gt_row gt_right gt_striped">0.59966667</td>
+      <td class="gt_row gt_right gt_striped">8.211919e-02</td>
+      <td class="gt_row gt_right gt_striped">-0.1816773439</td>
+      <td class="gt_row gt_right gt_striped">1.38101068</td>
+      <td class="gt_row gt_center gt_striped">3</td>
+      <td class="gt_row gt_center gt_striped">3</td>
+      <td class="gt_row gt_right gt_striped">3.15537321</td>
+      <td class="gt_row gt_right gt_striped">2.100464</td>
+      <td class="gt_row gt_right gt_striped">1.437086e-01</td>
+      <td class="gt_row gt_center gt_striped">HET-MUT</td>
+      <td class="gt_row gt_left gt_striped">0.14</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">WT</td>
+      <td class="gt_row gt_left">HET</td>
+      <td class="gt_row gt_left">4 months</td>
+      <td class="gt_row gt_left">weight_gr</td>
+      <td class="gt_row gt_right">-0.02156250</td>
+      <td class="gt_row gt_right">5.358769e-01</td>
+      <td class="gt_row gt_right">-0.0919068025</td>
+      <td class="gt_row gt_right">0.04878180</td>
+      <td class="gt_row gt_center">16</td>
+      <td class="gt_row gt_center">18</td>
+      <td class="gt_row gt_right">-0.62636294</td>
+      <td class="gt_row gt_right">29.606380</td>
+      <td class="gt_row gt_right">5.662095e-01</td>
+      <td class="gt_row gt_center">WT-HET</td>
+      <td class="gt_row gt_left">0.57</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left gt_striped">WT</td>
+      <td class="gt_row gt_left gt_striped">MUT</td>
+      <td class="gt_row gt_left gt_striped">4 months</td>
+      <td class="gt_row gt_left gt_striped">weight_gr</td>
+      <td class="gt_row gt_right gt_striped">0.07100000</td>
+      <td class="gt_row gt_right gt_striped">5.191514e-02</td>
+      <td class="gt_row gt_right gt_striped">-0.0006281862</td>
+      <td class="gt_row gt_right gt_striped">0.14262819</td>
+      <td class="gt_row gt_center gt_striped">16</td>
+      <td class="gt_row gt_center gt_striped">16</td>
+      <td class="gt_row gt_right gt_striped">2.02483899</td>
+      <td class="gt_row gt_right gt_striped">29.832245</td>
+      <td class="gt_row gt_right gt_striped">1.038303e-01</td>
+      <td class="gt_row gt_center gt_striped">WT-MUT</td>
+      <td class="gt_row gt_left gt_striped">0.1</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">HET</td>
+      <td class="gt_row gt_left">MUT</td>
+      <td class="gt_row gt_left">4 months</td>
+      <td class="gt_row gt_left">weight_gr</td>
+      <td class="gt_row gt_right">0.09256250</td>
+      <td class="gt_row gt_right">8.861220e-03</td>
+      <td class="gt_row gt_right">0.0250430026</td>
+      <td class="gt_row gt_right">0.16008200</td>
+      <td class="gt_row gt_center">18</td>
+      <td class="gt_row gt_center">16</td>
+      <td class="gt_row gt_right">2.79994612</td>
+      <td class="gt_row gt_right">29.950467</td>
+      <td class="gt_row gt_right">2.481142e-02</td>
+      <td class="gt_row gt_center">HET-MUT</td>
+      <td class="gt_row gt_left">0.025</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left gt_striped">WT</td>
+      <td class="gt_row gt_left gt_striped">HET</td>
+      <td class="gt_row gt_left gt_striped">4 months</td>
+      <td class="gt_row gt_left gt_striped">length_cm</td>
+      <td class="gt_row gt_right gt_striped">-0.01475000</td>
+      <td class="gt_row gt_right gt_striped">8.355968e-01</td>
+      <td class="gt_row gt_right gt_striped">-0.1587867998</td>
+      <td class="gt_row gt_right gt_striped">0.12928680</td>
+      <td class="gt_row gt_center gt_striped">16</td>
+      <td class="gt_row gt_center gt_striped">18</td>
+      <td class="gt_row gt_right gt_striped">-0.20939474</td>
+      <td class="gt_row gt_right gt_striped">29.146602</td>
+      <td class="gt_row gt_right gt_striped">8.507895e-01</td>
+      <td class="gt_row gt_center gt_striped">WT-HET</td>
+      <td class="gt_row gt_left gt_striped">0.85</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">WT</td>
+      <td class="gt_row gt_left">MUT</td>
+      <td class="gt_row gt_left">4 months</td>
+      <td class="gt_row gt_left">length_cm</td>
+      <td class="gt_row gt_right">0.20956250</td>
+      <td class="gt_row gt_right">1.166651e-02</td>
+      <td class="gt_row gt_right">0.0502402906</td>
+      <td class="gt_row gt_right">0.36888471</td>
+      <td class="gt_row gt_center">16</td>
+      <td class="gt_row gt_center">16</td>
+      <td class="gt_row gt_right">2.68650606</td>
+      <td class="gt_row gt_right">29.939351</td>
+      <td class="gt_row gt_right">3.111069e-02</td>
+      <td class="gt_row gt_center">WT-MUT</td>
+      <td class="gt_row gt_left">0.031</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left gt_striped">HET</td>
+      <td class="gt_row gt_left gt_striped">MUT</td>
+      <td class="gt_row gt_left gt_striped">4 months</td>
+      <td class="gt_row gt_left gt_striped">length_cm</td>
+      <td class="gt_row gt_right gt_striped">0.22431250</td>
+      <td class="gt_row gt_right gt_striped">4.309750e-03</td>
+      <td class="gt_row gt_right gt_striped">0.0762502074</td>
+      <td class="gt_row gt_right gt_striped">0.37237479</td>
+      <td class="gt_row gt_center gt_striped">18</td>
+      <td class="gt_row gt_center gt_striped">16</td>
+      <td class="gt_row gt_right gt_striped">3.09999575</td>
+      <td class="gt_row gt_right gt_striped">28.680772</td>
+      <td class="gt_row gt_right gt_striped">1.419682e-02</td>
+      <td class="gt_row gt_center gt_striped">HET-MUT</td>
+      <td class="gt_row gt_left gt_striped">0.014</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">WT</td>
+      <td class="gt_row gt_left">HET</td>
+      <td class="gt_row gt_left">6 months</td>
+      <td class="gt_row gt_left">weight_gr</td>
+      <td class="gt_row gt_right">0.03793750</td>
+      <td class="gt_row gt_right">1.583234e-01</td>
+      <td class="gt_row gt_right">-0.0160179132</td>
+      <td class="gt_row gt_right">0.09189291</td>
+      <td class="gt_row gt_center">16</td>
+      <td class="gt_row gt_center">10</td>
+      <td class="gt_row gt_right">1.46372375</td>
+      <td class="gt_row gt_right">20.654357</td>
+      <td class="gt_row gt_right">2.316792e-01</td>
+      <td class="gt_row gt_center">WT-HET</td>
+      <td class="gt_row gt_left">0.23</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left gt_striped">WT</td>
+      <td class="gt_row gt_left gt_striped">MUT</td>
+      <td class="gt_row gt_left gt_striped">6 months</td>
+      <td class="gt_row gt_left gt_striped">weight_gr</td>
+      <td class="gt_row gt_right gt_striped">0.06638194</td>
+      <td class="gt_row gt_right gt_striped">2.347196e-02</td>
+      <td class="gt_row gt_right gt_striped">0.0098278344</td>
+      <td class="gt_row gt_right gt_striped">0.12293605</td>
+      <td class="gt_row gt_center gt_striped">16</td>
+      <td class="gt_row gt_center gt_striped">9</td>
+      <td class="gt_row gt_right gt_striped">2.43268347</td>
+      <td class="gt_row gt_right gt_striped">22.249575</td>
+      <td class="gt_row gt_right gt_striped">5.714911e-02</td>
+      <td class="gt_row gt_center gt_striped">WT-MUT</td>
+      <td class="gt_row gt_left gt_striped">0.057</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">HET</td>
+      <td class="gt_row gt_left">MUT</td>
+      <td class="gt_row gt_left">6 months</td>
+      <td class="gt_row gt_left">weight_gr</td>
+      <td class="gt_row gt_right">0.02844444</td>
+      <td class="gt_row gt_right">1.289009e-01</td>
+      <td class="gt_row gt_right">-0.0092367045</td>
+      <td class="gt_row gt_right">0.06612559</td>
+      <td class="gt_row gt_center">10</td>
+      <td class="gt_row gt_center">9</td>
+      <td class="gt_row gt_right">1.60295190</td>
+      <td class="gt_row gt_right">15.675714</td>
+      <td class="gt_row gt_right">2.005126e-01</td>
+      <td class="gt_row gt_center">HET-MUT</td>
+      <td class="gt_row gt_left">0.2</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left gt_striped">WT</td>
+      <td class="gt_row gt_left gt_striped">HET</td>
+      <td class="gt_row gt_left gt_striped">6 months</td>
+      <td class="gt_row gt_left gt_striped">length_cm</td>
+      <td class="gt_row gt_right gt_striped">0.09984722</td>
+      <td class="gt_row gt_right gt_striped">1.229148e-01</td>
+      <td class="gt_row gt_right gt_striped">-0.0292046357</td>
+      <td class="gt_row gt_right gt_striped">0.22889908</td>
+      <td class="gt_row gt_center gt_striped">16</td>
+      <td class="gt_row gt_center gt_striped">10</td>
+      <td class="gt_row gt_right gt_striped">1.60365310</td>
+      <td class="gt_row gt_right gt_striped">22.214851</td>
+      <td class="gt_row gt_right gt_striped">1.966637e-01</td>
+      <td class="gt_row gt_center gt_striped">WT-HET</td>
+      <td class="gt_row gt_left gt_striped">0.2</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">WT</td>
+      <td class="gt_row gt_left">MUT</td>
+      <td class="gt_row gt_left">6 months</td>
+      <td class="gt_row gt_left">length_cm</td>
+      <td class="gt_row gt_right">0.27929167</td>
+      <td class="gt_row gt_right">2.061703e-03</td>
+      <td class="gt_row gt_right">0.1170518134</td>
+      <td class="gt_row gt_right">0.44153152</td>
+      <td class="gt_row gt_center">16</td>
+      <td class="gt_row gt_center">9</td>
+      <td class="gt_row gt_right">3.63216358</td>
+      <td class="gt_row gt_right">16.989487</td>
+      <td class="gt_row gt_right">7.215960e-03</td>
+      <td class="gt_row gt_center">WT-MUT</td>
+      <td class="gt_row gt_left">0.0072</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left gt_striped">HET</td>
+      <td class="gt_row gt_left gt_striped">MUT</td>
+      <td class="gt_row gt_left gt_striped">6 months</td>
+      <td class="gt_row gt_left gt_striped">length_cm</td>
+      <td class="gt_row gt_right gt_striped">0.17944444</td>
+      <td class="gt_row gt_right gt_striped">2.879024e-02</td>
+      <td class="gt_row gt_right gt_striped">0.0214680704</td>
+      <td class="gt_row gt_right gt_striped">0.33742082</td>
+      <td class="gt_row gt_center gt_striped">10</td>
+      <td class="gt_row gt_center gt_striped">9</td>
+      <td class="gt_row gt_right gt_striped">2.43583025</td>
+      <td class="gt_row gt_right gt_striped">14.025807</td>
+      <td class="gt_row gt_right gt_striped">6.449014e-02</td>
+      <td class="gt_row gt_center gt_striped">HET-MUT</td>
+      <td class="gt_row gt_left gt_striped">0.064</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">WT</td>
+      <td class="gt_row gt_left">HET</td>
+      <td class="gt_row gt_left">8 months</td>
+      <td class="gt_row gt_left">weight_gr</td>
+      <td class="gt_row gt_right">0.07537500</td>
+      <td class="gt_row gt_right">1.654852e-01</td>
+      <td class="gt_row gt_right">-0.0367696512</td>
+      <td class="gt_row gt_right">0.18751965</td>
+      <td class="gt_row gt_center">8</td>
+      <td class="gt_row gt_center">5</td>
+      <td class="gt_row gt_right">1.49422475</td>
+      <td class="gt_row gt_right">10.168584</td>
+      <td class="gt_row gt_right">2.316792e-01</td>
+      <td class="gt_row gt_center">WT-HET</td>
+      <td class="gt_row gt_left">0.23</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left gt_striped">WT</td>
+      <td class="gt_row gt_left gt_striped">MUT</td>
+      <td class="gt_row gt_left gt_striped">8 months</td>
+      <td class="gt_row gt_left gt_striped">weight_gr</td>
+      <td class="gt_row gt_right gt_striped">0.15870833</td>
+      <td class="gt_row gt_right gt_striped">6.287145e-02</td>
+      <td class="gt_row gt_right gt_striped">-0.0121737068</td>
+      <td class="gt_row gt_right gt_striped">0.32959037</td>
+      <td class="gt_row gt_center gt_striped">8</td>
+      <td class="gt_row gt_center gt_striped">3</td>
+      <td class="gt_row gt_right gt_striped">2.34698522</td>
+      <td class="gt_row gt_right gt_striped">5.303121</td>
+      <td class="gt_row gt_right gt_striped">1.173600e-01</td>
+      <td class="gt_row gt_center gt_striped">WT-MUT</td>
+      <td class="gt_row gt_left gt_striped">0.12</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">HET</td>
+      <td class="gt_row gt_left">MUT</td>
+      <td class="gt_row gt_left">8 months</td>
+      <td class="gt_row gt_left">weight_gr</td>
+      <td class="gt_row gt_right">0.08333333</td>
+      <td class="gt_row gt_right">2.386006e-01</td>
+      <td class="gt_row gt_right">-0.0992560170</td>
+      <td class="gt_row gt_right">0.26592268</td>
+      <td class="gt_row gt_center">5</td>
+      <td class="gt_row gt_center">3</td>
+      <td class="gt_row gt_right">1.47805620</td>
+      <td class="gt_row gt_right">2.910506</td>
+      <td class="gt_row gt_right">3.181342e-01</td>
+      <td class="gt_row gt_center">HET-MUT</td>
+      <td class="gt_row gt_left">0.32</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left gt_striped">WT</td>
+      <td class="gt_row gt_left gt_striped">HET</td>
+      <td class="gt_row gt_left gt_striped">8 months</td>
+      <td class="gt_row gt_left gt_striped">length_cm</td>
+      <td class="gt_row gt_right gt_striped">0.05340000</td>
+      <td class="gt_row gt_right gt_striped">5.306760e-01</td>
+      <td class="gt_row gt_right gt_striped">-0.1289292816</td>
+      <td class="gt_row gt_right gt_striped">0.23572928</td>
+      <td class="gt_row gt_center gt_striped">8</td>
+      <td class="gt_row gt_center gt_striped">5</td>
+      <td class="gt_row gt_right gt_striped">0.64835024</td>
+      <td class="gt_row gt_right gt_striped">10.504039</td>
+      <td class="gt_row gt_right gt_striped">5.662095e-01</td>
+      <td class="gt_row gt_center gt_striped">WT-HET</td>
+      <td class="gt_row gt_left gt_striped">0.57</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">WT</td>
+      <td class="gt_row gt_left">MUT</td>
+      <td class="gt_row gt_left">8 months</td>
+      <td class="gt_row gt_left">length_cm</td>
+      <td class="gt_row gt_right">0.41000000</td>
+      <td class="gt_row gt_right">3.698248e-02</td>
+      <td class="gt_row gt_right">0.0437728089</td>
+      <td class="gt_row gt_right">0.77622719</td>
+      <td class="gt_row gt_center">8</td>
+      <td class="gt_row gt_center">3</td>
+      <td class="gt_row gt_right">3.34985666</td>
+      <td class="gt_row gt_right">3.373257</td>
+      <td class="gt_row gt_right">7.670441e-02</td>
+      <td class="gt_row gt_center">WT-MUT</td>
+      <td class="gt_row gt_left">0.077</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left gt_striped">HET</td>
+      <td class="gt_row gt_left gt_striped">MUT</td>
+      <td class="gt_row gt_left gt_striped">8 months</td>
+      <td class="gt_row gt_left gt_striped">length_cm</td>
+      <td class="gt_row gt_right gt_striped">0.35660000</td>
+      <td class="gt_row gt_right gt_striped">5.618708e-02</td>
+      <td class="gt_row gt_right gt_striped">-0.0171056053</td>
+      <td class="gt_row gt_right gt_striped">0.73030561</td>
+      <td class="gt_row gt_center gt_striped">5</td>
+      <td class="gt_row gt_center gt_striped">3</td>
+      <td class="gt_row gt_right gt_striped">2.95649267</td>
+      <td class="gt_row gt_right gt_striped">3.150185</td>
+      <td class="gt_row gt_right gt_striped">1.084992e-01</td>
+      <td class="gt_row gt_center gt_striped">HET-MUT</td>
+      <td class="gt_row gt_left gt_striped">0.11</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">WT</td>
+      <td class="gt_row gt_left">HET</td>
+      <td class="gt_row gt_left">10 months</td>
+      <td class="gt_row gt_left">weight_gr</td>
+      <td class="gt_row gt_right">-0.20850000</td>
+      <td class="gt_row gt_right">1.424807e-01</td>
+      <td class="gt_row gt_right">-0.5681511396</td>
+      <td class="gt_row gt_right">0.15115114</td>
+      <td class="gt_row gt_center">3</td>
+      <td class="gt_row gt_center">6</td>
+      <td class="gt_row gt_right">-2.18044005</td>
+      <td class="gt_row gt_right">2.335699</td>
+      <td class="gt_row gt_right">2.156465e-01</td>
+      <td class="gt_row gt_center">WT-HET</td>
+      <td class="gt_row gt_left">0.22</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left gt_striped">WT</td>
+      <td class="gt_row gt_left gt_striped">MUT</td>
+      <td class="gt_row gt_left gt_striped">10 months</td>
+      <td class="gt_row gt_left gt_striped">weight_gr</td>
+      <td class="gt_row gt_right gt_striped">0.25819048</td>
+      <td class="gt_row gt_right gt_striped">8.115582e-02</td>
+      <td class="gt_row gt_right gt_striped">-0.0519209124</td>
+      <td class="gt_row gt_right gt_striped">0.56830186</td>
+      <td class="gt_row gt_center gt_striped">3</td>
+      <td class="gt_row gt_center gt_striped">7</td>
+      <td class="gt_row gt_right gt_striped">2.35427185</td>
+      <td class="gt_row gt_right gt_striped">3.823578</td>
+      <td class="gt_row gt_right gt_striped">1.437086e-01</td>
+      <td class="gt_row gt_center gt_striped">WT-MUT</td>
+      <td class="gt_row gt_left gt_striped">0.14</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">HET</td>
+      <td class="gt_row gt_left">MUT</td>
+      <td class="gt_row gt_left">10 months</td>
+      <td class="gt_row gt_left">weight_gr</td>
+      <td class="gt_row gt_right">0.46669048</td>
+      <td class="gt_row gt_right">8.754234e-05</td>
+      <td class="gt_row gt_right">0.3165660983</td>
+      <td class="gt_row gt_right">0.61681485</td>
+      <td class="gt_row gt_center">6</td>
+      <td class="gt_row gt_center">7</td>
+      <td class="gt_row gt_right">7.14070157</td>
+      <td class="gt_row gt_right">8.183986</td>
+      <td class="gt_row gt_right">4.085309e-04</td>
+      <td class="gt_row gt_center">HET-MUT</td>
+      <td class="gt_row gt_left">0.00041</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left gt_striped">WT</td>
+      <td class="gt_row gt_left gt_striped">HET</td>
+      <td class="gt_row gt_left gt_striped">10 months</td>
+      <td class="gt_row gt_left gt_striped">length_cm</td>
+      <td class="gt_row gt_right gt_striped">-0.20783333</td>
+      <td class="gt_row gt_right gt_striped">4.794465e-01</td>
+      <td class="gt_row gt_right gt_striped">-1.0467343138</td>
+      <td class="gt_row gt_right gt_striped">0.63106765</td>
+      <td class="gt_row gt_center gt_striped">3</td>
+      <td class="gt_row gt_center gt_striped">6</td>
+      <td class="gt_row gt_right gt_striped">-0.81088645</td>
+      <td class="gt_row gt_right gt_striped">2.859050</td>
+      <td class="gt_row gt_right gt_striped">5.369801e-01</td>
+      <td class="gt_row gt_center gt_striped">WT-HET</td>
+      <td class="gt_row gt_left gt_striped">0.54</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">WT</td>
+      <td class="gt_row gt_left">MUT</td>
+      <td class="gt_row gt_left">10 months</td>
+      <td class="gt_row gt_left">length_cm</td>
+      <td class="gt_row gt_right">0.47647619</td>
+      <td class="gt_row gt_right">1.641646e-01</td>
+      <td class="gt_row gt_right">-0.3597144025</td>
+      <td class="gt_row gt_right">1.31266678</td>
+      <td class="gt_row gt_center">3</td>
+      <td class="gt_row gt_center">7</td>
+      <td class="gt_row gt_right">1.85658902</td>
+      <td class="gt_row gt_right">2.880856</td>
+      <td class="gt_row gt_right">2.316792e-01</td>
+      <td class="gt_row gt_center">WT-MUT</td>
+      <td class="gt_row gt_left">0.23</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left gt_striped">HET</td>
+      <td class="gt_row gt_left gt_striped">MUT</td>
+      <td class="gt_row gt_left gt_striped">10 months</td>
+      <td class="gt_row gt_left gt_striped">length_cm</td>
+      <td class="gt_row gt_right gt_striped">0.68430952</td>
+      <td class="gt_row gt_right gt_striped">8.405781e-04</td>
+      <td class="gt_row gt_right gt_striped">0.3532353946</td>
+      <td class="gt_row gt_right gt_striped">1.01538365</td>
+      <td class="gt_row gt_center gt_striped">6</td>
+      <td class="gt_row gt_center gt_striped">7</td>
+      <td class="gt_row gt_right gt_striped">4.55318159</td>
+      <td class="gt_row gt_right gt_striped">10.923641</td>
+      <td class="gt_row gt_right gt_striped">3.138158e-03</td>
+      <td class="gt_row gt_center gt_striped">HET-MUT</td>
+      <td class="gt_row gt_left gt_striped">0.0031</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">WT</td>
+      <td class="gt_row gt_left">HET</td>
+      <td class="gt_row gt_left">13 months</td>
+      <td class="gt_row gt_left">weight_gr</td>
+      <td class="gt_row gt_right">0.10850000</td>
+      <td class="gt_row gt_right">9.086120e-02</td>
+      <td class="gt_row gt_right">-0.0200935794</td>
+      <td class="gt_row gt_right">0.23709358</td>
+      <td class="gt_row gt_center">8</td>
+      <td class="gt_row gt_center">6</td>
+      <td class="gt_row gt_right">1.83883213</td>
+      <td class="gt_row gt_right">11.972238</td>
+      <td class="gt_row gt_right">1.541887e-01</td>
+      <td class="gt_row gt_center">WT-HET</td>
+      <td class="gt_row gt_left">0.15</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left gt_striped">WT</td>
+      <td class="gt_row gt_left gt_striped">MUT</td>
+      <td class="gt_row gt_left gt_striped">13 months</td>
+      <td class="gt_row gt_left gt_striped">weight_gr</td>
+      <td class="gt_row gt_right gt_striped">0.27425000</td>
+      <td class="gt_row gt_right gt_striped">4.012757e-04</td>
+      <td class="gt_row gt_right gt_striped">0.1578059773</td>
+      <td class="gt_row gt_right gt_striped">0.39069402</td>
+      <td class="gt_row gt_center gt_striped">8</td>
+      <td class="gt_row gt_center gt_striped">4</td>
+      <td class="gt_row gt_right gt_striped">5.26968725</td>
+      <td class="gt_row gt_right gt_striped">9.701685</td>
+      <td class="gt_row gt_right gt_striped">1.605103e-03</td>
+      <td class="gt_row gt_center gt_striped">WT-MUT</td>
+      <td class="gt_row gt_left gt_striped">0.0016</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">HET</td>
+      <td class="gt_row gt_left">MUT</td>
+      <td class="gt_row gt_left">13 months</td>
+      <td class="gt_row gt_left">weight_gr</td>
+      <td class="gt_row gt_right">0.16575000</td>
+      <td class="gt_row gt_right">5.924125e-03</td>
+      <td class="gt_row gt_right">0.0631895484</td>
+      <td class="gt_row gt_right">0.26831045</td>
+      <td class="gt_row gt_center">6</td>
+      <td class="gt_row gt_center">4</td>
+      <td class="gt_row gt_right">3.74114818</td>
+      <td class="gt_row gt_right">7.827213</td>
+      <td class="gt_row gt_right">1.746058e-02</td>
+      <td class="gt_row gt_center">HET-MUT</td>
+      <td class="gt_row gt_left">0.017</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left gt_striped">WT</td>
+      <td class="gt_row gt_left gt_striped">HET</td>
+      <td class="gt_row gt_left gt_striped">13 months</td>
+      <td class="gt_row gt_left gt_striped">length_cm</td>
+      <td class="gt_row gt_right gt_striped">0.22470833</td>
+      <td class="gt_row gt_right gt_striped">1.008492e-01</td>
+      <td class="gt_row gt_right gt_striped">-0.0543979310</td>
+      <td class="gt_row gt_right gt_striped">0.50381460</td>
+      <td class="gt_row gt_center gt_striped">8</td>
+      <td class="gt_row gt_center gt_striped">6</td>
+      <td class="gt_row gt_right gt_striped">1.84680359</td>
+      <td class="gt_row gt_right gt_striped">8.250321</td>
+      <td class="gt_row gt_right gt_striped">1.661045e-01</td>
+      <td class="gt_row gt_center gt_striped">WT-HET</td>
+      <td class="gt_row gt_left gt_striped">0.17</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">WT</td>
+      <td class="gt_row gt_left">MUT</td>
+      <td class="gt_row gt_left">13 months</td>
+      <td class="gt_row gt_left">length_cm</td>
+      <td class="gt_row gt_right">0.34670833</td>
+      <td class="gt_row gt_right">5.701559e-03</td>
+      <td class="gt_row gt_right">0.1416316407</td>
+      <td class="gt_row gt_right">0.55178503</td>
+      <td class="gt_row gt_center">8</td>
+      <td class="gt_row gt_center">4</td>
+      <td class="gt_row gt_right">4.07433508</td>
+      <td class="gt_row gt_right">6.404260</td>
+      <td class="gt_row gt_right">1.746058e-02</td>
+      <td class="gt_row gt_center">WT-MUT</td>
+      <td class="gt_row gt_left">0.017</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left gt_striped">HET</td>
+      <td class="gt_row gt_left gt_striped">MUT</td>
+      <td class="gt_row gt_left gt_striped">13 months</td>
+      <td class="gt_row gt_left gt_striped">length_cm</td>
+      <td class="gt_row gt_right gt_striped">0.12200000</td>
+      <td class="gt_row gt_right gt_striped">3.468120e-01</td>
+      <td class="gt_row gt_right gt_striped">-0.1644267529</td>
+      <td class="gt_row gt_right gt_striped">0.40842675</td>
+      <td class="gt_row gt_center gt_striped">6</td>
+      <td class="gt_row gt_center gt_striped">4</td>
+      <td class="gt_row gt_right gt_striped">1.00916475</td>
+      <td class="gt_row gt_right gt_striped">6.932824</td>
+      <td class="gt_row gt_right gt_striped">4.273500e-01</td>
+      <td class="gt_row gt_center gt_striped">HET-MUT</td>
+      <td class="gt_row gt_left gt_striped">0.43</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">WT</td>
+      <td class="gt_row gt_left">HET</td>
+      <td class="gt_row gt_left">24 months</td>
+      <td class="gt_row gt_left">weight_gr</td>
+      <td class="gt_row gt_right">0.08396667</td>
+      <td class="gt_row gt_right">2.453113e-01</td>
+      <td class="gt_row gt_right">-0.0632879921</td>
+      <td class="gt_row gt_right">0.23122133</td>
+      <td class="gt_row gt_center">9</td>
+      <td class="gt_row gt_center">10</td>
+      <td class="gt_row gt_right">1.20372012</td>
+      <td class="gt_row gt_right">16.875993</td>
+      <td class="gt_row gt_right">3.194751e-01</td>
+      <td class="gt_row gt_center">WT-HET</td>
+      <td class="gt_row gt_left">0.32</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left gt_striped">WT</td>
+      <td class="gt_row gt_left gt_striped">MUT</td>
+      <td class="gt_row gt_left gt_striped">24 months</td>
+      <td class="gt_row gt_left gt_striped">weight_gr</td>
+      <td class="gt_row gt_right gt_striped">NA</td>
+      <td class="gt_row gt_right gt_striped">NA</td>
+      <td class="gt_row gt_right gt_striped">NA</td>
+      <td class="gt_row gt_right gt_striped">NA</td>
+      <td class="gt_row gt_center gt_striped">9</td>
+      <td class="gt_row gt_center gt_striped">0</td>
+      <td class="gt_row gt_right gt_striped">NA</td>
+      <td class="gt_row gt_right gt_striped">NA</td>
+      <td class="gt_row gt_right gt_striped">NA</td>
+      <td class="gt_row gt_center gt_striped">WT-MUT</td>
+      <td class="gt_row gt_left gt_striped">NA</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">HET</td>
+      <td class="gt_row gt_left">MUT</td>
+      <td class="gt_row gt_left">24 months</td>
+      <td class="gt_row gt_left">weight_gr</td>
+      <td class="gt_row gt_right">NA</td>
+      <td class="gt_row gt_right">NA</td>
+      <td class="gt_row gt_right">NA</td>
+      <td class="gt_row gt_right">NA</td>
+      <td class="gt_row gt_center">10</td>
+      <td class="gt_row gt_center">0</td>
+      <td class="gt_row gt_right">NA</td>
+      <td class="gt_row gt_right">NA</td>
+      <td class="gt_row gt_right">NA</td>
+      <td class="gt_row gt_center">HET-MUT</td>
+      <td class="gt_row gt_left">NA</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left gt_striped">WT</td>
+      <td class="gt_row gt_left gt_striped">HET</td>
+      <td class="gt_row gt_left gt_striped">24 months</td>
+      <td class="gt_row gt_left gt_striped">length_cm</td>
+      <td class="gt_row gt_right gt_striped">0.19035556</td>
+      <td class="gt_row gt_right gt_striped">2.000748e-01</td>
+      <td class="gt_row gt_right gt_striped">-0.1112864647</td>
+      <td class="gt_row gt_right gt_striped">0.49199758</td>
+      <td class="gt_row gt_center gt_striped">9</td>
+      <td class="gt_row gt_center gt_striped">10</td>
+      <td class="gt_row gt_right gt_striped">1.33508832</td>
+      <td class="gt_row gt_right gt_striped">16.409563</td>
+      <td class="gt_row gt_right gt_striped">2.732729e-01</td>
+      <td class="gt_row gt_center gt_striped">WT-HET</td>
+      <td class="gt_row gt_left gt_striped">0.27</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left">WT</td>
+      <td class="gt_row gt_left">MUT</td>
+      <td class="gt_row gt_left">24 months</td>
+      <td class="gt_row gt_left">length_cm</td>
+      <td class="gt_row gt_right">NA</td>
+      <td class="gt_row gt_right">NA</td>
+      <td class="gt_row gt_right">NA</td>
+      <td class="gt_row gt_right">NA</td>
+      <td class="gt_row gt_center">9</td>
+      <td class="gt_row gt_center">0</td>
+      <td class="gt_row gt_right">NA</td>
+      <td class="gt_row gt_right">NA</td>
+      <td class="gt_row gt_right">NA</td>
+      <td class="gt_row gt_center">WT-MUT</td>
+      <td class="gt_row gt_left">NA</td>
+    </tr>
+    <tr>
+      <td class="gt_row gt_left gt_striped">HET</td>
+      <td class="gt_row gt_left gt_striped">MUT</td>
+      <td class="gt_row gt_left gt_striped">24 months</td>
+      <td class="gt_row gt_left gt_striped">length_cm</td>
+      <td class="gt_row gt_right gt_striped">NA</td>
+      <td class="gt_row gt_right gt_striped">NA</td>
+      <td class="gt_row gt_right gt_striped">NA</td>
+      <td class="gt_row gt_right gt_striped">NA</td>
+      <td class="gt_row gt_center gt_striped">10</td>
+      <td class="gt_row gt_center gt_striped">0</td>
+      <td class="gt_row gt_right gt_striped">NA</td>
+      <td class="gt_row gt_right gt_striped">NA</td>
+      <td class="gt_row gt_right gt_striped">NA</td>
+      <td class="gt_row gt_center gt_striped">HET-MUT</td>
+      <td class="gt_row gt_left gt_striped">NA</td>
+    </tr>
+  </tbody>
+  
+  
+</table></div>

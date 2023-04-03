@@ -1,5 +1,5 @@
 ---
-title: "figure 1A, 1B - weight and length"
+title: "figure 1 - weight and length"
 author: "Bradley Demarest"
 date: '2023-03-03'
 output: github_document
@@ -257,8 +257,10 @@ print(p2_p3)
 
 ```
 
-```{r}
-# Statistics. Use 'tab2' data set!!
+
+```{r anova-with-tukeyhsd, eval=FALSE, include=FALSE}
+# Statistics. Use 'tab2' data set!! 
+# (tab2 has some older female fish removed, and other labelling differences.)
 # 1. Do ANOVA for weight, length ~ age + genotype
 # 2. Possibly do pairwise t-tests for genotypes at each timepoint.
 
@@ -293,22 +295,27 @@ plot(tukey_res_l)
 
 
 
-```{r pairwise-t-tests, eval=FALSE, include=FALSE}
+```{r pairwise-t-tests}
 # Example code for pairwise t-test (wt-mut, het-mut, wt-het) for
 # each timepoint.
 
-# Hold on this, pending anova / TukeyHSD results.
+# (1) Using Anova + TukeyHSD does not allow us to choose only the comparisons
+#     of interest. For example we want 3 pairwise genotype comparison _within_
+#     each timepoint.
+# (2) Instead we will stick with previous method of running selected pairwise
+#     t-tests, combined with FDR-corrected p-values.
+# (3) Problem remaining -- How to correct 95% conf intervals for multiple
+#     comparisons? `multcomp` package may have Tukey-stype 'family-wise' 
+#     correction for confidence intervals.
 
-# copied from ultrasound proj.
-#------ T-tests for non-normalized dotplots 7 variables, 2 batches.
+
 
 comp_tab = data.table(group1=rep(c("WT", "WT", "HET"), times=2),
                       group2=rep(c("HET", "MUT", "MUT"), times=2),
-                         variable=rep(c("weight_gr", "length_cm"), each=3))
+                      variable=rep(c("weight_gr", "length_cm"), each=3),
+                      age=rep(levels(tab2$age2), each=6))
 
-comp_tab = rbind(comp_tab, comp_tab)
-
-comp_tab[, age:=rep(levels(tab2$age2), each=6)]
+table(comp_tab$age, comp_tab$variable)
 
 
 
@@ -320,13 +327,13 @@ for (i in seq(nrow(comp_tab))) {
   tmp_group2 = row_i$group2
   tmp_age = row_i$age
   tmp_var = row_i$variable
+  # what is `..` syntax?
+  group1_data = tab2[genotype == tmp_group1 & age2 == tmp_age, ..tmp_var]
   
-  group1_data = by_fish[genotype == tmp_group1 & age == tmp_age, 
-                   ..tmp_var]
+  group2_data = tab2[genotype == tmp_group2 & age2 == tmp_age, ..tmp_var]
   
-  group2_data = by_fish[genotype == tmp_group2 & age == tmp_age, 
-                   ..tmp_var]
-  
+  if (nrow(group1_data) > 0L & nrow(group2_data) > 0L) {
+      
     tmp_res = t.test(x=group1_data,
                      y=group2_data,
                      alternative = "two.sided",
@@ -344,6 +351,22 @@ for (i in seq(nrow(comp_tab))) {
                          sample_size_group2=nrow(group2_data),
                          t_statistic=tmp_res$statistic,
                          df=tmp_res$parameter)
+  } else {
+    # When one group has no fish, fill in t-test results with NA values.
+    new_row = data.table(group1=tmp_group1,
+                         group2=tmp_group2,
+                         age=tmp_age,
+                         comparison_variable=tmp_var,
+                         effect_size=NA_real_,
+                         pvalue=NA_real_,
+                         conf_lower=NA_real_,
+                         conf_upper=NA_real_,
+                         sample_size_group1=nrow(group1_data),
+                         sample_size_group2=nrow(group2_data),
+                         t_statistic=NA_real_,
+                         df=NA_real_)
+  }
+  
   tres_list[[i]] = new_row
                        
 }
@@ -361,19 +384,50 @@ stats_tab[, genotype_pair:=paste(group1, group2, sep="-")]
 stats_tab[, genotype_pair:=factor(genotype_pair,
                                   levels=c("WT-HET", "HET-MUT", "WT-MUT"))]
 
+# Format padj values for adding to figures.
+# Format string: 0 = leading zeros, .2 = precision , 
+# "g" = precision is interpreted as n of significant digits.
+stats_tab[, padj_format:=sprintf("%0.2g", padj)]
+
 # Output stats to text file.
 fwrite(stats_tab, 
-       file="pairwise_ttest_results_nonnormalized_7variables_6month_8month_20220621.txt", 
+       file=here("figure_1",
+                 "pairwise_ttest_results_weight_length_10ages_20230403.txt"), 
        sep="\t")
 
 
+# Write out a filtered, sorted version for Leo to use adding pvalues in AI.
+
+stats2 = stats_tab[padj < 0.05, 
+                   list(age, comparison_variable, genotype_pair, padj_format)]
+
+stats2[, age:=factor(age, levels=age_order_vec)]
 
 
+setorder(stats2, comparison_variable, age, -genotype_pair)
+
+library(writexl)
+write_xlsx(stats2, 
+           path=here("figure_1", 
+                     "pairwise_ttest_padj05_table_for_figure_1_20230403.xlsx"))
 
 ```
 
 
+```{r print-ttest-results-tables}
 
+
+  stats2 %>% as_tibble() %>%
+  gt() %>%
+  tab_header(title="Pairwise t-test results within each timepoint. FDR-adj p-value < 0.05")
+
+
+  stats_tab %>% as_tibble() %>%
+  gt() %>%
+  tab_header(title="Pairwise t-test results with each timepoint. All results.")
+
+
+```
 
 
 

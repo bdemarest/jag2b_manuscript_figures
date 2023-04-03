@@ -198,50 +198,155 @@ ggsave(here("figure_2", "figure2_ultrasound_panels_20230329.pdf"),
 ```
 
 
-```{r print-figure-in-markdown}
+```{r print-ultrasound-figure-in-markdown}
 
 print(ultrasound_fig)
 
 ```
 
 
-```{r} 
 
-# Stats TO DO:
-# ANOVA and Tukey HSD results (with correct contrasts)
-# Needs to be done for Figure 1 also.
+
+```{r ultrasound-pairwise-t-tests}
+
+# Example code for pairwise t-test (wt-mut, het-mut, wt-het) for
+# each timepoint.
+
+# (1) Using Anova + TukeyHSD does not allow us to choose only the comparisons
+#     of interest. For example we want 3 pairwise genotype comparison _within_
+#     each timepoint.
+# (2) Instead we will stick with previous method of running selected pairwise
+#     t-tests, combined with FDR-corrected p-values.
+# (3) Problem remaining -- How to correct 95% conf intervals for multiple
+#     comparisons? `multcomp` package may have Tukey-stype 'family-wise' 
+#     correction for confidence intervals.
+
+
+group_vec = c("4-month old, batch 1", "4-month old, batch 2", "6-month old")
+
+
+variable_vec = c("weight_gr", "HR_avg", "Ad_avg", "As_avg", "CO", "SA")
+
+
+comp_tab = data.table(group1=rep(c("WT", "WT", "HET"), times=length(variable_vec)),
+                      group2=rep(c("HET", "MUT", "MUT"), times=length(variable_vec)),
+                      variable=rep(variable_vec, each=3), # modify
+                      age_batch=rep(group_vec, each=3 * length(variable_vec)))
+
+table(comp_tab$variable, comp_tab$age_batch)
+
+
+
+tres_list = list()
+
+for (i in seq(nrow(comp_tab))) {
+  row_i = comp_tab[i]
+  tmp_group1 = row_i$group1
+  tmp_group2 = row_i$group2
+  tmp_age_batch = row_i$age_batch
+  tmp_var = row_i$variable
+  group1_data = utab[genotype == tmp_group1 & group == tmp_age_batch, ..tmp_var]
+  
+  group2_data = utab[genotype == tmp_group2 & group == tmp_age_batch, ..tmp_var]
+  
+  if (nrow(group1_data) > 0L & nrow(group2_data) > 0L) {
+      
+    tmp_res = t.test(x=group1_data,
+                     y=group2_data,
+                     alternative = "two.sided",
+                     conf.level=0.95)
+  
+    new_row = data.table(group1=tmp_group1,
+                         group2=tmp_group2,
+                         age_batch=tmp_age_batch,
+                         comparison_variable=tmp_var,
+                         effect_size=tmp_res$estimate[1] - tmp_res$estimate[2], # (mutant or het mean) - wt mean
+                         pvalue=tmp_res$p.value,
+                         conf_lower=tmp_res$conf.int[1],
+                         conf_upper=tmp_res$conf.int[2],
+                         sample_size_group1=nrow(group1_data),
+                         sample_size_group2=nrow(group2_data),
+                         t_statistic=tmp_res$statistic,
+                         df=tmp_res$parameter)
+  } else {
+    # When one group has no fish, fill in t-test results with NA values.
+    new_row = data.table(group1=tmp_group1,
+                         group2=tmp_group2,
+                         age_batch=tmp_age_batch,
+                         comparison_variable=tmp_var,
+                         effect_size=NA_real_,
+                         pvalue=NA_real_,
+                         conf_lower=NA_real_,
+                         conf_upper=NA_real_,
+                         sample_size_group1=nrow(group1_data),
+                         sample_size_group2=nrow(group2_data),
+                         t_statistic=NA_real_,
+                         df=NA_real_)
+  }
+  
+  tres_list[[i]] = new_row
+                       
+}
+
+
+# Summary table of all pair-wise t.test results and related values.
+stats_tab = rbindlist(tres_list)
+
+n_comparisons = sum(!is.na(stats_tab$pvalue))
+
+stats_tab[, padj:=p.adjust(pvalue, method="fdr", n=n_comparisons)]
+
+stats_tab[, genotype_pair:=paste(group1, group2, sep="-")]
+
+stats_tab[, genotype_pair:=factor(genotype_pair,
+                                  levels=c("WT-HET", "HET-MUT", "WT-MUT"))]
+
+# Format padj values for adding to figures.
+# Format string: 0 = leading zeros, .2 = precision , 
+# "g" = precision is interpreted as n of significant digits.
+stats_tab[, padj_format:=sprintf("%0.2g", padj)]
+
+# Output stats to text file.
+fwrite(stats_tab, 
+       file=here("figure_2",
+                 "pairwise_ttest_results_6ultrasound_variables_3batches_20230403.txt"), 
+       sep="\t")
+
+
+# Write out a filtered, sorted version for Leo to use adding pvalues in AI.
+
+stats2 = stats_tab[padj < 0.05, 
+                   list(age_batch, comparison_variable, genotype_pair, padj_format)]
+
+
+
+setorder(stats2, age_batch, comparison_variable, -genotype_pair)
+
+library(writexl)
+write_xlsx(stats2, 
+           path=here("figure_2", 
+                     "pairwise_ttest_padj05_table_for_figure_2_6ultrasound_vars_20230403.xlsx"))
 
 ```
 
 
 
+```{r print-ultrasound-ttest-results-tables}
 
 
+  stats2 %>% as_tibble() %>%
+  gt() %>%
+  tab_header(title="Pairwise t-test results within each batch-by-variable combo. FDR-adj p-value < 0.05")
 
 
-
-
-```{r old-plot-attempt, eval=FALSE, include=FALSE}
-
-
-utab_long = melt(utab,
-                 id.vars=c("fish_id", "genotype", "age", "batch", "group"),
-                 measure.vars=c("weight_gr", "As_avg", "Ad_avg", 
-                                "HR_avg", "SA", "CO"),
-                 value.name="measurement_value",
-                 variable.name="measurement_variable")
-
-
-
-u1_w = ggplot(data=utab_long[measurement_variable %in% "weight_gr"],
-              aes(y=measurement_value, x=genotype, color=genotype, fill=genotype)) +
-  geom_point() +
-  facet_grid(rows=vars(group))
-
-
+  stats_tab %>% as_tibble() %>%
+  gt() %>%
+  tab_header(title="Pairwise t-test results within each batch-by-variable combo. All results.")
 
 
 ```
+
+
 
 
 
