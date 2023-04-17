@@ -348,7 +348,7 @@ write_xlsx(stats2,
 ```{r load-histology-data}
 
 htab = fread(here("figure_2",
-                  "jag2b_mef2_summarized_histology_4_6_8_month_n38_20230310.txt"))
+                  "jag2b_mef2_summarized_histology_4_6_8_month_n38_20230417.txt"))
 setnames(htab, old="genotype2", new="genotype")
 
 batch_info = fread(here("figure_2", 
@@ -448,7 +448,7 @@ d1 = ggplot() +
      facet_grid(cols=vars(group))
 
 ggsave(filename=here("figure_2",
-                     "figure2_histology_panels_4_6_month_20230404.pdf"), 
+                     "figure2_histology_panels_4_6_month_20230417.pdf"), 
        plot=d1, 
        width=3.0, height=2.8, 
        useDingbats=FALSE) 
@@ -527,7 +527,7 @@ stats_tab[, padj_format:=sprintf("%0.2g", padj)]
 # Output stats to text file.
 fwrite(stats_tab, 
        file=here("figure_2",
-                 "pairwise_ttest_results_mef2_fraction_4_6_months_20230404.txt"), 
+                 "pairwise_ttest_results_mef2_fraction_4_6_months_20230417.txt"), 
        sep="\t")
 
 
@@ -545,21 +545,145 @@ fwrite(stats_tab,
 ```
 
 
-#### Histology and ultrasound variables on the same plot.
-Exploratory data analysis.
+#### Histology and ultrasound data for n = 17 6-month old fish.
 
-```{r histology-vs-ultrasound-results, eval=FALSE, include=FALSE}
+
+```{r histology-vs-ultrasound-results, eval=TRUE, include=TRUE}
 
 # Fix the fish_id column in 'htab'.
-
 htab[, fish_id:=str_remove(fish_id2_fct, "^.+_")]
 htab[, fish_id:=str_replace(fish_id, "F", "f")]
 
 ctab = merge(utab, 
-             htab[, list(fish_id, age, genotype=toupper(genotype), genotype2,], 
-             by=c("fish_id", "age", "genotype2"))
+             htab[, list(fish_id, age, genotype=toupper(genotype), 
+                         genotype2, mef2_fraction)], 
+             by=c("fish_id", "age", "genotype2", "genotype"))
+# 
+# ctab should have 17 fish (fish_ids that have both ultrasound and
+# histology data). Currently only 16 fish are included.
+
+# 17 Apr 2023 Leo audited fish f0118 because it was
+# recorded as WT in the ultrasound data file, and as HET in the 
+# histology data. 
+# Lab notebook shows that correct f0118 genotype is WT.
 
 
+# f0118 fish genotype needs to be corrected:
+# [ ] (1) Need to correct excel sheet 
+#         mef2_histology_analysis_jag2b_6_month_2023-03-09_correct_age.xlsx
+# [ ] (2) Need to re-run .Rmd and commit and push to
+#         https://github.com/bdemarest/jag2b_mef2_histology
+# [XX] (3) Need to correct
+#         ~/work/lalmero/jag2b_manuscript_figures/figure_2/jag2b_mef2_summarized_histology_4_6_8_month_n38_20230310.txt
+# [ ] (4) re-run, commit and push to 
+#         https://github.com/bdemarest/jag2b_manuscript_figures
+
+
+
+# EDA.
+# Plot weight, len, all ultrasound variables, against mef2_fraction.
+
+     
+xvar_vec = c("weight_gr", "length_cm", "As_avg", "Ad_avg",
+             "HR_avg", "inflow_avg", "outflow_avg", "SA",
+             "EFA", "CO")
+
+genotype2_colors  = c("+/+"="#80b1d3",
+                      "+/-"="#b3de69",
+                      "-/-"="#fb8072")
+
+point_size = 2.6
+errorbar_width = 0.6
+errorbar_linewidth = 0.625
+meanbar_half_width = 0.45
+meanbar_linewidth = 1.2
+# Expand y-axis 5% on bottom end and 25% on upper end, to make room for p-values.
+yaxis_expand = expansion(mult=c(0.05, 0.25))
+
+plt_list = list()
+
+
+for (i in seq_along(xvar_vec)) {
+  tmp_xvar = xvar_vec[i]
+  
+  tmp_plot = ggplot(data=ctab,
+                    aes(x=!!as.name(tmp_xvar),
+                        y=mef2_fraction,
+                        color=genotype2,
+                        fill=genotype2)) +
+             theme_bw() +
+             geom_point(size=point_size,
+                        shape=21,
+                        color="grey30") +
+             scale_fill_manual(values=genotype2_colors) +
+             scale_color_manual(values=genotype2_colors) +
+             guides(color="none")
+   
+  
+  plt_list[[i]] = tmp_plot
+  
+}
+
+
+p01 =  wrap_plots(plt_list, nrow=3) + plot_layout(guides="collect")
+
+ggsave(here("figure_2",
+            "mef2_fraction_vs_10ultrasound_vars_6month_n17_20230417.pdf"),
+       plot=p01, width=10, height=8)
+
+
+print(p01)
+
+#---------------
+# p02, linear fits for overall + individual genotypes.
+
+plt_list2 = list()
+
+for (i in seq_along(xvar_vec)) {
+  tmp_xvar = xvar_vec[i]
+  
+  tmp_plot = ggplot(data=ctab,
+                    aes(x=!!as.name(tmp_xvar),
+                        y=mef2_fraction,
+                        color=genotype2,
+                        fill=genotype2)) +
+             theme_bw() +
+             geom_smooth(aes(group=1),
+                         method="lm",
+                         se=FALSE,
+                         linewidth=1.2,
+                         color="grey30") +
+             geom_smooth(method="lm",
+                         se=FALSE,
+                         linewidth=0.8) +
+             geom_point(size=point_size,
+                        shape=21,
+                        color="grey30") +
+             scale_fill_manual(values=genotype2_colors) +
+             scale_color_manual(values=genotype2_colors) +
+             guides(color="none")
+   
+  
+  plt_list2[[i]] = tmp_plot
+  
+}
+
+p02 =  wrap_plots(plt_list2, nrow=3) + plot_layout(guides="collect")
+
+
+
+
+
+
+
+
+pdf(here("figure_2",
+         "mef2_fraction_vs_10ultrasound_vars_6month_n17_lmfit_20230417.pdf"),
+         width=10, height=8)
+
+print(p02)
+
+dev.off()
 
 
 ```
