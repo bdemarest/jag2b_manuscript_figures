@@ -331,7 +331,7 @@ write_xlsx(stats2,
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#cmmwdzvsqy .gt_table {
+#buwzfvjhvc .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -359,7 +359,7 @@ write_xlsx(stats2,
   /* table.border.bottom.color */
 }
 
-#cmmwdzvsqy .gt_heading {
+#buwzfvjhvc .gt_heading {
   background-color: #FFFFFF;
   /* heading.background.color */
   border-bottom-color: #FFFFFF;
@@ -378,7 +378,7 @@ write_xlsx(stats2,
   /* heading.border.lr.color */
 }
 
-#cmmwdzvsqy .gt_title {
+#buwzfvjhvc .gt_title {
   color: #333333;
   font-size: 125%;
   /* heading.title.font.size */
@@ -392,7 +392,7 @@ write_xlsx(stats2,
   border-bottom-width: 0;
 }
 
-#cmmwdzvsqy .gt_subtitle {
+#buwzfvjhvc .gt_subtitle {
   color: #333333;
   font-size: 85%;
   /* heading.subtitle.font.size */
@@ -406,7 +406,7 @@ write_xlsx(stats2,
   border-top-width: 0;
 }
 
-#cmmwdzvsqy .gt_bottom_border {
+#buwzfvjhvc .gt_bottom_border {
   border-bottom-style: solid;
   /* heading.border.bottom.style */
   border-bottom-width: 2px;
@@ -415,7 +415,7 @@ write_xlsx(stats2,
   /* heading.border.bottom.color */
 }
 
-#cmmwdzvsqy .gt_column_spanner {
+#buwzfvjhvc .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -423,7 +423,7 @@ write_xlsx(stats2,
   padding-bottom: 4px;
 }
 
-#cmmwdzvsqy .gt_col_headings {
+#buwzfvjhvc .gt_col_headings {
   border-top-style: solid;
   /* column_labels.border.top.style */
   border-top-width: 2px;
@@ -450,7 +450,7 @@ write_xlsx(stats2,
   /* column_labels.border.lr.color */
 }
 
-#cmmwdzvsqy .gt_col_heading {
+#buwzfvjhvc .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   /* column_labels.background.color */
@@ -466,11 +466,11 @@ write_xlsx(stats2,
   overflow-x: hidden;
 }
 
-#cmmwdzvsqy .gt_sep_right {
+#buwzfvjhvc .gt_sep_right {
   border-right: 5px solid #FFFFFF;
 }
 
-#cmmwdzvsqy .gt_group_heading {
+#buwzfvjhvc .gt_group_heading {
   padding: 8px;
   /* row_group.padding */
   color: #333333;
@@ -509,7 +509,7 @@ write_xlsx(stats2,
   vertical-align: middle;
 }
 
-#cmmwdzvsqy .gt_empty_group_heading {
+#buwzfvjhvc .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -533,20 +533,20 @@ write_xlsx(stats2,
   vertical-align: middle;
 }
 
-#cmmwdzvsqy .gt_striped {
+#buwzfvjhvc .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
   /* row.striping.background_color */
 }
 
-#cmmwdzvsqy .gt_from_md > :first-child {
+#buwzfvjhvc .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#cmmwdzvsqy .gt_from_md > :last-child {
+#buwzfvjhvc .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#cmmwdzvsqy .gt_row {
+#buwzfvjhvc .gt_row {
   padding-top: 8px;
   /* data_row.padding */
   padding-bottom: 8px;
@@ -576,7 +576,7 @@ write_xlsx(stats2,
   overflow-x: hidden;
 }
 
-#cmmwdzvsqy .gt_stub {
+#buwzfvjhvc .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   /* stub.background.color */
@@ -593,7 +593,7 @@ write_xlsx(stats2,
   padding-left: 12px;
 }
 
-#cmmwdzvsqy .gt_summary_row {
+#buwzfvjhvc .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* summary_row.background.color */
@@ -607,7 +607,7 @@ write_xlsx(stats2,
   padding-right: 5px;
 }
 
-#cmmwdzvsqy .gt_first_summary_row {
+#buwzfvjhvc .gt_first_summary_row {
   padding-top: 8px;
   /* summary_row.padding */
   padding-bottom: 8px;
@@ -622,7 +622,7 @@ write_xlsx(stats2,
   /* summary_row.border.color */
 }
 
-#cmmwdzvsqy .gt_grand_summary_row {
+#buwzfvjhvc .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* grand_summary_row.background.color */
@@ -636,7 +636,7 @@ write_xlsx(stats2,
   padding-right: 5px;
 }
 
-#cmmwdzvsqy .gt_first_grand_summary_row {
+#buwzfvjhvc .gt_first_grand_summary_row {
   padding-top: 8px;
   /* grand_summary_row.padding */
   padding-bottom: 8px;
@@ -651,7 +651,7 @@ write_xlsx(stats2,
   /* grand_summary_row.border.color */
 }
 
-#cmmwdzvsqy .gt_table_body {
+#buwzfvjhvc .gt_table_body {
   border-top-style: solid;
   /* table_body.border.top.style */
   border-top-width: 2px;
@@ -666,7 +666,7 @@ write_xlsx(stats2,
   /* table_body.border.bottom.color */
 }
 
-#cmmwdzvsqy .gt_footnotes {
+#buwzfvjhvc .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   /* footnotes.background.color */
@@ -690,7 +690,7 @@ write_xlsx(stats2,
   /* footnotes.border.lr.color */
 }
 
-#cmmwdzvsqy .gt_footnote {
+#buwzfvjhvc .gt_footnote {
   margin: 0px;
   font-size: 90%;
   /* footnotes.font.size */
@@ -698,7 +698,7 @@ write_xlsx(stats2,
   /* footnotes.padding */
 }
 
-#cmmwdzvsqy .gt_sourcenotes {
+#buwzfvjhvc .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   /* source_notes.background.color */
@@ -722,48 +722,48 @@ write_xlsx(stats2,
   /* source_notes.border.lr.style */
 }
 
-#cmmwdzvsqy .gt_sourcenote {
+#buwzfvjhvc .gt_sourcenote {
   font-size: 90%;
   /* source_notes.font.size */
   padding: 4px;
   /* source_notes.padding */
 }
 
-#cmmwdzvsqy .gt_left {
+#buwzfvjhvc .gt_left {
   text-align: left;
 }
 
-#cmmwdzvsqy .gt_center {
+#buwzfvjhvc .gt_center {
   text-align: center;
 }
 
-#cmmwdzvsqy .gt_right {
+#buwzfvjhvc .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#cmmwdzvsqy .gt_font_normal {
+#buwzfvjhvc .gt_font_normal {
   font-weight: normal;
 }
 
-#cmmwdzvsqy .gt_font_bold {
+#buwzfvjhvc .gt_font_bold {
   font-weight: bold;
 }
 
-#cmmwdzvsqy .gt_font_italic {
+#buwzfvjhvc .gt_font_italic {
   font-style: italic;
 }
 
-#cmmwdzvsqy .gt_super {
+#buwzfvjhvc .gt_super {
   font-size: 65%;
 }
 
-#cmmwdzvsqy .gt_footnote_marks {
+#buwzfvjhvc .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="cmmwdzvsqy" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="buwzfvjhvc" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   <thead class="gt_header">
     <tr>
       <th colspan="4" class="gt_heading gt_title gt_font_normal gt_center" style>Ultrasound variables, pairwise t-test results within each batch-by-variable combo. FDR-adj p-value &lt; 0.05</th>
@@ -909,7 +909,7 @@ dcast(data=htab, genotype ~ group, fun.aggregate=length) %>%
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#popheudcst .gt_table {
+#fcfkziixdb .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -937,7 +937,7 @@ dcast(data=htab, genotype ~ group, fun.aggregate=length) %>%
   /* table.border.bottom.color */
 }
 
-#popheudcst .gt_heading {
+#fcfkziixdb .gt_heading {
   background-color: #FFFFFF;
   /* heading.background.color */
   border-bottom-color: #FFFFFF;
@@ -956,7 +956,7 @@ dcast(data=htab, genotype ~ group, fun.aggregate=length) %>%
   /* heading.border.lr.color */
 }
 
-#popheudcst .gt_title {
+#fcfkziixdb .gt_title {
   color: #333333;
   font-size: 125%;
   /* heading.title.font.size */
@@ -970,7 +970,7 @@ dcast(data=htab, genotype ~ group, fun.aggregate=length) %>%
   border-bottom-width: 0;
 }
 
-#popheudcst .gt_subtitle {
+#fcfkziixdb .gt_subtitle {
   color: #333333;
   font-size: 85%;
   /* heading.subtitle.font.size */
@@ -984,7 +984,7 @@ dcast(data=htab, genotype ~ group, fun.aggregate=length) %>%
   border-top-width: 0;
 }
 
-#popheudcst .gt_bottom_border {
+#fcfkziixdb .gt_bottom_border {
   border-bottom-style: solid;
   /* heading.border.bottom.style */
   border-bottom-width: 2px;
@@ -993,7 +993,7 @@ dcast(data=htab, genotype ~ group, fun.aggregate=length) %>%
   /* heading.border.bottom.color */
 }
 
-#popheudcst .gt_column_spanner {
+#fcfkziixdb .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1001,7 +1001,7 @@ dcast(data=htab, genotype ~ group, fun.aggregate=length) %>%
   padding-bottom: 4px;
 }
 
-#popheudcst .gt_col_headings {
+#fcfkziixdb .gt_col_headings {
   border-top-style: solid;
   /* column_labels.border.top.style */
   border-top-width: 2px;
@@ -1028,7 +1028,7 @@ dcast(data=htab, genotype ~ group, fun.aggregate=length) %>%
   /* column_labels.border.lr.color */
 }
 
-#popheudcst .gt_col_heading {
+#fcfkziixdb .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   /* column_labels.background.color */
@@ -1044,11 +1044,11 @@ dcast(data=htab, genotype ~ group, fun.aggregate=length) %>%
   overflow-x: hidden;
 }
 
-#popheudcst .gt_sep_right {
+#fcfkziixdb .gt_sep_right {
   border-right: 5px solid #FFFFFF;
 }
 
-#popheudcst .gt_group_heading {
+#fcfkziixdb .gt_group_heading {
   padding: 8px;
   /* row_group.padding */
   color: #333333;
@@ -1087,7 +1087,7 @@ dcast(data=htab, genotype ~ group, fun.aggregate=length) %>%
   vertical-align: middle;
 }
 
-#popheudcst .gt_empty_group_heading {
+#fcfkziixdb .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1111,20 +1111,20 @@ dcast(data=htab, genotype ~ group, fun.aggregate=length) %>%
   vertical-align: middle;
 }
 
-#popheudcst .gt_striped {
+#fcfkziixdb .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
   /* row.striping.background_color */
 }
 
-#popheudcst .gt_from_md > :first-child {
+#fcfkziixdb .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#popheudcst .gt_from_md > :last-child {
+#fcfkziixdb .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#popheudcst .gt_row {
+#fcfkziixdb .gt_row {
   padding-top: 8px;
   /* data_row.padding */
   padding-bottom: 8px;
@@ -1154,7 +1154,7 @@ dcast(data=htab, genotype ~ group, fun.aggregate=length) %>%
   overflow-x: hidden;
 }
 
-#popheudcst .gt_stub {
+#fcfkziixdb .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   /* stub.background.color */
@@ -1171,7 +1171,7 @@ dcast(data=htab, genotype ~ group, fun.aggregate=length) %>%
   padding-left: 12px;
 }
 
-#popheudcst .gt_summary_row {
+#fcfkziixdb .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* summary_row.background.color */
@@ -1185,7 +1185,7 @@ dcast(data=htab, genotype ~ group, fun.aggregate=length) %>%
   padding-right: 5px;
 }
 
-#popheudcst .gt_first_summary_row {
+#fcfkziixdb .gt_first_summary_row {
   padding-top: 8px;
   /* summary_row.padding */
   padding-bottom: 8px;
@@ -1200,7 +1200,7 @@ dcast(data=htab, genotype ~ group, fun.aggregate=length) %>%
   /* summary_row.border.color */
 }
 
-#popheudcst .gt_grand_summary_row {
+#fcfkziixdb .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* grand_summary_row.background.color */
@@ -1214,7 +1214,7 @@ dcast(data=htab, genotype ~ group, fun.aggregate=length) %>%
   padding-right: 5px;
 }
 
-#popheudcst .gt_first_grand_summary_row {
+#fcfkziixdb .gt_first_grand_summary_row {
   padding-top: 8px;
   /* grand_summary_row.padding */
   padding-bottom: 8px;
@@ -1229,7 +1229,7 @@ dcast(data=htab, genotype ~ group, fun.aggregate=length) %>%
   /* grand_summary_row.border.color */
 }
 
-#popheudcst .gt_table_body {
+#fcfkziixdb .gt_table_body {
   border-top-style: solid;
   /* table_body.border.top.style */
   border-top-width: 2px;
@@ -1244,7 +1244,7 @@ dcast(data=htab, genotype ~ group, fun.aggregate=length) %>%
   /* table_body.border.bottom.color */
 }
 
-#popheudcst .gt_footnotes {
+#fcfkziixdb .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   /* footnotes.background.color */
@@ -1268,7 +1268,7 @@ dcast(data=htab, genotype ~ group, fun.aggregate=length) %>%
   /* footnotes.border.lr.color */
 }
 
-#popheudcst .gt_footnote {
+#fcfkziixdb .gt_footnote {
   margin: 0px;
   font-size: 90%;
   /* footnotes.font.size */
@@ -1276,7 +1276,7 @@ dcast(data=htab, genotype ~ group, fun.aggregate=length) %>%
   /* footnotes.padding */
 }
 
-#popheudcst .gt_sourcenotes {
+#fcfkziixdb .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   /* source_notes.background.color */
@@ -1300,48 +1300,48 @@ dcast(data=htab, genotype ~ group, fun.aggregate=length) %>%
   /* source_notes.border.lr.style */
 }
 
-#popheudcst .gt_sourcenote {
+#fcfkziixdb .gt_sourcenote {
   font-size: 90%;
   /* source_notes.font.size */
   padding: 4px;
   /* source_notes.padding */
 }
 
-#popheudcst .gt_left {
+#fcfkziixdb .gt_left {
   text-align: left;
 }
 
-#popheudcst .gt_center {
+#fcfkziixdb .gt_center {
   text-align: center;
 }
 
-#popheudcst .gt_right {
+#fcfkziixdb .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#popheudcst .gt_font_normal {
+#fcfkziixdb .gt_font_normal {
   font-weight: normal;
 }
 
-#popheudcst .gt_font_bold {
+#fcfkziixdb .gt_font_bold {
   font-weight: bold;
 }
 
-#popheudcst .gt_font_italic {
+#fcfkziixdb .gt_font_italic {
   font-style: italic;
 }
 
-#popheudcst .gt_super {
+#fcfkziixdb .gt_super {
   font-size: 65%;
 }
 
-#popheudcst .gt_footnote_marks {
+#fcfkziixdb .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="popheudcst" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="fcfkziixdb" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   <thead class="gt_header">
     <tr>
       <th colspan="3" class="gt_heading gt_title gt_font_normal gt_center" style>Histology sample summary</th>
@@ -1522,7 +1522,7 @@ fwrite(stats_tab,
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
 }
 
-#xoilsigesy .gt_table {
+#kggyndocit .gt_table {
   display: table;
   border-collapse: collapse;
   margin-left: auto;
@@ -1550,7 +1550,7 @@ fwrite(stats_tab,
   /* table.border.bottom.color */
 }
 
-#xoilsigesy .gt_heading {
+#kggyndocit .gt_heading {
   background-color: #FFFFFF;
   /* heading.background.color */
   border-bottom-color: #FFFFFF;
@@ -1569,7 +1569,7 @@ fwrite(stats_tab,
   /* heading.border.lr.color */
 }
 
-#xoilsigesy .gt_title {
+#kggyndocit .gt_title {
   color: #333333;
   font-size: 125%;
   /* heading.title.font.size */
@@ -1583,7 +1583,7 @@ fwrite(stats_tab,
   border-bottom-width: 0;
 }
 
-#xoilsigesy .gt_subtitle {
+#kggyndocit .gt_subtitle {
   color: #333333;
   font-size: 85%;
   /* heading.subtitle.font.size */
@@ -1597,7 +1597,7 @@ fwrite(stats_tab,
   border-top-width: 0;
 }
 
-#xoilsigesy .gt_bottom_border {
+#kggyndocit .gt_bottom_border {
   border-bottom-style: solid;
   /* heading.border.bottom.style */
   border-bottom-width: 2px;
@@ -1606,7 +1606,7 @@ fwrite(stats_tab,
   /* heading.border.bottom.color */
 }
 
-#xoilsigesy .gt_column_spanner {
+#kggyndocit .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
@@ -1614,7 +1614,7 @@ fwrite(stats_tab,
   padding-bottom: 4px;
 }
 
-#xoilsigesy .gt_col_headings {
+#kggyndocit .gt_col_headings {
   border-top-style: solid;
   /* column_labels.border.top.style */
   border-top-width: 2px;
@@ -1641,7 +1641,7 @@ fwrite(stats_tab,
   /* column_labels.border.lr.color */
 }
 
-#xoilsigesy .gt_col_heading {
+#kggyndocit .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   /* column_labels.background.color */
@@ -1657,11 +1657,11 @@ fwrite(stats_tab,
   overflow-x: hidden;
 }
 
-#xoilsigesy .gt_sep_right {
+#kggyndocit .gt_sep_right {
   border-right: 5px solid #FFFFFF;
 }
 
-#xoilsigesy .gt_group_heading {
+#kggyndocit .gt_group_heading {
   padding: 8px;
   /* row_group.padding */
   color: #333333;
@@ -1700,7 +1700,7 @@ fwrite(stats_tab,
   vertical-align: middle;
 }
 
-#xoilsigesy .gt_empty_group_heading {
+#kggyndocit .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -1724,20 +1724,20 @@ fwrite(stats_tab,
   vertical-align: middle;
 }
 
-#xoilsigesy .gt_striped {
+#kggyndocit .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
   /* row.striping.background_color */
 }
 
-#xoilsigesy .gt_from_md > :first-child {
+#kggyndocit .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#xoilsigesy .gt_from_md > :last-child {
+#kggyndocit .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#xoilsigesy .gt_row {
+#kggyndocit .gt_row {
   padding-top: 8px;
   /* data_row.padding */
   padding-bottom: 8px;
@@ -1767,7 +1767,7 @@ fwrite(stats_tab,
   overflow-x: hidden;
 }
 
-#xoilsigesy .gt_stub {
+#kggyndocit .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   /* stub.background.color */
@@ -1784,7 +1784,7 @@ fwrite(stats_tab,
   padding-left: 12px;
 }
 
-#xoilsigesy .gt_summary_row {
+#kggyndocit .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* summary_row.background.color */
@@ -1798,7 +1798,7 @@ fwrite(stats_tab,
   padding-right: 5px;
 }
 
-#xoilsigesy .gt_first_summary_row {
+#kggyndocit .gt_first_summary_row {
   padding-top: 8px;
   /* summary_row.padding */
   padding-bottom: 8px;
@@ -1813,7 +1813,7 @@ fwrite(stats_tab,
   /* summary_row.border.color */
 }
 
-#xoilsigesy .gt_grand_summary_row {
+#kggyndocit .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   /* grand_summary_row.background.color */
@@ -1827,7 +1827,7 @@ fwrite(stats_tab,
   padding-right: 5px;
 }
 
-#xoilsigesy .gt_first_grand_summary_row {
+#kggyndocit .gt_first_grand_summary_row {
   padding-top: 8px;
   /* grand_summary_row.padding */
   padding-bottom: 8px;
@@ -1842,7 +1842,7 @@ fwrite(stats_tab,
   /* grand_summary_row.border.color */
 }
 
-#xoilsigesy .gt_table_body {
+#kggyndocit .gt_table_body {
   border-top-style: solid;
   /* table_body.border.top.style */
   border-top-width: 2px;
@@ -1857,7 +1857,7 @@ fwrite(stats_tab,
   /* table_body.border.bottom.color */
 }
 
-#xoilsigesy .gt_footnotes {
+#kggyndocit .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   /* footnotes.background.color */
@@ -1881,7 +1881,7 @@ fwrite(stats_tab,
   /* footnotes.border.lr.color */
 }
 
-#xoilsigesy .gt_footnote {
+#kggyndocit .gt_footnote {
   margin: 0px;
   font-size: 90%;
   /* footnotes.font.size */
@@ -1889,7 +1889,7 @@ fwrite(stats_tab,
   /* footnotes.padding */
 }
 
-#xoilsigesy .gt_sourcenotes {
+#kggyndocit .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   /* source_notes.background.color */
@@ -1913,48 +1913,48 @@ fwrite(stats_tab,
   /* source_notes.border.lr.style */
 }
 
-#xoilsigesy .gt_sourcenote {
+#kggyndocit .gt_sourcenote {
   font-size: 90%;
   /* source_notes.font.size */
   padding: 4px;
   /* source_notes.padding */
 }
 
-#xoilsigesy .gt_left {
+#kggyndocit .gt_left {
   text-align: left;
 }
 
-#xoilsigesy .gt_center {
+#kggyndocit .gt_center {
   text-align: center;
 }
 
-#xoilsigesy .gt_right {
+#kggyndocit .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#xoilsigesy .gt_font_normal {
+#kggyndocit .gt_font_normal {
   font-weight: normal;
 }
 
-#xoilsigesy .gt_font_bold {
+#kggyndocit .gt_font_bold {
   font-weight: bold;
 }
 
-#xoilsigesy .gt_font_italic {
+#kggyndocit .gt_font_italic {
   font-style: italic;
 }
 
-#xoilsigesy .gt_super {
+#kggyndocit .gt_super {
   font-size: 65%;
 }
 
-#xoilsigesy .gt_footnote_marks {
+#kggyndocit .gt_footnote_marks {
   font-style: italic;
   font-size: 65%;
 }
 </style>
-<div id="xoilsigesy" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
+<div id="kggyndocit" style="overflow-x:auto;overflow-y:auto;width:auto;height:auto;"><table class="gt_table">
   <thead class="gt_header">
     <tr>
       <th colspan="5" class="gt_heading gt_title gt_font_normal gt_center" style>Pairwise t-test results for mef2 fraction data.</th>
@@ -2056,28 +2056,60 @@ ctab = merge(utab,
 # EDA.
 # Plot weight, len, all ultrasound variables, against mef2_fraction.
 
+# Measurement units notes:
+# Weight: grams
+# Length: centimeters
+# Ventricle areas: mm-squared
+# Heartrate: beats per minute
+# Inflow, outflow: mm per second
+# Stroke area: mm-squared
+# Ejection fraction: dimensionless
+# Cardiac Output: mm-squared per minute
+
      
 xvar_vec = c("weight_gr", "length_cm", "As_avg", "Ad_avg",
              "HR_avg", "inflow_avg", "outflow_avg", "SA",
              "EFA", "CO")
+
+xvar_labels = c("'Weight (grams)'",
+                "'Length (cm)'",
+                "'Ventricle area, diastole '('mm'^2)",
+                "'Ventricle area, systole '('mm'^2)",
+                "'Heart rate '('minute'^-1)",
+                "'Inflow '('mm' %.% 'sec'^-1)",
+                "'Outflow '('mm' %.% 'sec'^-1)",
+                "'Stroke area '('mm'^2)",
+                "'Ejection fraction '('area')", 
+                "'Cardiac output '('mm'^2 %.% 'minute'^-1)")
+
 
 genotype2_colors  = c("+/+"="#80b1d3",
                       "+/-"="#b3de69",
                       "-/-"="#fb8072")
 
 point_size = 2.6
-errorbar_width = 0.6
-errorbar_linewidth = 0.625
-meanbar_half_width = 0.45
-meanbar_linewidth = 1.2
+point_outline_color = "grey30"
+fit_line_width = 1.2
+fit_line_color = "grey60"
+fit_line_width_small = 0.8
+xtitle_scale = 0.9
+
+
+
 # Expand y-axis 5% on bottom end and 25% on upper end, to make room for p-values.
 yaxis_expand = expansion(mult=c(0.05, 0.25))
 
+#mef2_axis_label = "Myocardium density"
+mef2_axis_label = "Fraction of ventricle covered\nin trabecular myocardium"
+
+plot_page_title = "jag2b histology and ultrasound data, 6-month, n = 17."
+  
 plt_list = list()
 
 
 for (i in seq_along(xvar_vec)) {
   tmp_xvar = xvar_vec[i]
+  tmp_label = xvar_labels[i] 
   
   tmp_plot = ggplot(data=ctab,
                     aes(x=!!as.name(tmp_xvar),
@@ -2087,10 +2119,14 @@ for (i in seq_along(xvar_vec)) {
              theme_bw() +
              geom_point(size=point_size,
                         shape=21,
-                        color="grey30") +
+                        color=point_outline_color) +
              scale_fill_manual(values=genotype2_colors) +
              scale_color_manual(values=genotype2_colors) +
-             guides(color="none")
+             guides(color="none") +
+             labs(x=parse(text=tmp_label)) + 
+             labs(y=mef2_axis_label) +
+             theme(axis.title.x=element_text(size=rel(xtitle_scale)))
+
    
   
   plt_list[[i]] = tmp_plot
@@ -2098,11 +2134,13 @@ for (i in seq_along(xvar_vec)) {
 }
 
 
-p01 =  wrap_plots(plt_list, nrow=3) + plot_layout(guides="collect")
+p01 =  wrap_plots(plt_list, nrow=3) + 
+       plot_layout(guides="collect") +
+       plot_annotation(title=plot_page_title)
 
 ggsave(here("figure_2",
             "mef2_fraction_vs_10ultrasound_vars_6month_n17_20230417.pdf"),
-       plot=p01, width=10, height=8)
+       plot=p01, width=10, height=8, useDingbats=FALSE)
 ```
 
     ## Warning: Removed 2 rows containing missing values (`geom_point()`).
@@ -2123,6 +2161,7 @@ plt_list2 = list()
 
 for (i in seq_along(xvar_vec)) {
   tmp_xvar = xvar_vec[i]
+  tmp_label = xvar_labels[i] 
   
   tmp_plot = ggplot(data=ctab,
                     aes(x=!!as.name(tmp_xvar),
@@ -2133,37 +2172,453 @@ for (i in seq_along(xvar_vec)) {
              geom_smooth(aes(group=1),
                          method="lm",
                          se=FALSE,
-                         linewidth=1.2,
-                         color="grey30") +
+                         linewidth=fit_line_width,
+                         color=fit_line_color,
+                         show.legend=FALSE) +
              geom_smooth(method="lm",
                          se=FALSE,
-                         linewidth=0.8) +
+                         linewidth=fit_line_width_small,
+                         show.legend=FALSE) +
              geom_point(size=point_size,
                         shape=21,
-                        color="grey30") +
+                        color=fit_line_color) +
              scale_fill_manual(values=genotype2_colors) +
              scale_color_manual(values=genotype2_colors) +
-             guides(color="none")
+             guides(color="none") +
+             labs(x=parse(text=tmp_label)) + 
+             labs(y=mef2_axis_label) +
+             theme(axis.title.x=element_text(size=rel(xtitle_scale)))
    
   
   plt_list2[[i]] = tmp_plot
   
 }
 
-p02 =  wrap_plots(plt_list2, nrow=3) + plot_layout(guides="collect")
+p02 =  wrap_plots(plt_list2, nrow=3) + 
+       plot_layout(guides="collect") +
+       plot_annotation(title=plot_page_title)
+
+
+#---------------
+# p03, linear fits for overall + individual genotypes, with std error ribbons for both.
+
+plt_list3 = list()
+
+for (i in seq_along(xvar_vec)) {
+  tmp_xvar = xvar_vec[i]
+  tmp_label = xvar_labels[i] 
+  
+  tmp_plot = ggplot(data=ctab,
+                    aes(x=!!as.name(tmp_xvar),
+                        y=mef2_fraction,
+                        color=genotype2,
+                        fill=genotype2)) +
+             theme_bw() +
+             geom_smooth(aes(group=1),
+                         method="lm",
+                         se=TRUE,
+                         linewidth=fit_line_width,
+                         color=fit_line_color,
+                         show.legend=FALSE) +
+             geom_smooth(method="lm",
+                         se=TRUE,
+                         linewidth=fit_line_width_small,
+                         show.legend=FALSE) +
+             geom_point(size=point_size,
+                        shape=21,
+                        color=point_outline_color) +
+             scale_fill_manual(values=genotype2_colors) +
+             scale_color_manual(values=genotype2_colors) +
+             guides(color="none") +
+             labs(x=parse(text=tmp_label)) + 
+             labs(y=mef2_axis_label) +
+             theme(axis.title.x=element_text(size=rel(xtitle_scale)))
+   
+  
+  plt_list3[[i]] = tmp_plot
+  
+}
+
+p03 =  wrap_plots(plt_list3, nrow=3) + 
+       plot_layout(guides="collect") +
+       plot_annotation(title=plot_page_title)
+
+#---------------
+# p04, linear fits for overall only, with std error ribbon.
+
+plt_list4 = list()
+
+for (i in seq_along(xvar_vec)) {
+  tmp_xvar = xvar_vec[i]
+  tmp_label = xvar_labels[i] 
+  
+  tmp_plot = ggplot(data=ctab,
+                    aes(x=!!as.name(tmp_xvar),
+                        y=mef2_fraction,
+                        color=genotype2,
+                        fill=genotype2)) +
+             theme_bw() +
+             geom_smooth(aes(group=1),
+                         method="lm",
+                         se=TRUE,
+                         linewidth=fit_line_width,
+                         color=fit_line_color,
+                         show.legend=FALSE) +
+             geom_point(size=point_size,
+                        shape=21,
+                        color=point_outline_color) +
+             scale_fill_manual(values=genotype2_colors) +
+             scale_color_manual(values=genotype2_colors) +
+             guides(color="none") +
+             labs(x=parse(text=tmp_label)) + 
+             labs(y=mef2_axis_label) +
+             theme(axis.title.x=element_text(size=rel(xtitle_scale)))
+   
+  
+  plt_list4[[i]] = tmp_plot
+  
+}
+
+p04 =  wrap_plots(plt_list4, nrow=3) + 
+       plot_layout(guides="collect") +
+       plot_annotation(title=plot_page_title)
 
 
 
+
+#---------------
+# p05, linear fits for overall only, _without_ std error ribbon.
+
+plt_list5 = list()
+
+for (i in seq_along(xvar_vec)) {
+  tmp_xvar = xvar_vec[i]
+  tmp_label = xvar_labels[i] 
+  
+  tmp_plot = ggplot(data=ctab,
+                    aes(x=!!as.name(tmp_xvar),
+                        y=mef2_fraction,
+                        color=genotype2,
+                        fill=genotype2)) +
+             theme_bw() +
+             geom_smooth(aes(group=1),
+                         method="lm",
+                         se=FALSE,
+                         linewidth=fit_line_width,
+                         color=fit_line_color,
+                         show.legend=FALSE) +
+             geom_point(size=point_size,
+                        shape=21,
+                        color=point_outline_color) +
+             scale_fill_manual(values=genotype2_colors) +
+             scale_color_manual(values=genotype2_colors) +
+             guides(color="none") +
+             labs(x=parse(text=tmp_label)) + 
+             labs(y=mef2_axis_label) +
+             theme(axis.title.x=element_text(size=rel(xtitle_scale)))
+   
+  
+  plt_list5[[i]] = tmp_plot
+  
+}
+
+p05 =  wrap_plots(plt_list5, nrow=3) + 
+       plot_layout(guides="collect") +
+       plot_annotation(title=plot_page_title)
 
 
 
 
 
 pdf(here("figure_2",
-         "mef2_fraction_vs_10ultrasound_vars_6month_n17_lmfit_20230417.pdf"),
-         width=10, height=8)
+         "mef2_fraction_vs_10ultrasound_vars_6month_n17_all_versions_20230418.pdf"),
+         width=12, height=8, useDingbats=FALSE)
 
+print(p05)
+```
+
+    ## `geom_smooth()` using formula = 'y ~ x'
+
+    ## Warning: The following aesthetics were dropped during statistical transformation: fill
+    ## ℹ This can happen when ggplot fails to infer the correct grouping structure in
+    ##   the data.
+    ## ℹ Did you forget to specify a `group` aesthetic or to convert a numerical
+    ##   variable into a factor?
+
+    ## `geom_smooth()` using formula = 'y ~ x'
+
+    ## Warning: The following aesthetics were dropped during statistical transformation: fill
+    ## ℹ This can happen when ggplot fails to infer the correct grouping structure in
+    ##   the data.
+    ## ℹ Did you forget to specify a `group` aesthetic or to convert a numerical
+    ##   variable into a factor?
+
+    ## `geom_smooth()` using formula = 'y ~ x'
+
+    ## Warning: The following aesthetics were dropped during statistical transformation: fill
+    ## ℹ This can happen when ggplot fails to infer the correct grouping structure in
+    ##   the data.
+    ## ℹ Did you forget to specify a `group` aesthetic or to convert a numerical
+    ##   variable into a factor?
+
+    ## `geom_smooth()` using formula = 'y ~ x'
+
+    ## Warning: The following aesthetics were dropped during statistical transformation: fill
+    ## ℹ This can happen when ggplot fails to infer the correct grouping structure in
+    ##   the data.
+    ## ℹ Did you forget to specify a `group` aesthetic or to convert a numerical
+    ##   variable into a factor?
+
+    ## `geom_smooth()` using formula = 'y ~ x'
+
+    ## Warning: The following aesthetics were dropped during statistical transformation: fill
+    ## ℹ This can happen when ggplot fails to infer the correct grouping structure in
+    ##   the data.
+    ## ℹ Did you forget to specify a `group` aesthetic or to convert a numerical
+    ##   variable into a factor?
+
+    ## `geom_smooth()` using formula = 'y ~ x'
+
+    ## Warning: The following aesthetics were dropped during statistical transformation: fill
+    ## ℹ This can happen when ggplot fails to infer the correct grouping structure in
+    ##   the data.
+    ## ℹ Did you forget to specify a `group` aesthetic or to convert a numerical
+    ##   variable into a factor?
+
+    ## `geom_smooth()` using formula = 'y ~ x'
+
+    ## Warning: Removed 2 rows containing non-finite values (`stat_smooth()`).
+
+    ## Warning: The following aesthetics were dropped during statistical transformation: fill
+    ## ℹ This can happen when ggplot fails to infer the correct grouping structure in
+    ##   the data.
+    ## ℹ Did you forget to specify a `group` aesthetic or to convert a numerical
+    ##   variable into a factor?
+
+    ## Warning: Removed 2 rows containing missing values (`geom_point()`).
+
+    ## `geom_smooth()` using formula = 'y ~ x'
+
+    ## Warning: The following aesthetics were dropped during statistical transformation: fill
+    ## ℹ This can happen when ggplot fails to infer the correct grouping structure in
+    ##   the data.
+    ## ℹ Did you forget to specify a `group` aesthetic or to convert a numerical
+    ##   variable into a factor?
+
+    ## `geom_smooth()` using formula = 'y ~ x'
+
+    ## Warning: The following aesthetics were dropped during statistical transformation: fill
+    ## ℹ This can happen when ggplot fails to infer the correct grouping structure in
+    ##   the data.
+    ## ℹ Did you forget to specify a `group` aesthetic or to convert a numerical
+    ##   variable into a factor?
+
+    ## `geom_smooth()` using formula = 'y ~ x'
+
+    ## Warning: The following aesthetics were dropped during statistical transformation: fill
+    ## ℹ This can happen when ggplot fails to infer the correct grouping structure in
+    ##   the data.
+    ## ℹ Did you forget to specify a `group` aesthetic or to convert a numerical
+    ##   variable into a factor?
+
+``` r
+print(p04)
+```
+
+    ## `geom_smooth()` using formula = 'y ~ x'
+
+    ## Warning: The following aesthetics were dropped during statistical transformation: fill
+    ## ℹ This can happen when ggplot fails to infer the correct grouping structure in
+    ##   the data.
+    ## ℹ Did you forget to specify a `group` aesthetic or to convert a numerical
+    ##   variable into a factor?
+
+    ## `geom_smooth()` using formula = 'y ~ x'
+
+    ## Warning: The following aesthetics were dropped during statistical transformation: fill
+    ## ℹ This can happen when ggplot fails to infer the correct grouping structure in
+    ##   the data.
+    ## ℹ Did you forget to specify a `group` aesthetic or to convert a numerical
+    ##   variable into a factor?
+
+    ## `geom_smooth()` using formula = 'y ~ x'
+
+    ## Warning: The following aesthetics were dropped during statistical transformation: fill
+    ## ℹ This can happen when ggplot fails to infer the correct grouping structure in
+    ##   the data.
+    ## ℹ Did you forget to specify a `group` aesthetic or to convert a numerical
+    ##   variable into a factor?
+
+    ## `geom_smooth()` using formula = 'y ~ x'
+
+    ## Warning: The following aesthetics were dropped during statistical transformation: fill
+    ## ℹ This can happen when ggplot fails to infer the correct grouping structure in
+    ##   the data.
+    ## ℹ Did you forget to specify a `group` aesthetic or to convert a numerical
+    ##   variable into a factor?
+
+    ## `geom_smooth()` using formula = 'y ~ x'
+
+    ## Warning: The following aesthetics were dropped during statistical transformation: fill
+    ## ℹ This can happen when ggplot fails to infer the correct grouping structure in
+    ##   the data.
+    ## ℹ Did you forget to specify a `group` aesthetic or to convert a numerical
+    ##   variable into a factor?
+
+    ## `geom_smooth()` using formula = 'y ~ x'
+
+    ## Warning: The following aesthetics were dropped during statistical transformation: fill
+    ## ℹ This can happen when ggplot fails to infer the correct grouping structure in
+    ##   the data.
+    ## ℹ Did you forget to specify a `group` aesthetic or to convert a numerical
+    ##   variable into a factor?
+
+    ## `geom_smooth()` using formula = 'y ~ x'
+
+    ## Warning: Removed 2 rows containing non-finite values (`stat_smooth()`).
+
+    ## Warning: The following aesthetics were dropped during statistical transformation: fill
+    ## ℹ This can happen when ggplot fails to infer the correct grouping structure in
+    ##   the data.
+    ## ℹ Did you forget to specify a `group` aesthetic or to convert a numerical
+    ##   variable into a factor?
+
+    ## Warning: Removed 2 rows containing missing values (`geom_point()`).
+
+    ## `geom_smooth()` using formula = 'y ~ x'
+
+    ## Warning: The following aesthetics were dropped during statistical transformation: fill
+    ## ℹ This can happen when ggplot fails to infer the correct grouping structure in
+    ##   the data.
+    ## ℹ Did you forget to specify a `group` aesthetic or to convert a numerical
+    ##   variable into a factor?
+
+    ## `geom_smooth()` using formula = 'y ~ x'
+
+    ## Warning: The following aesthetics were dropped during statistical transformation: fill
+    ## ℹ This can happen when ggplot fails to infer the correct grouping structure in
+    ##   the data.
+    ## ℹ Did you forget to specify a `group` aesthetic or to convert a numerical
+    ##   variable into a factor?
+
+    ## `geom_smooth()` using formula = 'y ~ x'
+
+    ## Warning: The following aesthetics were dropped during statistical transformation: fill
+    ## ℹ This can happen when ggplot fails to infer the correct grouping structure in
+    ##   the data.
+    ## ℹ Did you forget to specify a `group` aesthetic or to convert a numerical
+    ##   variable into a factor?
+
+``` r
+print(p01)
+```
+
+    ## Warning: Removed 2 rows containing missing values (`geom_point()`).
+
+``` r
 print(p02)
+```
+
+    ## `geom_smooth()` using formula = 'y ~ x'
+
+    ## Warning: The following aesthetics were dropped during statistical transformation: fill
+    ## ℹ This can happen when ggplot fails to infer the correct grouping structure in
+    ##   the data.
+    ## ℹ Did you forget to specify a `group` aesthetic or to convert a numerical
+    ##   variable into a factor?
+
+    ## `geom_smooth()` using formula = 'y ~ x'
+    ## `geom_smooth()` using formula = 'y ~ x'
+
+    ## Warning: The following aesthetics were dropped during statistical transformation: fill
+    ## ℹ This can happen when ggplot fails to infer the correct grouping structure in
+    ##   the data.
+    ## ℹ Did you forget to specify a `group` aesthetic or to convert a numerical
+    ##   variable into a factor?
+
+    ## `geom_smooth()` using formula = 'y ~ x'
+    ## `geom_smooth()` using formula = 'y ~ x'
+
+    ## Warning: The following aesthetics were dropped during statistical transformation: fill
+    ## ℹ This can happen when ggplot fails to infer the correct grouping structure in
+    ##   the data.
+    ## ℹ Did you forget to specify a `group` aesthetic or to convert a numerical
+    ##   variable into a factor?
+
+    ## `geom_smooth()` using formula = 'y ~ x'
+    ## `geom_smooth()` using formula = 'y ~ x'
+
+    ## Warning: The following aesthetics were dropped during statistical transformation: fill
+    ## ℹ This can happen when ggplot fails to infer the correct grouping structure in
+    ##   the data.
+    ## ℹ Did you forget to specify a `group` aesthetic or to convert a numerical
+    ##   variable into a factor?
+
+    ## `geom_smooth()` using formula = 'y ~ x'
+    ## `geom_smooth()` using formula = 'y ~ x'
+
+    ## Warning: The following aesthetics were dropped during statistical transformation: fill
+    ## ℹ This can happen when ggplot fails to infer the correct grouping structure in
+    ##   the data.
+    ## ℹ Did you forget to specify a `group` aesthetic or to convert a numerical
+    ##   variable into a factor?
+
+    ## `geom_smooth()` using formula = 'y ~ x'
+    ## `geom_smooth()` using formula = 'y ~ x'
+
+    ## Warning: The following aesthetics were dropped during statistical transformation: fill
+    ## ℹ This can happen when ggplot fails to infer the correct grouping structure in
+    ##   the data.
+    ## ℹ Did you forget to specify a `group` aesthetic or to convert a numerical
+    ##   variable into a factor?
+
+    ## `geom_smooth()` using formula = 'y ~ x'
+    ## `geom_smooth()` using formula = 'y ~ x'
+
+    ## Warning: Removed 2 rows containing non-finite values (`stat_smooth()`).
+
+    ## Warning: The following aesthetics were dropped during statistical transformation: fill
+    ## ℹ This can happen when ggplot fails to infer the correct grouping structure in
+    ##   the data.
+    ## ℹ Did you forget to specify a `group` aesthetic or to convert a numerical
+    ##   variable into a factor?
+
+    ## `geom_smooth()` using formula = 'y ~ x'
+
+    ## Warning: Removed 2 rows containing non-finite values (`stat_smooth()`).
+
+    ## Warning: Removed 2 rows containing missing values (`geom_point()`).
+
+    ## `geom_smooth()` using formula = 'y ~ x'
+
+    ## Warning: The following aesthetics were dropped during statistical transformation: fill
+    ## ℹ This can happen when ggplot fails to infer the correct grouping structure in
+    ##   the data.
+    ## ℹ Did you forget to specify a `group` aesthetic or to convert a numerical
+    ##   variable into a factor?
+
+    ## `geom_smooth()` using formula = 'y ~ x'
+    ## `geom_smooth()` using formula = 'y ~ x'
+
+    ## Warning: The following aesthetics were dropped during statistical transformation: fill
+    ## ℹ This can happen when ggplot fails to infer the correct grouping structure in
+    ##   the data.
+    ## ℹ Did you forget to specify a `group` aesthetic or to convert a numerical
+    ##   variable into a factor?
+
+    ## `geom_smooth()` using formula = 'y ~ x'
+    ## `geom_smooth()` using formula = 'y ~ x'
+
+    ## Warning: The following aesthetics were dropped during statistical transformation: fill
+    ## ℹ This can happen when ggplot fails to infer the correct grouping structure in
+    ##   the data.
+    ## ℹ Did you forget to specify a `group` aesthetic or to convert a numerical
+    ##   variable into a factor?
+
+    ## `geom_smooth()` using formula = 'y ~ x'
+
+``` r
+print(p03)
 ```
 
     ## `geom_smooth()` using formula = 'y ~ x'
