@@ -86,7 +86,7 @@ dcast(data=tab, sex + genotype2 ~ age2, fun.aggregate=length) %>%
     Sex differences in weight and length are generally minimal at these ages,
     and jag2b mutants are impossible to sex.
     The number of females of ages 10- to 24-months is too small to allow
-    adding sex to the ANOVA model."))
+    adding sex to the ANOVA model.")) %>% as_raw_html()
                      
 ```
 
